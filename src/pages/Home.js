@@ -5,7 +5,7 @@ import useScreenSize from "../hooks/useScreenSize";
 import Alon from "../assets/images/alon-alush-resized.jpg";
 import { SiteWrapper, Header, Hero, Mask, Img, Row, H1, H2 } from "./Home.style";
 import Resume from "./resume/Resume";
-import Summary from "./resume/Resume";
+import Summary from "./Summary";
 import Navigation from "../components/Navigation";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import styled from "@emotion/styled";

@@ -123,7 +123,7 @@ export const Card = styled.div`
     flex-direction: column;
     align-items: center;
     transition: all 0.2s ease-in;
-    width: 220px;
+    width: 320px;
     border-radius: 10px;
     border: 1px dashed #999;
 
