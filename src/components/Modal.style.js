@@ -2,29 +2,6 @@ import "react-spring-modal/styles.css";
 import { COLORS, DESKTOP_MQ, WIDE_MQ } from "../config/utils"; // requires a loader
 import styled from "@emotion/styled";
 
-export const contentProps = {
-    style: {
-        position: "fixed",
-        // top: "calc(50% - 10rem)",
-        // left: "calc(50% - 10rem)",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        top: "50%",
-        width: "98%",
-        height: "98%",
-        backgroundImage:
-            "repeating-linear-gradient(45deg, #2d2d2d 0, #2d2d2d 0.8px, #222 0, #222 0.3%)",
-        color: "#acbac4",
-        // borderRadius: "10rem",
-        // backgroundColor: "transparent",
-        zIndex: 11122211,
-        padding: "20px",
-    },
-};
 export const P = styled.div`
     margin-bottom: 0px;
 
@@ -41,6 +18,11 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
 
     ${DESKTOP_MQ} {
         overflow-y: unset;

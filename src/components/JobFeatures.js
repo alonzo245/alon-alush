@@ -39,8 +39,8 @@ export const Container = styled.div`
     margin-bottom: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-bottom: 1px dotted #99999960;
-    border-top: 1px dotted #99999960;
+    /* border-bottom: 1px dotted #99999960; */
+    /* border-top: 1px dotted #99999960; */
 `;
 
 export const FeatureBtn = styled.div`

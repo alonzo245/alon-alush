@@ -7,7 +7,7 @@ import { mobileThreshold } from "../config/utils";
 import FeatureCarousel from "./FeatureCarousel";
 import { IoMdClose } from "react-icons/io";
 import { icon } from "../assets/icons";
-import { P, H3, Container, Row, Close, Content, contentProps, H6, TechList } from "./Modal.style";
+import { P, H3, Container, Row, Close, Content, H6, TechList } from "./Modal.style";
 import workFeatures from "../assets/workFeatures/coderzApp";
 import styled from "@emotion/styled";
 export default function () {
@@ -20,7 +20,29 @@ export default function () {
             isOpen={!!state?.modal}
             // isOpen={true}
             // onDismiss={() => setState({ modal: false })}
-            contentProps={contentProps}
+            contentProps={{
+                style: {
+                    position: "fixed",
+                    // top: "calc(50% - 10rem)",
+                    // left: "calc(50% - 10rem)",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    top: "50%",
+                    width: width > mobileThreshold ? "98%" : "100%",
+                    height: width > mobileThreshold ? "98%" : "100%",
+                    backgroundImage:
+                        "repeating-linear-gradient(45deg, #2d2d2d 0, #2d2d2d 0.8px, #222 0, #222 0.3%)",
+                    color: "#acbac4",
+                    // borderRadius: "10rem",
+                    // backgroundColor: "transparent",
+                    zIndex: 11122211,
+                    padding: "20px",
+                },
+            }}
         >
             <Container>
                 <Close onClick={() => setState({ modal: false, modalData: null })}>
