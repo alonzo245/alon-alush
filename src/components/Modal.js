@@ -1,99 +1,104 @@
-import React, { useState } from "react";
-import { ExpandModal, ModalTitle, ModalCloseTarget, CenterModal } from "react-spring-modal";
+import React from "react";
+import { ExpandModal } from "react-spring-modal";
 import { useGlobalState } from "../hooks/useGlobalState";
 import "react-spring-modal/styles.css";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import useScreenSize from "../hooks/useScreenSize";
-import { mobileThreshold } from "../config/utils"; // requires a loader
-import FeatureCarusel from "./FeatureCarusel";
+import { mobileThreshold } from "../config/utils";
+import FeatureCarousel from "./FeatureCarousel";
 import { IoMdClose } from "react-icons/io";
+import { icon } from "../assets/icons";
+import { P, H3, Container, Row, Close, Content, contentProps, H6, TechList } from "./Modal.style";
+import workFeatures from "../assets/workFeatures/coderzApp";
 import styled from "@emotion/styled";
-
 export default function () {
     const { width } = useScreenSize();
 
     const { setState, state } = useGlobalState();
+
     return (
-        <>
-            <ExpandModal
-                isOpen={!!state?.modal}
-                // isOpen={true}
-                onDismiss={() => setState({ modal: false })}
-                contentProps={{
-                    style: {
-                        position: "fixed",
-                        // top: "calc(50% - 10rem)",
-                        // left: "calc(50% - 10rem)",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                        top: "50%",
-                        width: "98vw",
-                        height: "98vh",
-                        backgroundImage:
-                            "repeating-linear-gradient(45deg, #2d2d2d 0, #2d2d2d 0.8px, #222 0, #222 0.3%)",
-                        color: "#acbac4",
-                        // borderRadius: "10rem",
-                        // backgroundColor: "transparent",
-                        zIndex: 11122211,
-                    },
-                }}
-            >
-                <Close>
-                    <IoMdClose
-                        size={30}
-                        color={"#fff"}
-                        onClick={() => setState({ modal: false })}
-                    />
+        <ExpandModal
+            isOpen={!!state?.modal}
+            // isOpen={true}
+            // onDismiss={() => setState({ modal: false })}
+            contentProps={contentProps}
+        >
+            <Container>
+                <Close onClick={() => setState({ modal: false, modalData: null })}>
+                    <IoMdClose size={30} color={"#fff"} />
                 </Close>
-                <Row>
-                    <FeatureCarusel />
-                    <Content>
-                        Being a productive leader of the team where leadership is a behavioral
-                        trait.
-                        <br />
-                        Developing and maintaining team standards, documentation, tools, and best
-                        practices in the agile scrum world.
-                        <br />
-                        Develop and maintain the back-end,front-end and core applications of the
-                        company.
-                        <br />
-                        Work closely with the product team, developers, testers, designers, data
-                        scientists.
-                        <br />
-                        Reaching for quality tests of the applications.
-                        <br />
-                        Working in TDD SOLID methodologies.
-                        <br />
-                        Developing and designing system architecture of the company features and
-                        products.
-                    </Content>
-                </Row>
-            </ExpandModal>
-        </>
+                {width < mobileThreshold ? (
+                    <>
+                        <Content>
+                            <H3>{state?.modalData?.title}</H3>
+                            <H6>Technologies used in project</H6>
+                            <TechList>
+                                {(state?.modalData?.technologies || []).map((item, i) => (
+                                    <div key={i}>
+                                        {icon(item, width > mobileThreshold ? 40 : 22)}
+                                    </div>
+                                ))}
+                            </TechList>
+                            <P
+                                dangerouslySetInnerHTML={{
+                                    __html: state?.modalData?.description,
+                                }}
+                            />
+                        </Content>
+                        <DIV>
+                            {(state?.modalData?.items || []).map((item, i) => {
+                                return <Img alt="" key={i} src={workFeatures[item]} />;
+                            })}
+                        </DIV>
+                    </>
+                ) : (
+                    <>
+                        {state?.modalData && (
+                            <Row>
+                                <Content>
+                                    <H3>{state?.modalData?.title}</H3>
+                                    <H6>Technologies used in project</H6>
+                                    <TechList>
+                                        {(state?.modalData?.technologies || []).map((item, i) => (
+                                            <div key={i}>
+                                                {icon(item, width > mobileThreshold ? 40 : 22)}
+                                            </div>
+                                        ))}
+                                    </TechList>
+                                    <P
+                                        dangerouslySetInnerHTML={{
+                                            __html: state?.modalData?.description,
+                                        }}
+                                    />
+                                </Content>
+                                <FeatureCarousel />
+                            </Row>
+                        )}
+                    </>
+                )}
+            </Container>
+        </ExpandModal>
     );
 }
 
-const Content = styled.div`
-    width: 50%;
-    height: 100%;
-    text-align: left;
-    vertical-align: top;
-`;
-
-const Row = styled.div`
+const DIV = styled.div`
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin-top: 30px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: visible;
+    //height: 824px;
+    //display: table; ;
 `;
 
-const Close = styled.div`
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
+const Img = styled.img`
+    width: 70%;
+    height: auto;
+    //max-height: 100px;
+    //height: auto;
+    margin: 0 10px;
+    display: table-row;
+
+    &:first-child {
+        padding-left: -40px;
+    }
 `;

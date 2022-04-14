@@ -10,7 +10,7 @@ export default function () {
             <RowIcons>
                 {techIcons.map((i, k) => {
                     return (
-                        <TechItem>
+                        <TechItem key={k}>
                             {i.icon}
                             <p style={{ fontSize: "11px", marginTop: "5px", textAlign: "center" }}>
                                 {i.title}

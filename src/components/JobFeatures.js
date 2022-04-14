@@ -1,0 +1,65 @@
+import React from "react";
+import { useGlobalState } from "../hooks/useGlobalState";
+import workFeatures from "../data/workFeatures";
+import { BsCodeSlash } from "react-icons/bs";
+import styled from "@emotion/styled";
+import useScreenSize from "../hooks/useScreenSize";
+
+export default function ({ id }) {
+    const { setState, state } = useGlobalState();
+    const { width } = useScreenSize();
+
+    return (
+        <Container>
+            {(Object.keys(workFeatures[id]) || []).map((featureName, i) => {
+                return (
+                    <FeatureBtn
+                        onClick={() =>
+                            setState({
+                                modal: true,
+                                modalData: {
+                                    ...workFeatures[id][featureName],
+                                },
+                            })
+                        }
+                    >
+                        <BsCodeSlash size={20} color={"#ffffff60"} />
+                        <p>{workFeatures[id][featureName]?.title}</p>
+                    </FeatureBtn>
+                );
+            })}
+        </Container>
+    );
+}
+
+export const Container = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px dotted #99999960;
+    border-top: 1px dotted #99999960;
+`;
+
+export const FeatureBtn = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10px;
+    border-radius: 10px;
+    border: 1px dotted #ffffff30;
+    padding: 10px;
+    min-width: 100px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: #ffffff20;
+    }
+    p {
+        font-size: 11px;
+    }
+`;

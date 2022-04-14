@@ -1,27 +1,8 @@
-const externalLink = (text, url) =>
-    `<span>
-        <a href="${url}" target={"_blank"}>
-            ${text}
-        </a>
- <svg
-        stroke="currentColor"
-        fill="currentColor"
-        stroke-width="0"
-        viewBox="0 0 20 20"
-        color="#fff"
-        height="14"
-        width="14"
-        xmlns="http://www.w3.org/2000/svg"
-        style="color: rgb(255, 255, 255);"
-    >
-        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
-        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
-    </svg>    
-</span>`;
-
+import { externalLink } from "../utils";
 //************************************************************************************//
 export default [
     {
+        id: "coderz",
         icon: "coderz",
         company: "Coderz by Jolt.io",
         title: "Head of Engineering Development & Full-Stack Education",
@@ -40,13 +21,15 @@ Creating live code along sessions, Hand-On developing the ${externalLink(
 As the project leader I'm mentoring, teaching and guiding to show how it's like being a hand-on on teamwork, agile workflow, behaving in the recruiting process and technical interviews and more topics that every developer experiences on an everyday basis.
 <br/><br/>
 Products of Coderz:
-Coderz the App - developed with React Native which can be downloaded through the 
- ${externalLink("App Store", "https://apps.apple.com/il/app/coderz/id1603698449")} 
-  or 
-   ${externalLink(
-       "Play Store",
-       "https://play.google.com/store/apps/details?id=com.coderz.coderz&hl=en&gl=il",
-   )}, for guiding developers step by step in a roadmap to reach their first job.
+Coderz the App - developed with React Native which can be downloaded
+            through the ${externalLink(
+                "App Store",
+                "https://apps.apple.com/il/app/coderz/id1603698449",
+            )} or ${externalLink(
+            "Play Store",
+            "https://play.google.com/store/apps/details?id=com.coderz.coderz&hl=en&gl=il",
+        )}, 
+            for level up  developers step by step in a personal roadmap to reach their knowledge first job.
 <br/><br/>
  ${externalLink(
      "Coderz VOD",
@@ -82,6 +65,7 @@ ${externalLink(
         date: "2021 - Present",
     },
     {
+        id: "jolt",
         icon: "jolt",
         company: "Jolt.io",
         title: "Hands-on R&D Director of Engineering",
@@ -104,6 +88,7 @@ Products I've led & developed:
         date: "2021 - Present",
     },
     {
+        id: "jolt",
         icon: "jolt",
         company: "Jolt.io",
         title: "R&D Team Leader / Senior Fullstack Developer ",
@@ -120,6 +105,7 @@ Developing and designing system architecture of the company features and product
         date: "2020 - 2021",
     },
     {
+        id: "pepper",
         icon: "pepper",
         company: "Pepper Bank",
         title: "Senior Full Stack Developer / Scrum Master ",
@@ -134,6 +120,23 @@ Responsible for writing server-side web application logic in JavaScript, develop
         date: "2018 - 2020",
     },
     {
+        id: "investing",
+        icon: "investing",
+        company: "Investing.com",
+        title: "Tech Lead / Senior Full Stack Developer",
+        description: `
+Project leader of the company’s mobile website.<br/>
+Worked with management directly and matrix management of 5 employees during planning phases of projects and code implementations.
+Worked in parallel on 5 other development projects of the company, such as Web Apps, Restful API’s, Back Office Admins, including Front End JavaScript, MVVM Frameworks, HTML5, CSS3 and Back End technologies (LAMP).<br/>
+Assisting other developers of the company with code review, planned effective work strategies and tasks to grow their skill set and make them most efficient.<br/>
+Self driven to solve problems, communicating with different departments of the company, such as product, design, front-end and QA teams. <br/>
+My main responsibilities were to design the application architecture and create reusable and testable code for the site of the company as a part of a scalable application.<br/> 
+Managing different opcode caching, creating and designing databases, developed CMS's in front-end and backend. <br/>
+       `,
+        date: "2014 - 2018",
+    },
+    {
+        id: "salesTech",
         icon: "",
         company: "SalesTech",
         title: "Senior Full Stack DeveloperSalesTech ",
@@ -146,6 +149,7 @@ application. Working with GIT in Agile development.<br/>
         date: "2014 - 2015",
     },
     {
+        id: "csmedia",
         icon: "",
         company: "CS Media",
         title: "Tech Lead and Senior Full Stack Web Developer ",
@@ -158,6 +162,7 @@ application. Working with GIT in Agile development.<br/>
         date: "2009 - 2013",
     },
     {
+        id: "ynet",
         icon: "ynet",
         company: "ynet",
         title: "Web Developer ",
@@ -168,6 +173,7 @@ Creating frontend designs and animations for online advertising campaigns.<br/>
         date: "2008 - 2009",
     },
     {
+        id: "aviadis",
         icon: "",
         company: "Aviadis",
         title: "Web Developer ",
