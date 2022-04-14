@@ -1,7 +1,7 @@
 a:hover {
     text-decoration: none;
 }
-.centered{
+.centered {
     padding: 0 20px;
 }
 
@@ -47,7 +47,16 @@ a:hover {
     padding: 30px;
     width: 100%;
 }
-.branch h1, .branch h2, .branch h3, .branch h4, .branch h5, .branch h6 {
+.branch.branch-centered {
+    padding: 30px 10px;
+}
+
+.branch h1,
+.branch h2,
+.branch h3,
+.branch h4,
+.branch h5,
+.branch h6 {
     line-height: inherit;
 }
 
@@ -81,7 +90,7 @@ a:hover {
     background: #ccd5db;
     display: block;
     position: absolute;
-    top: 24px;
+    top: 44px;
     bottom: 0;
     left: 6px;
 }
@@ -93,8 +102,18 @@ a:hover {
     border: 3px solid #ff6b6b;
 }
 .content {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     margin-top: 20px;
+}
+.content a {
+}
+.content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.content a:hover {
+    /*text-decoration: underline;*/
+    color: #9cc4ff;
 }
 .content p:last-child {
     margin-bottom: 0;
@@ -130,39 +149,60 @@ a:hover {
     margin: 0;
 }
 @media (min-width: 768px) {
+    .branch.branch-centered {
+        padding: 00px 10px;
+    }
+
     .title {
         text-align: center;
         margin: 30px auto;
     }
-    .branch-split .branch, .branch-centered .branch {
+
+    .branch-split .branch,
+    .branch-centered .branch {
         display: table;
     }
-    .branch-split .item, .branch-centered .item {
+    .branch-split .item,
+    .branch-centered .item {
         display: table-row;
         padding: 0;
     }
-    .branch-split .date-title, .branch-centered .date-title, .branch-split .node-icon, .branch-centered .node-icon, .branch-split .content, .branch-centered .content, .branch-split .period .date-title, .branch-centered .period .date-title {
+    .branch-split .date-title,
+    .branch-centered .date-title,
+    .branch-split .node-icon,
+    .branch-centered .node-icon,
+    .branch-split .content,
+    .branch-centered .content,
+    .branch-split .period .date-title,
+    .branch-centered .period .date-title {
         display: table-cell;
         vertical-align: top;
     }
-    .branch-split .node-icon, .branch-centered .node-icon {
+    .branch-split .node-icon,
+    .branch-centered .node-icon {
         position: relative;
     }
-    .branch-split .content, .branch-centered .content {
+    .branch-split .content,
+    .branch-centered .content {
         padding-left: 30px;
     }
-    .branch-split .date-title, .branch-centered .date-title {
+    .branch-split .date-title,
+    .branch-centered .date-title {
         padding-right: 30px;
-
     }
-    .branch-split .period .item-title, .branch-centered .period .item-title {
+    .branch-split .period .item-title,
+    .branch-centered .period .item-title {
         position: relative;
         left: -45px;
     }
 }
 
 @media (min-width: 992px) {
-    .branch-centered, .branch-centered .item, .branch-centered .date-title, .branch-centered .node-icon, .branch-centered .content {
+    .branch-centered,
+    .branch-centered .item,
+    .branch-centered .date-title,
+    .branch-centered .node-icon,
+    .branch-centered .content {
         display: block;
         margin: 0;
         padding: 0;
@@ -176,7 +216,8 @@ a:hover {
         left: 50%;
         margin-left: -7.5px;
     }
-    .branch-centered .date-title, .branch-centered .content {
+    .branch-centered .date-title,
+    .branch-centered .content {
         width: 50%;
     }
     .branch-centered > .item:nth-child(odd) .date-title {
@@ -188,20 +229,19 @@ a:hover {
     .branch-centered > .item:nth-child(odd) .content {
         float: right;
         text-align: left;
-        padding-left: 30px;
+        padding-left: 40px;
         margin-top: 10px;
-
     }
     .branch-centered > .item:nth-child(even) .date-title {
         float: right;
         text-align: left;
-        padding-left: 30px;
+        padding-left: 40px;
         margin-top: 10px;
     }
     .branch-centered > .item:nth-child(even) .content {
         float: left;
         text-align: left;
-        padding-right: 30px;
+        padding-right: 40px;
         margin-top: 10px;
         /*color: red;*/
     }
@@ -231,4 +271,3 @@ a:hover {
 .marker-outline .item:hover .node-icon:before {
     background: #ff6b6b;
 }
-

@@ -1,20 +1,22 @@
 import React, { useRef, useState } from "react";
 import { StyledBurger, StyledMenu } from "./Navigation.style";
 import useClickOutside from "../hooks/useClickOutside";
-// import { Link } from "react-router-dom";
 import { StyledLink, Container, BurgerContainer } from "./Navigation.style";
 import { animateScroll as scroll } from "react-scroll";
 import { CENTER_ITEMS_FLEX, COLORS, mobileThreshold } from "../config/utils";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import useScreenSize from "../hooks/useScreenSize";
 import styled from "@emotion/styled";
+import { useGlobalState } from "../hooks/useGlobalState";
 
 export default function () {
     const [open, setOpen] = useState(false);
     const node = useRef();
     const { width } = useScreenSize();
-
+    const { state, setState } = useGlobalState();
     useClickOutside(node, () => setOpen(false));
+
+    if (state?.modal) return null;
 
     const onClick = (section) => {
         setOpen(!open);

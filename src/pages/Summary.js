@@ -4,7 +4,9 @@ import { Container, H3, Row, RowIcons, P, TechItem, H4 } from "./Summary.style";
 export default function () {
     return (
         <Container id="summary">
-            <H3 style={{ alignSelf: "center", marginBottom: "30px" }}>Tech I Work with</H3>
+            <H3 style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}>
+                Tech I Work with
+            </H3>
             <RowIcons>
                 {techIcons.map((i, k) => {
                     return (
@@ -17,6 +19,7 @@ export default function () {
                     );
                 })}
             </RowIcons>
+
             <Row>
                 <P>
                     <H4>Summary</H4>

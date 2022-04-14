@@ -88,7 +88,7 @@ export const CardContent = styled.div`
 export const H3 = styled.h3`
     font-size: 30px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
 
     ${DESKTOP_MQ} {
         margin-top: 0px;

@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 // import { useParams } from "react-router-dom";
 // import { useGlobalState } from "../hooks/useGlobalState";
 import useScreenSize from "../hooks/useScreenSize";
-import Alon from "../assets/images/alon-alush-resized.jpg";
-import { SiteWrapper, Header, Hero, Mask, Img, Row, H1, H2 } from "./Home.style";
+import { SiteWrapper, Header, Hero, Row, H1, H2 } from "./Home.style";
 import Resume from "./resume/Resume";
 import Summary from "./Summary";
 import Navigation from "../components/Navigation";
@@ -11,6 +10,8 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import styled from "@emotion/styled";
 import { mobileThreshold } from "../config/utils";
 import Projects from "./Projects";
+import Modal from "../components/Modal";
+import Avatar from "../components/Avatar";
 
 export default function () {
     // const { videoId } = useParams();
@@ -19,13 +20,12 @@ export default function () {
 
     return (
         <SiteWrapper>
+            <Modal />
             <Header>
                 <Navigation />
             </Header>
             <Hero id="hero">
-                <Mask>
-                    <Img src={Alon} alt={"Alon ALush"} />
-                </Mask>
+                <Avatar />
                 <Row>
                     <H1>Alon Alush</H1>
                     <H2>

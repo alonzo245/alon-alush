@@ -12,6 +12,8 @@ export default function () {
     const { state, setState } = useGlobalState();
     const ref = useRef(null);
 
+    if (state?.modal) return null;
+
     return (
         <Container ref={ref}>
             {width < mobileThreshold ? (
@@ -46,7 +48,7 @@ const HamburgerWrapper = styled.div`
     right: 5px;
     background-color: #000000;
     border-radius: 50%;
-    z-index: 1111111;
+    z-index: 11;
     //height: 20px;
 `;
 
