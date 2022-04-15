@@ -39,6 +39,14 @@ export const Container = styled.div`
     margin-bottom: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 82px;
+    //background-color: red;
     /* border-bottom: 1px dotted #99999960; */
     /* border-top: 1px dotted #99999960; */
 `;
@@ -51,10 +59,11 @@ export const FeatureBtn = styled.div`
     margin-inline: 10px;
     border-radius: 10px;
     border: 1px dotted #ffffff30;
-    padding: 10px;
-    min-width: 100px;
+    padding: 5px;
+    width: 110px;
     cursor: pointer;
     transition: all 0.2s ease-in;
+    background-color: #00000030;
 
     &:hover {
         background-color: #ffffff20;

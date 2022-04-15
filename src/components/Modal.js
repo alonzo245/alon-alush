@@ -8,7 +8,7 @@ import FeatureCarousel from "./FeatureCarousel";
 import { IoMdClose } from "react-icons/io";
 import { icon } from "../assets/icons";
 import { P, H3, Container, Row, Close, Content, H6, TechList } from "./Modal.style";
-import workFeatures from "../assets/workFeatures/coderzApp";
+import workFeatures from "../assets/workFeatures";
 import styled from "@emotion/styled";
 export default function () {
     const { width } = useScreenSize();
@@ -67,8 +67,25 @@ export default function () {
                             />
                         </Content>
                         <DIV>
-                            {(state?.modalData?.items || []).map((item, i) => {
-                                return <Img alt="" key={i} src={workFeatures[item]} />;
+                            {(state?.modalData?.thumbnails || []).map((item, i) => {
+                                if (item?.type === "youtube") {
+                                    return (
+                                        <iframe
+                                            width="100%"
+                                            height={width > mobileThreshold ? "320px" : "220px"}
+                                            src={item?.url}
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                            title="Embedded youtube"
+                                        />
+                                    );
+                                }
+                                return item?.type === "wide" ? (
+                                    <></>
+                                ) : (
+                                    <Img alt="" key={i} src={workFeatures[item]} />
+                                );
                             })}
                         </DIV>
                     </>

@@ -33,19 +33,19 @@ export const Container = styled.div`
     }
 `;
 export const H6 = styled.h6`
-    color: ${COLORS.brightPurple};
+    color: #958eca;
     font-size: 20px;
     margin-bottom: 20px;
 
     ${DESKTOP_MQ} {
-        color: ${COLORS.brightPurple};
-        font-size: 30px;
+        color: #958eca;
+        font-size: 25px;
         margin-bottom: 20px;
     }
 
     ${WIDE_MQ} {
-        color: ${COLORS.brightPurple};
-        font-size: 30px;
+        color: #958eca;
+        font-size: 25px;
         margin-bottom: 20px;
     }
 `;
@@ -87,7 +87,7 @@ export const TechList = styled.div`
         margin-bottom: 30px;
         width: 100%;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     ${WIDE_MQ} {
@@ -96,7 +96,7 @@ export const TechList = styled.div`
         margin-bottom: 30px;
         width: 100%;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 `;
 
