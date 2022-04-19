@@ -9,16 +9,6 @@ export const CENTER_ITEMS_FLEX = `
     justify-content: center;
     align-items: center;
 `;
-export const FLEX_SPACE_BETWEEN = `
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-export const CENTER_ITEMS_FLEX_IN_STYLE = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-};
 
 export const isEmailValid = (email) => {
     const re =

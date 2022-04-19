@@ -4,6 +4,7 @@ import workFeatures from "../data/workFeatures";
 import { BsCodeSlash } from "react-icons/bs";
 import styled from "@emotion/styled";
 import useScreenSize from "../hooks/useScreenSize";
+import { DIV } from "./ResumeEditItem.style";
 
 export default function ({ id }) {
     const { setState, state } = useGlobalState();
@@ -14,6 +15,7 @@ export default function ({ id }) {
             {(Object.keys(workFeatures[id]) || []).map((featureName, i) => {
                 return (
                     <FeatureBtn
+                        key={i}
                         onClick={() =>
                             setState({
                                 modal: true,

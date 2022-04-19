@@ -13,13 +13,13 @@ export default function () {
             <Attributes />
             {state?.user?.summary?.length === 0 || state?.edit ? null : (
                 <Row>
-                    {state?.user?.summary?.map((item, i) => {
+                    {(state?.user?.summary || [])?.map((item, i) => {
                         return (
                             <DIV key={i}>
                                 <H4>{item?.title}</H4>
                                 <ul>
-                                    {item?.bullets?.map((bullet, k) => {
-                                        return <li>{bullet}</li>;
+                                    {(item?.bullets || [])?.map((bullet, k) => {
+                                        return <li key={k}>{bullet}</li>;
                                     })}
                                 </ul>
                             </DIV>

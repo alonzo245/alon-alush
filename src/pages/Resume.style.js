@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { COLORS, DESKTOP_MQ, MOBILE_MQ, WIDE_MQ } from "../config/utils";
+import { DESKTOP_MQ, WIDE_MQ } from "../config/utils";
 
 export const Container = styled.section`
     align-self: center;
@@ -11,19 +11,6 @@ export const Container = styled.section`
         &:hover {
         }
     }
-
-    ${DESKTOP_MQ} {
-    }
-
-    ${WIDE_MQ} {
-    }
-`;
-
-export const ResumeBar = styled.div`
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    align-items: center;
 
     ${DESKTOP_MQ} {
     }

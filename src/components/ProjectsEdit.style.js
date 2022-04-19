@@ -113,7 +113,7 @@ export const H6 = styled.h6`
     align-items: center;
 `;
 
-export const Card = styled.div`
+export const CardEdit = styled.div`
     margin: 10px;
     height: 320px;
     color: white;
@@ -129,7 +129,7 @@ export const Card = styled.div`
     ${DESKTOP_MQ} {
         width: 240px;
         &:hover {
-            background-color: ${COLORS.blueish};
+            //background-color: ${COLORS.blueish};
             color: #fff;
         }
     }
@@ -137,13 +137,165 @@ export const Card = styled.div`
     ${WIDE_MQ} {
         width: 240px;
         &:hover {
-            background-color: ${COLORS.blueish};
+            //background-color: ${COLORS.blueish};
             color: #fff;
         }
     }
 `;
 
-export const CardContainer = styled.div`
+export const CardAddProject = styled.div`
+    margin: 10px;
+    height: 320px;
+    color: white;
+    padding: 5px 5px;
+    transition: all 0.2s ease-in;
+    width: 320px;
+    border-radius: 10px;
+    border: 1px dashed #999;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+        transition: all 0.2s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border: 1px dashed #ffffff;
+        border-radius: 50px;
+    }
+
+    ${DESKTOP_MQ} {
+        width: 240px;
+        &:hover {
+            background-color: #444;
+            border: 1px dashed #ffffff;
+            color: #fff;
+
+            div {
+                background-color: #fff;
+                border: 1px dashed #ffffff;
+            }
+        }
+    }
+
+    ${WIDE_MQ} {
+        width: 240px;
+        &:hover {
+            background-color: #444;
+            border: 1px dashed #ffffff;
+
+            color: #fff;
+        }
+    }
+`;
+
+export const Textarea = styled.textarea`
+    color: #acbac4;
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+    //min-width: 250px;
+    //border-bottom: 1px dashed #88888840;
+    width: 100%;
+    //padding-left: 23px;
+
+    &::placeholder {
+        color: #acbac4;
+    }
+    &:focus {
+        color: #acbac4;
+        border-bottom: 1px dashed #888;
+    }
+
+    &:hover {
+        color: #acbac4;
+        border-bottom: 1px dashed #888;
+    }
+`;
+
+export const Input2 = styled.input`
+    color: #acbac4;
+    background-color: #00000040;
+    border: unset;
+    outline: unset;
+    font-weight: bold;
+    //min-width: 250px;
+    //border-bottom: 1px dashed #88888840;
+    //width: 100%;
+    //padding-left: 23px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+
+    &::placeholder {
+        color: #acbac4;
+    }
+    &:focus {
+        color: #999;
+        //border-bottom: 1px dashed #888;
+    }
+
+    &:hover {
+        color: #999;
+        //border-bottom: 1px dashed #888;
+    }
+`;
+export const Input1 = styled.input`
+    color: #acbac4;
+    background-color: #00000000;
+    border: unset;
+    outline: unset;
+    font-weight: bold;
+    //min-width: 250px;
+    //border-bottom: 1px dashed #88888840;
+    //width: 100%;
+    //padding-left: 23px;
+    font-size: 18px;
+    padding: 10px;
+
+    &::placeholder {
+        color: #acbac4;
+    }
+    &:focus {
+        color: #999;
+        //border-bottom: 1px dashed #888;
+    }
+
+    &:hover {
+        color: #999;
+        //border-bottom: 1px dashed #888;
+    }
+`;
+export const Input3 = styled.input`
+    color: #acbac4;
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+    font-weight: bold;
+    min-width: 250px;
+    border-bottom: 1px dashed #88888840;
+    width: 100%;
+    padding-left: 23px;
+
+    &::placeholder {
+        color: #acbac4;
+    }
+    &:focus {
+        color: #999;
+        border-bottom: 1px dashed #888;
+    }
+
+    &:hover {
+        color: #999;
+        border-bottom: 1px dashed #888;
+    }
+`;
+
+export const CardContainerEdit = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

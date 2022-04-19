@@ -18,7 +18,7 @@ export default function () {
                 </H3>
             ) : null}
             <RowIcons>
-                {state?.user?.attributes.map((title, k) => {
+                {(state?.user?.attributes || []).map((title, k) => {
                     const i = techIcons?.find((icon) => icon?.title === title);
                     return (
                         <TechItem key={k}>

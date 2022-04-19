@@ -9,6 +9,7 @@ import {
     EditIconWrapper,
 } from "./AttributesEdit.style";
 import { useGlobalState } from "../hooks/useGlobalState";
+import { DIV } from "./ResumeEditItem.style";
 
 export default function () {
     const { setState, state } = useGlobalState();
@@ -16,7 +17,7 @@ export default function () {
 
     useEffect(() => {
         setIconTitles([...techIcons?.map((icon) => icon?.title)]);
-        console.log([...techIcons?.map((icon) => icon?.title)]);
+        // console.log([...techIcons?.map((icon) => icon?.title)]);
     }, []);
 
     const onClick = (attr, action) => {
@@ -55,7 +56,7 @@ export default function () {
                     <RowIcons>
                         {techIcons.map((icon, i) => {
                             const iconEntity = (
-                                <>
+                                <div key={i}>
                                     {icon.icon}
                                     <p
                                         style={{
@@ -66,7 +67,7 @@ export default function () {
                                     >
                                         {icon.title}
                                     </p>
-                                </>
+                                </div>
                             );
                             const checked = state?.user?.attributes?.includes(icon?.title);
                             return (
@@ -83,7 +84,7 @@ export default function () {
                 </>
             ) : (
                 <RowIcons>
-                    {state?.user?.attributes.map((i, k) => {
+                    {(state?.user?.attributes || []).map((i, k) => {
                         return (
                             <TechItem key={k}>
                                 {i.icon}

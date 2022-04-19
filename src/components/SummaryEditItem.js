@@ -1,35 +1,45 @@
-import React, { useState } from "react";
-import techIcons from "../data/techIcons";
-import { Input, Input2, Textarea } from "../pages/Summary.style";
+import React from "react";
 import { useGlobalState } from "../hooks/useGlobalState";
-import { EditIconWrapper2, EditIconWrapper3 } from "../pages/Home.style";
+import { EditIconWrapper2 } from "../pages/Home.style";
 import { AiOutlineCloseCircle, AiOutlinePlus } from "react-icons/ai";
-import { ImgContainer, LI2 } from "./ResumeEditItem.style";
-import styled from "@emotion/styled";
-import { DESKTOP_MQ, WIDE_MQ } from "../config/utils";
+import { DIV, Row, Input, Textarea, Button, Button2 } from "./ResumeEditItem.style";
 
 export default function () {
     const { setState, state } = useGlobalState();
-    const [summary, setSummary] = useState(() => state?.user?.summary || []);
 
     const onClick = () => {
-        setSummary([{ title: "", bullets: ["First bullet :)"] }, ...summary]);
+        setState({
+            user: {
+                ...state?.user,
+                summary: [{ title: "", bullets: ["First bullet :)"] }, ...state?.user?.summary],
+            },
+        });
     };
 
     const onClick2 = (i) => {
-        const arr = [...summary];
-        setSummary(
-            arr.map((item, index) => {
-                if (index === i) return { ...item, bullets: [...item.bullets, ""] };
-                return item;
-            }),
-        );
+        const array = [...state?.user?.summary];
+
+        setState({
+            user: {
+                ...state?.user,
+                summary: array.map((item, index) => {
+                    if (index === i) return { ...item, bullets: [...item.bullets, ""] };
+                    return item;
+                }),
+            },
+        });
     };
 
     const onClick3 = (i, k) => {
-        const array = [...summary];
+        const array = [...state?.user?.summary];
         array[i]?.bullets?.splice(k, 1);
-        setSummary([...array]);
+        // setState([...array]);
+        setState({
+            user: {
+                ...state?.user,
+                summary: [...array],
+            },
+        });
     };
 
     return (
@@ -41,7 +51,7 @@ export default function () {
                     </span>
                     Add another summary
                 </Button>
-                {summary?.map((item, i) => {
+                {(state?.user?.summary || [])?.map((item, i) => {
                     return (
                         <DIV key={i}>
                             <EditIconWrapper2>
@@ -50,7 +60,7 @@ export default function () {
                             <ul>
                                 {(item?.bullets || []).map((bullet, k) => {
                                     return (
-                                        <li style={{ display: "flex", marginTop: "10px" }}>
+                                        <li style={{ display: "flex", marginTop: "10px" }} key={k}>
                                             <AiOutlineCloseCircle
                                                 onClick={() => onClick3(i, k)}
                                                 size={20}
@@ -75,82 +85,3 @@ export default function () {
         )
     );
 }
-
-export const Row = styled.div`
-    display: flex;
-    flex: 1 1;
-    padding: 0 30px;
-    margin: 0px auto;
-    flex-direction: column;
-    width: 100%;
-
-    ${DESKTOP_MQ} {
-        margin: 40px auto;
-        padding: 0 80px;
-    }
-
-    ${WIDE_MQ} {
-        margin: 40px auto;
-        padding: 0 80px;
-    }
-`;
-
-export const DIV = styled.div`
-    flex: unset;
-    line-height: 1.2;
-
-    padding: 20px;
-    background: #99999920;
-    border-radius: 10px;
-    width: 100%;
-    align-self: center;
-    margin-bottom: 20px;
-    & li {
-        padding: 3px 0;
-    }
-
-    ${DESKTOP_MQ} {
-        max-width: 1000px;
-    }
-
-    ${WIDE_MQ} {
-        max-width: 1000px;
-    }
-`;
-
-const Button2 = styled.div`
-    margin: 10px auto;
-    padding: 15px;
-    background-color: #66666640;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-    width: 100%;
-    align-self: center;
-    text-align: center;
-
-    &:hover {
-        background-color: #77777780;
-    }
-
-    ${WIDE_MQ} {
-        width: 200px;
-    }
-
-    ${DESKTOP_MQ} {
-        width: 200px;
-    }
-`;
-
-const Button = styled.div`
-    margin: 10px auto;
-    padding: 15px;
-    background-color: #66666640;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-
-    &:hover {
-        background-color: #77777780;
-    }
-`;

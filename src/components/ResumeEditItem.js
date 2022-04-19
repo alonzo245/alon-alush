@@ -3,29 +3,41 @@ import "../pages/resume/resume.style.css";
 import { useGlobalState } from "../hooks/useGlobalState";
 import { AiFillEdit, AiOutlinePlus } from "react-icons/ai";
 import { EditIconWrapper2 } from "../pages/Home.style";
-import { ImgContainer, LI, LI2, Input, Input2, Input3, Textarea } from "./ResumeEditItem.style";
+import {
+    ImgContainer,
+    LI,
+    LI2,
+    Input,
+    Input2,
+    Input3,
+    Textarea,
+    DIV,
+} from "./ResumeEditItem.style";
 export default function () {
     const { setState, state } = useGlobalState();
-    const [items, setItems] = useState([]);
-    const [resume, setResume] = useState(() => [...(state?.user?.resume || [])]);
 
     const onClick = () => {
-        setItems([
-            ...items,
-            {
-                title: "",
-                date: "",
-                company: "",
-                description: "",
+        setState({
+            user: {
+                ...state?.user,
+                resume: [
+                    ...state?.user?.resume,
+                    {
+                        title: "",
+                        date: "",
+                        company: "",
+                        description: "",
+                    },
+                ],
             },
-        ]);
+        });
     };
 
     return (
         <>
-            {(resume || []).map((item, i) => {
+            {(state?.user?.resume || []).map((item, i) => {
                 return (
-                    <LI className="item">
+                    <LI className="item" key={i}>
                         <div className="date-title">
                             <span>
                                 <EditIconWrapper2>

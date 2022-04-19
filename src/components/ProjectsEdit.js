@@ -10,12 +10,20 @@ import {
     Card,
     CardBadges,
     CardButton,
-    CardContainer,
+    CardContainerEdit,
     H3,
     H6,
+    Input3,
+    Textarea,
+    CardEdit,
+    Input1,
+    Input2,
+    CardAddProject,
 } from "./ProjectsEdit.style";
 import { EditIconWrapper, Input } from "./AttributesEdit.style";
 import { useGlobalState } from "../hooks/useGlobalState";
+import { EditIconWrapper2 } from "../pages/Home.style";
+import { AiOutlinePlus } from "react-icons/ai";
 
 const projectSourceUrlButton = (url) => (
     <Btn href={url} target="_blank">
@@ -26,6 +34,25 @@ const projectSourceUrlButton = (url) => (
 
 export default function (props) {
     const { state, setState } = useGlobalState();
+
+    const onClick = () => {
+        setState({
+            user: {
+                ...state?.user,
+                projects: [
+                    {
+                        name: "",
+                        created_at: "",
+                        language: "",
+                        url: "",
+                        description: "",
+                        technologies: [],
+                    },
+                    ...state?.user?.projects,
+                ],
+            },
+        });
+    };
 
     return (
         <Container id="projects">
@@ -48,14 +75,23 @@ export default function (props) {
                     ) : null}
                 </>
             )}
-            <CardContainer>
-                {state?.user?.projects.map((project, key) => (
-                    <Card key={key}>
+            <CardContainerEdit>
+                <CardAddProject onClick={onClick}>
+                    <div>
+                        <AiOutlinePlus size={40} color={"#999"} />
+                    </div>
+                </CardAddProject>
+                {(state?.user?.projects || []).map((project, key) => (
+                    <CardEdit key={key}>
                         <CardContent>
                             <H6>
-                                <span>{project.name.replace(/[_,-]/g, " ")}</span>
+                                <Input1 value={project.name} placeholder={"Enter Work Duration"} />
                             </H6>
-                            <p>{project.description}</p>
+                            <Textarea
+                                rows={4}
+                                value={project.description}
+                                placeholder={"What did you worked on over there?"}
+                            />
                         </CardContent>
 
                         <CardBadges>
@@ -70,13 +106,10 @@ export default function (props) {
                                 ))}
                         </CardBadges>
 
-                        <CardButton>
-                            {project.url && projectSourceUrlButton(project.url)}
-                            {/*{project.demoUrl && projectUrlButton(project.demoUrl)}*/}
-                        </CardButton>
-                    </Card>
+                        <Input2 value={project.url} placeholder={"project url"} />
+                    </CardEdit>
                 ))}
-            </CardContainer>
+            </CardContainerEdit>
         </Container>
     );
 }

@@ -1,7 +1,86 @@
 import React from "react";
 import "../pages/resume/resume.style.css";
 import styled from "@emotion/styled";
-import { COLORS } from "../config/utils";
+import { COLORS, DESKTOP_MQ, WIDE_MQ } from "../config/utils";
+
+export const Row = styled.div`
+    display: flex;
+    flex: 1 1;
+    padding: 0 30px;
+    margin: 0px auto;
+    flex-direction: column;
+    width: 100%;
+
+    ${DESKTOP_MQ} {
+        margin: 40px auto;
+        padding: 0 80px;
+    }
+
+    ${WIDE_MQ} {
+        margin: 40px auto;
+        padding: 0 80px;
+    }
+`;
+
+export const DIV = styled.div`
+    flex: unset;
+    line-height: 1.2;
+
+    padding: 20px;
+    background: #99999920;
+    border-radius: 10px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 20px;
+    & li {
+        padding: 3px 0;
+    }
+
+    ${DESKTOP_MQ} {
+        max-width: 1000px;
+    }
+
+    ${WIDE_MQ} {
+        max-width: 1000px;
+    }
+`;
+
+export const Button2 = styled.div`
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #66666640;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+
+    &:hover {
+        background-color: #77777780;
+    }
+
+    ${WIDE_MQ} {
+        width: 200px;
+    }
+
+    ${DESKTOP_MQ} {
+        width: 200px;
+    }
+`;
+
+export const Button = styled.div`
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #66666640;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: #77777780;
+    }
+`;
 
 export const LI = styled.li`
     //background-color: #33333360;

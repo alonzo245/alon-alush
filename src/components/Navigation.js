@@ -13,7 +13,7 @@ export default function () {
     const [open, setOpen] = useState(false);
     const node = useRef();
     const { width } = useScreenSize();
-    const { state, setState } = useGlobalState();
+    const { state } = useGlobalState();
     useClickOutside(node, () => setOpen(false));
 
     if (state?.modal) return null;

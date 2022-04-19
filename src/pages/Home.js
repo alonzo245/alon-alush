@@ -22,14 +22,16 @@ import Projects from "./Projects";
 import Modal from "../components/Modal";
 import Avatar from "../components/Avatar";
 import { useGlobalState } from "../hooks/useGlobalState";
+import { useSearchParams } from "react-router-dom";
 
-export default function ({ edit = false }) {
-    // const { videoId } = useParams();
+export default function () {
+    const [searchParams, setSearchParams] = useSearchParams();
     const { state, setState } = useGlobalState();
     const { width } = useScreenSize();
+    // console.log(searchParams?.get("edit"));
 
     useEffect(() => {
-        edit && setState({ edit: true });
+        searchParams?.get("edit") && setState({ edit: true });
     }, []);
 
     return (
@@ -110,7 +112,7 @@ export default function ({ edit = false }) {
 }
 
 const A = styled.a`
-    &:first-child {
+    &:first-of-type {
         margin: 0;
     }
     display: inline-block;

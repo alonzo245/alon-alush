@@ -71,6 +71,7 @@ export default function () {
                                 if (item?.type === "youtube") {
                                     return (
                                         <iframe
+                                            key={i}
                                             width="100%"
                                             height={width > mobileThreshold ? "320px" : "220px"}
                                             src={item?.url}
@@ -81,9 +82,7 @@ export default function () {
                                         />
                                     );
                                 }
-                                return item?.type === "wide" ? (
-                                    <></>
-                                ) : (
+                                return item?.type === "wide" ? null : (
                                     <Img alt="" key={i} src={workFeatures[item]} />
                                 );
                             })}
@@ -137,7 +136,7 @@ const Img = styled.img`
     margin: 0 10px;
     display: table-row;
 
-    &:first-child {
+    &:first-of-type {
         padding-left: -40px;
     }
 `;

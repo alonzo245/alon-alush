@@ -13,7 +13,6 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/alon-alush" element={<Home />} />
-                <Route path="/alon-alush/edit" element={<Home edit={true} />} />
             </Routes>
         </BrowserRouter>
     );

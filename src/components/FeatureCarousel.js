@@ -9,6 +9,7 @@ import useScreenSize from "../hooks/useScreenSize";
 import { DESKTOP_MQ, mobileThreshold, WIDE_MQ } from "../config/utils"; // requires a loader
 import workFeatures from "../assets/workFeatures";
 import styled from "@emotion/styled";
+import { DIV } from "./ResumeEditItem.style";
 
 export default function (data) {
     const { width } = useScreenSize();
@@ -26,10 +27,10 @@ export default function (data) {
                 if (state?.modalData?.thumbnails?.length <= 1) return null;
                 return (state?.modalData?.thumbnails || []).map((item, i) => {
                     if (item?.type === "youtube") {
-                        return <Thumb alt="" key={i} src={workFeatures[item?.name]} />;
+                        return <Thumb alt="" key={i} src={workFeatures[item?.name]} key={i} />;
                     }
                     return (
-                        <div>
+                        <div key={i}>
                             {item?.type === "wide" ? (
                                 <Thumb
                                     alt=""

@@ -18,28 +18,6 @@ export const SiteWrapper = styled.div`
         max-width: 1440px;
     }
 `;
-export const Mask = styled.div`
-    border-radius: 250px;
-    height: 250px;
-    width: 250px;
-    overflow: hidden;
-
-    ${DESKTOP_MQ} {
-        border-radius: 300px;
-        height: 350px;
-        width: 350px;
-    }
-
-    ${WIDE_MQ} {
-        border-radius: 300px;
-        height: 550px;
-        width: 550px;
-    }
-`;
-
-export const Img = styled.img`
-    width: 100%;
-`;
 
 export const Row = styled.div`
     position: relative;
@@ -271,7 +249,7 @@ export const LinkInput = styled.input`
     ${DESKTOP_MQ} {
         text-align: left;
         //font-size: 56px;
-    }s
+    }
 `;
 export const H2Input = styled.input`
     color: ${COLORS.blueish};
