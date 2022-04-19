@@ -13,9 +13,9 @@ import {
     CardContainer,
     H3,
     H6,
-} from "./Projects.style";
+} from "./ProjectsEdit.style";
+import { EditIconWrapper, Input } from "./AttributesEdit.style";
 import { useGlobalState } from "../hooks/useGlobalState";
-import ProjectsEdit from "../components/ProjectsEdit";
 
 const projectSourceUrlButton = (url) => (
     <Btn href={url} target="_blank">
@@ -27,13 +27,29 @@ const projectSourceUrlButton = (url) => (
 export default function (props) {
     const { state, setState } = useGlobalState();
 
-    return state?.edit ? (
-        <ProjectsEdit />
-    ) : (
+    return (
         <Container id="projects">
-            <H3>{state?.user?.projectsTitle}</H3>
+            {state?.edit ? (
+                <EditIconWrapper style={{ width: "60%", margin: "0 auto" }}>
+                    <Input
+                        value={state?.user?.projectsTitle}
+                        name={"attributesTitle"}
+                        placeholder={"Enter Title for your projects"}
+                    />
+                </EditIconWrapper>
+            ) : (
+                <>
+                    {state?.user?.attributes?.length > 0 ? (
+                        <H3
+                            style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}
+                        >
+                            {state?.user?.projectsTitle}
+                        </H3>
+                    ) : null}
+                </>
+            )}
             <CardContainer>
-                {(state?.user?.projects || []).map((project, key) => (
+                {state?.user?.projects.map((project, key) => (
                     <Card key={key}>
                         <CardContent>
                             <H6>

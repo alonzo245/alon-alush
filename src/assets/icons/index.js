@@ -8,7 +8,7 @@ import {
     SiRedis,
 } from "react-icons/si";
 import { FaAws, FaMobileAlt, FaNodeJs, FaReact } from "react-icons/fa";
-import { AiOutlineAntDesign } from "react-icons/ai";
+import { AiFillEdit, AiOutlineAntDesign } from "react-icons/ai";
 
 export const icon = (name = "", size = 30, color = "#C1C1C1") => {
     const icons = {

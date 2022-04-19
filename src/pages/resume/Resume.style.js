@@ -2,6 +2,35 @@ import "./resume.style.css";
 import styled from "@emotion/styled";
 import { DESKTOP_MQ, WIDE_MQ } from "../../config/utils";
 
+export const Input = styled.input`
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+    font-weight: bold;
+    min-width: 250px;
+    border-bottom: 1px dashed #88888840;
+    text-align: center;
+    color: #627fc6;
+    //background: red;
+    font-size: 50px;
+    width: 100%;
+
+    &::placeholder {
+        color: #627fc6;
+    }
+    &:focus {
+        border-bottom: 1px dashed #888;
+    }
+
+    &:hover {
+        border-bottom: 1px dashed #888;
+    }
+`;
+
+export const Container = styled.div`
+    width: 100% !important;
+`;
+
 export const H3 = styled.h3`
     font-size: 50px;
     //margin-bottom: 10px;

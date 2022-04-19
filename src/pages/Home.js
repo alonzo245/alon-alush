@@ -1,8 +1,17 @@
-import React, { useState } from "react";
-// import { useParams } from "react-router-dom";
-// import { useGlobalState } from "../hooks/useGlobalState";
+import React, { useEffect, useState } from "react";
 import useScreenSize from "../hooks/useScreenSize";
-import { SiteWrapper, Header, Hero, Row, H1, H2 } from "./Home.style";
+import {
+    SiteWrapper,
+    Header,
+    Hero,
+    Row,
+    H1,
+    H2,
+    H1Input,
+    H2Input,
+    EditIconWrapper,
+    LinkInput,
+} from "./Home.style";
 import Resume from "./resume/Resume";
 import Summary from "./Summary";
 import Navigation from "../components/Navigation";
@@ -12,11 +21,16 @@ import { mobileThreshold } from "../config/utils";
 import Projects from "./Projects";
 import Modal from "../components/Modal";
 import Avatar from "../components/Avatar";
+import { useGlobalState } from "../hooks/useGlobalState";
 
-export default function () {
+export default function ({ edit = false }) {
     // const { videoId } = useParams();
-    // const { state, setState } = useGlobalState();
+    const { state, setState } = useGlobalState();
     const { width } = useScreenSize();
+
+    useEffect(() => {
+        edit && setState({ edit: true });
+    }, []);
 
     return (
         <SiteWrapper>
@@ -27,20 +41,64 @@ export default function () {
             <Hero id="hero">
                 <Avatar />
                 <Row>
-                    <H1>Alon Alush</H1>
-                    <H2>
-                        Hand-On Full-Stack Developer
-                        <br /> R&D Director of Engineering
-                    </H2>
+                    {state?.edit ? (
+                        <EditIconWrapper>
+                            <H1Input name="h1" placeholder={"Enter your name"} />
+                        </EditIconWrapper>
+                    ) : (
+                        <H1>{state?.user?.name}</H1>
+                    )}
+                    {state?.edit ? (
+                        <EditIconWrapper>
+                            <H2Input
+                                className={state?.edit && "editIcon"}
+                                name="h2"
+                                placeholder={"What's you job title?"}
+                            />
+                        </EditIconWrapper>
+                    ) : (
+                        <H2>{state?.user?.currentJobTitle}</H2>
+                    )}
                     {width > mobileThreshold && (
-                        <div>
-                            <A href="https://il.linkedin.com/in/alonalush" target={"_blank"}>
-                                <FaLinkedin size={30} color={"#999"} />
-                            </A>
-                            <A href="https://github.com/alonzo245" target={"_blank"}>
-                                <FaGithubSquare size={30} color={"#999"} />
-                            </A>
-                        </div>
+                        <>
+                            <div>
+                                {state?.edit ? (
+                                    <div>
+                                        <FaLinkedin
+                                            size={25}
+                                            color={"#999"}
+                                            style={{ marginRight: "10px" }}
+                                        />
+                                        <LinkInput
+                                            name="linkedin"
+                                            placeholder={"LinkedIn Profile url"}
+                                        />
+                                    </div>
+                                ) : state?.user?.linkedin ? (
+                                    <A href={state?.user?.linkedin} target={"_blank"}>
+                                        <FaLinkedin size={30} color={"#999"} />
+                                    </A>
+                                ) : null}
+
+                                {state?.edit ? (
+                                    <div>
+                                        <FaGithubSquare
+                                            size={25}
+                                            color={"#999"}
+                                            style={{ marginRight: "10px" }}
+                                        />
+                                        <LinkInput
+                                            name="github"
+                                            placeholder={"GitHub Profile url"}
+                                        />
+                                    </div>
+                                ) : state?.user?.linkedin ? (
+                                    <A href={state?.user?.github} target={"_blank"}>
+                                        <FaGithubSquare size={30} color={"#999"} />
+                                    </A>
+                                ) : null}
+                            </div>
+                        </>
                     )}
                 </Row>
             </Hero>

@@ -1,14 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import jwt_decode from "jwt-decode";
+import user from "../data/user";
 
 const globalStateContext = React.createContext({
     user: null,
+    edit: true,
     setState: () => {},
 });
 
 const useGlobalState = () => useContext(globalStateContext);
 
-const initialState = { user: null, setState: () => {} };
+const initialState = { user: { ...user }, edit: false, setState: () => {} };
 
 const { Provider } = globalStateContext;
 
