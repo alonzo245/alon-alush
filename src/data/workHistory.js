@@ -1,6 +1,27 @@
-import { externalLink } from "../utils";
+import {externalLink} from "../utils";
 //************************************************************************************//
 export default [
+    {
+        id: "jolt",
+        icon: "jolt",
+        company: "Jolt.io",
+        title: "VP of R&D",
+        description: `
+Responsible for ensuring that design requirements are met.
+ <br />
+ Overseeing the consistency of user experiences, and managing a team of engineers and developers.
+<br/><br/>
+<ul>
+    <li>Leading teams through management and mentorship.</li>
+    <li>Contributing to recruitment activities.</li>
+    <li>Developing standards and procedures to ensure that quality standards are met and consistent.</li>
+    <li>Preparing and optimizing budgets.</li>
+    <li>Recommending technological developments and improvements inefficiency.</li>
+    <li>Developing teams to ensure quality end products.</li>
+</ul>
+        `,
+        date: "2022 - Present",
+    },
     {
         id: "coderz",
         icon: "coderz",
@@ -85,7 +106,7 @@ Products I've led & developed:
 - Scheduler Instructor Web App.
 - Management system for students, teachers, class sessions.
         `,
-        date: "2021 - Present",
+        date: "2021 - 2022",
     },
     {
         id: "jolt",
