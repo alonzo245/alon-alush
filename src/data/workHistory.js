@@ -7,7 +7,7 @@ export default [
         company: "Jolt.io",
         title: "VP of R&D",
         preDescription: `
-<iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/UD41T2l8ewE?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player"
+<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/UD41T2l8ewE?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player"
  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         description: `
 
