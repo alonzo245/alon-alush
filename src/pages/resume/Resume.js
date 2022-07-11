@@ -46,7 +46,7 @@ export default function () {
                     ) : (
                         <>
                             {(resume || []).map(
-                                ({ id, title, company, icon, description, date }, k) => {
+                                ({ id, title, company, icon, description, date, preDescription = null }, k) => {
                                     return (
                                         <li className="item" key={k}>
                                             <div className="date-title">
@@ -71,6 +71,12 @@ export default function () {
                                             <div className="content">
                                                 <h3 className="item-title">{title}</h3>
                                                 {workFeatures[id] && <JobFeatures id={id} />}
+                                                {preDescription &&  <div
+                                                    style={{height:"fit-content"}}
+                                                    dangerouslySetInnerHTML={{
+                                                        __html: preDescription,
+                                                    }}
+                                                />}
                                                 {description?.length > 800 ? (
                                                     <>
                                                         <P

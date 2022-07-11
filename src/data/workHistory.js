@@ -6,7 +6,11 @@ export default [
         icon: "jolt",
         company: "Jolt.io",
         title: "VP of R&D",
+        preDescription: `
+<iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/UD41T2l8ewE?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player"
+ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         description: `
+
 Responsible for ensuring that design requirements are met.
  <br />
  Overseeing the consistency of user experiences, and managing a team of engineers and developers.
@@ -44,44 +48,44 @@ As the project leader I'm mentoring, teaching and guiding to show how it's like 
 Products of Coderz:
 Coderz the App - developed with React Native which can be downloaded
             through the ${externalLink(
-                "App Store",
-                "https://apps.apple.com/il/app/coderz/id1603698449",
-            )} or ${externalLink(
+            "App Store",
+            "https://apps.apple.com/il/app/coderz/id1603698449",
+        )} or ${externalLink(
             "Play Store",
             "https://play.google.com/store/apps/details?id=com.coderz.coderz&hl=en&gl=il",
         )}, 
             for level up  developers step by step in a personal roadmap to reach their knowledge first job.
 <br/><br/>
  ${externalLink(
-     "Coderz VOD",
-     "https://coderz.jolt.us",
- )} - Teaching and mentoring Hub for developers who want to level-up their skills.
+            "Coderz VOD",
+            "https://coderz.jolt.us",
+        )} - Teaching and mentoring Hub for developers who want to level-up their skills.
 <br/><br/>
  ${externalLink(
-     "OJT (On Job Training) Class",
-     "https://www.youtube.com/watch?v=vwEWb11Ggdg&list=PLFCVfoyaWM96jWOjz_QW0asuP_0YEkywS",
- )} - Teaching and mentoring developers without real experience by dividing them into Dev teams to work on a project that include all of the real pains and information they are not aware of such as Scrum, Pair programming, Git PRs, dealing and resolving conflicts with teammates, The goal is to understand how does development team really works, and gain a real experience and use it to overcome others in hiring process.
+            "OJT (On Job Training) Class",
+            "https://www.youtube.com/watch?v=vwEWb11Ggdg&list=PLFCVfoyaWM96jWOjz_QW0asuP_0YEkywS",
+        )} - Teaching and mentoring developers without real experience by dividing them into Dev teams to work on a project that include all of the real pains and information they are not aware of such as Scrum, Pair programming, Git PRs, dealing and resolving conflicts with teammates, The goal is to understand how does development team really works, and gain a real experience and use it to overcome others in hiring process.
 <br/><br/>
 ${externalLink(
-    "Coderz Challenges",
-    "https://www.youtube.com/watch?v=9ZHkkVkpJ-8",
-)} - Learn how to create a portfolio of personal projects, Build hybrid applications using cloud services, mobile apps and web apps.
+            "Coderz Challenges",
+            "https://www.youtube.com/watch?v=9ZHkkVkpJ-8",
+        )} - Learn how to create a portfolio of personal projects, Build hybrid applications using cloud services, mobile apps and web apps.
 The goal is to have fully documented the project with Scrum board tasks, time estimations, well organized git project, full documentation and more to present yourself in the most professional way to companies.
 <br/><br/>
 ${externalLink(
-    "Coderz Podcast",
-    "https://www.youtube.com/watch?v=HzhVTS7pyas&list=PLFCVfoyaWM97dsWhPEg7NaFCtdxyMH3Jj",
-)} - Technical talks about Full-Stack, Backend, Frontend and more topics for dev community.
+            "Coderz Podcast",
+            "https://www.youtube.com/watch?v=HzhVTS7pyas&list=PLFCVfoyaWM97dsWhPEg7NaFCtdxyMH3Jj",
+        )} - Technical talks about Full-Stack, Backend, Frontend and more topics for dev community.
 <br/><br/>
 ${externalLink(
-    "Coderz YouTube",
-    "https://www.youtube.com/channel/UCDoCEPVz8DewTIxeRDLgyyQ/playlists",
-)} - Showing live technical meetups with participants, Tech talks, OJT Class recorded sessions.
+            "Coderz YouTube",
+            "https://www.youtube.com/channel/UCDoCEPVz8DewTIxeRDLgyyQ/playlists",
+        )} - Showing live technical meetups with participants, Tech talks, OJT Class recorded sessions.
 <br/><br/>
 ${externalLink(
-    "Coderz Facebook Group",
-    "https://www.facebook.com/groups/coderzcommunity",
-)} - More than 1200 developers, we target to help junior developers level-up their skills and find a job in the high-tech industry.
+            "Coderz Facebook Group",
+            "https://www.facebook.com/groups/coderzcommunity",
+        )} - More than 1200 developers, we target to help junior developers level-up their skills and find a job in the high-tech industry.
         `,
         date: "2021 - Present",
     },
