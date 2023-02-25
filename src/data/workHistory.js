@@ -18,8 +18,8 @@ export default [
     <li>Creating short/long-term roadmaps for product delivery, from concept to production.</li>
     <li>Mentoring high-performing teams.</li>
     <li>Experience managing teams in hybrid environments and proven leadership abilities and people oriented.</li>
-    <li>Researching and suggesting new technologies to improve scale and performance, aata-driven and result-oriented.</li>
-    <li>Leading business processes, managing cross-organizational activities, initiatives, and projects..</li>
+    <li>Researching and suggesting new technologies to improve scale and performance, data-driven and result-oriented.</li>
+    <li>Leading business processes, managing cross-organizational activities, initiatives and projects.</li>
 </ul>
         `,
         date: "2022 - Present",
