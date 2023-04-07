@@ -2,17 +2,7 @@ import React, { useState } from "react";
 import githubProjects from "../data/githubProjects";
 import techImages from "../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
-import {
-    Badge2,
-    CardContent,
-    Container,
-    Btn,
-    Card,
-    CardBadges,
-    CardButton,
-    H3,
-    H6,
-} from "./Projects.style";
+
 import { useGlobalState } from "../hooks/useGlobalState";
 import ProjectsEdit from "../components/ProjectsEdit";
 import videosList from "../utils/videosList";
@@ -72,12 +62,42 @@ export default function (props) {
     );
 }
 
+const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 80px;
+
+    ${DESKTOP_MQ} {
+        padding: unset;
+    }
+    ${WIDE_MQ} {
+        padding: unset;
+    }
+`;
+
+const H3 = styled.h3`
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+    ${DESKTOP_MQ} {
+        margin-top: 30px;
+    }
+    ${WIDE_MQ} {
+        margin-top: 30px;
+    }
+`;
+
 const Div = styled.div`
     margin: 10px;
     width: 100%;
     flex-basis: 100%;
     /* background: red; */
-    height: 486px;
+    height: 396px;
 
     ${DESKTOP_MQ} {
         /* width: 25%; */
@@ -94,6 +114,10 @@ const Div = styled.div`
 const Img = styled.img`
     /* margin: 10px; */
     width: 100%;
+    cursor: pointer;
+    :hover {
+        opacity: 0.7;
+    }
 `;
 
 const CardContainer = styled.div`

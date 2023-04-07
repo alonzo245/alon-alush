@@ -39,7 +39,7 @@ export default function () {
     return (
         <SiteWrapper>
             <Modal />
-            <Videos />
+
             <Header>
                 <Navigation />
             </Header>
@@ -102,6 +102,7 @@ export default function () {
             <Attributes />
             <Summary />
             <Projects />
+            <Videos />
         </SiteWrapper>
     );
 }
