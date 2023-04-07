@@ -24,6 +24,7 @@ import Avatar from "../components/Avatar";
 import { useGlobalState } from "../hooks/useGlobalState";
 import { useSearchParams } from "react-router-dom";
 import Attributes from "./Attributes";
+import Videos from "./Videos";
 
 export default function () {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -38,6 +39,7 @@ export default function () {
     return (
         <SiteWrapper>
             <Modal />
+            <Videos />
             <Header>
                 <Navigation />
             </Header>

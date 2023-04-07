@@ -26,9 +26,9 @@ export default function () {
 
                             <Section key={key}>
                                 {section?.items?.map((iconName, k) => {
-                                    console.log(iconName);
+                                    // console.log(iconName);
                                     const i = techIcons?.find((item) => item?.title === iconName);
-                                    console.log("dddddd", i);
+                                    // console.log("dddddd", i);
                                     return (
                                         <TechItem key={k}>
                                             {i.icon ? (
