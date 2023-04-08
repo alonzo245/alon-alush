@@ -96,6 +96,7 @@ const Div = styled.div`
     margin: 10px;
     width: 100%;
     flex-basis: 100%;
+    position: relative;
     /* background: red; */
     height: 396px;
 
@@ -126,8 +127,9 @@ const Img = styled.img`
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
             border-left: 10px solid #303030;
-            content: "dsfsdfds";
-            background-color: red;
+            content: "";
+            z-index: 11111;
+            /* background-color: red; */
         }
     }
 `;
