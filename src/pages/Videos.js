@@ -69,7 +69,7 @@ const Container = styled.div`
     flex-direction: column;
     width: 100%;
     margin: 0px auto;
-    padding: 0 80px;
+    padding: 0 10px;
 
     ${DESKTOP_MQ} {
         padding: unset;
@@ -97,8 +97,30 @@ const Div = styled.div`
     width: 100%;
     flex-basis: 100%;
     position: relative;
-    /* background: red; */
-    height: 396px;
+    transition: 100ms all ease;
+
+    cursor: pointer;
+    :hover {
+        opacity: 0.8;
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            content: "";
+            z-index: 11111;
+            border: 0;
+            background: transparent;
+            box-sizing: border-box;
+            width: 0;
+            height: 74px;
+            border-color: transparent transparent transparent #ffffff;
+            cursor: pointer;
+            border-style: solid;
+            border-width: 37px 0 37px 60px;
+        }
+    }
 
     ${DESKTOP_MQ} {
         /* width: 25%; */
@@ -113,25 +135,7 @@ const Div = styled.div`
 `;
 
 const Img = styled.img`
-    /* margin: 10px; */
     width: 100%;
-    cursor: pointer;
-    :hover {
-        opacity: 0.7;
-        &::after {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            color: #fff;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-left: 10px solid #303030;
-            content: "";
-            z-index: 11111;
-            /* background-color: red; */
-        }
-    }
 `;
 
 const CardContainer = styled.div`
