@@ -31,7 +31,7 @@ export default function (props) {
 
     return (
         <Container id="projects">
-            <H3>Videos</H3>
+            <H3>Videos & Tutorials</H3>
             <CardContainer>
                 {/* {console.log(Object.keys(videosList))} */}
                 {videosList &&
@@ -117,6 +117,18 @@ const Img = styled.img`
     cursor: pointer;
     :hover {
         opacity: 0.7;
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            color: #fff;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #303030;
+            content: "dsfsdfds";
+            background-color: red;
+        }
     }
 `;
 

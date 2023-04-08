@@ -1,4 +1,701 @@
 export default {
+    fqhcqSNOffI: {
+        _id: "61bb2fd2c325252e1891bd88",
+        videoPublishedAt: "2021-11-26T13:43:06.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "ניהול פרויקטים ומשימות פיתוח ומוצר עם Jira | מדריך למפתחים/ות מתחילים ומתקדמים",
+        videoId: "fqhcqSNOffI",
+        created_at: "2021-12-16T12:23:46.725Z",
+        updated_at: "2021-12-16T12:23:46.725Z",
+        __v: 0,
+    },
+    "ayvoqwfVz-8": {
+        _id: "61bb2fd2c325252e1891bd8a",
+        videoPublishedAt: "2021-11-26T11:21:00.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק:  https://bit.ly/2YiXe14\n\nהפודקאסט של קודרז: https://bit.ly/3Cbq3Kz\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "איך צוות פיתוח עובד בחברת הייטק? | מדריך מקיף על עולם ה- Agile וה- Scrum | מדריך למתחילים ומתקדמים",
+        videoId: "ayvoqwfVz-8",
+        created_at: "2021-12-16T12:23:46.726Z",
+        updated_at: "2021-12-16T12:23:46.726Z",
+        __v: 0,
+    },
+    "5gdZSu9eFRg": {
+        _id: "61bb2fd2c325252e1891bd14",
+        videoPublishedAt: "2021-08-26T12:04:35.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "0",
+        title: "Fetch API in JavaScript - מדריך בעברית",
+        videoId: "5gdZSu9eFRg",
+        created_at: "2021-12-16T12:23:46.637Z",
+        updated_at: "2021-12-16T12:23:46.637Z",
+        __v: 0,
+    },
+    CfXmQ3eMaZU: {
+        _id: "61bb2fd2c325252e1891bd1c",
+        videoPublishedAt: "2021-11-07T07:50:26.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \nאתגר נובמבר של קודרז מתחיל ויעזור לכם למצוא עבודה באמצעות בניית תיק עבודות מושקע!\n\nקישור להרשמה לאתגר נובמבר 2021 של קודרז:\nhttps://forms.gle/PDMNrgPmH4DEbt9W6\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "7",
+        title: "עידכון ל- react router dom לגרסה v6 | מדריך שדרוג",
+        videoId: "CfXmQ3eMaZU",
+        created_at: "2021-12-16T12:23:46.645Z",
+        updated_at: "2021-12-16T12:23:46.645Z",
+        __v: 0,
+    },
+    "9i3RN_wXcNw": {
+        _id: "61bb2fd2c325252e1891bcfa",
+        videoPublishedAt: "2021-12-03T08:49:36.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "5",
+        title: "שאלות בסיסיות  ב- Javascript | Callback Hell & Promises | מתוך מפגשי פעילות של קהילת קודרז",
+        videoId: "9i3RN_wXcNw",
+        created_at: "2021-12-16T12:23:46.615Z",
+        updated_at: "2021-12-16T12:23:46.615Z",
+        __v: 0,
+    },
+    "31u9DtccOEc": {
+        _id: "61bb2fd2c325252e1891bd26",
+        videoPublishedAt: "2021-08-27T13:43:20.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/31u9DtccOEc/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/31u9DtccOEc/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/31u9DtccOEc/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "9",
+        title: "JavaScript Promise - מדריך שלם בעברית",
+        videoId: "31u9DtccOEc",
+        created_at: "2021-12-16T12:23:46.650Z",
+        updated_at: "2021-12-16T12:23:46.650Z",
+        __v: 0,
+    },
+    ZggTz7GCddU: {
+        _id: "61bb2fd2c325252e1891bd1a",
+        videoPublishedAt: "2021-10-02T11:51:04.000Z",
+        description:
+            "הקוד שלנו תמיד יכול להיות יותר פשוט וקל, הנה סרטון ראשון בסדרת שיפור וייעול הקוד שלנו ב- JavaScript.\n\nוהפעם אני מתמקד בפונקציות, תנאים ואיך ניתן לגרום להם להיות פשוטים ואף יותר יעילים.\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "איך לשפר את הקוד שלנו | פרק #1",
+        videoId: "ZggTz7GCddU",
+        created_at: "2021-12-16T12:23:46.643Z",
+        updated_at: "2021-12-16T12:23:46.643Z",
+        __v: 0,
+    },
+    EfEJg_Cw570: {
+        _id: "61bb2fd2c325252e1891bd20",
+        videoPublishedAt: "2021-10-03T08:26:10.000Z",
+        description:
+            "נלמד על התגיות:\nfieldset, datalist, color picker, progress, open graph, sub / sup, picture, template\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "4",
+        title: "Cool HTML Tags",
+        videoId: "EfEJg_Cw570",
+        created_at: "2021-12-16T12:23:46.647Z",
+        updated_at: "2021-12-16T12:23:46.647Z",
+        __v: 0,
+    },
+    YP2EQGMJT48: {
+        _id: "61bb2fd2c325252e1891bd24",
+        videoPublishedAt: "2021-11-16T06:12:12.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "8",
+        title: "מדריך NPM ופרסום חבילות",
+        videoId: "YP2EQGMJT48",
+        created_at: "2021-12-16T12:23:46.649Z",
+        updated_at: "2021-12-16T12:23:46.649Z",
+        __v: 0,
+    },
+    cqjMUjJ1k8E: {
+        _id: "61bb2fd2c325252e1891bd2c",
+        videoPublishedAt: "2021-11-10T21:02:16.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "2",
+        title: "מדריך Node.js | הסבר ראשוני והתקנה",
+        videoId: "cqjMUjJ1k8E",
+        created_at: "2021-12-16T12:23:46.657Z",
+        updated_at: "2021-12-16T12:23:46.657Z",
+        __v: 0,
+    },
+    VtjoExU11d4: {
+        _id: "61bb2fd2c325252e1891bd92",
+        videoPublishedAt: "2021-11-01T10:55:34.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 1/6",
+        videoId: "VtjoExU11d4",
+        created_at: "2021-12-16T12:23:46.731Z",
+        updated_at: "2021-12-16T12:23:46.731Z",
+        __v: 0,
+    },
+    ZXRtnwZ2RiQ: {
+        _id: "61bb2fd2c325252e1891bd8e",
+        videoPublishedAt: "2021-11-01T11:00:41.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 2/6",
+        videoId: "ZXRtnwZ2RiQ",
+        created_at: "2021-12-16T12:23:46.729Z",
+        updated_at: "2021-12-16T12:23:46.729Z",
+        __v: 0,
+    },
+    yOxNONblkb0: {
+        _id: "61bb2fd2c325252e1891bd94",
+        videoPublishedAt: "2021-11-01T11:04:14.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "2",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 3/6",
+        videoId: "yOxNONblkb0",
+        created_at: "2021-12-16T12:23:46.732Z",
+        updated_at: "2021-12-16T12:23:46.732Z",
+        __v: 0,
+    },
+    aiPAryg4nHA: {
+        _id: "61bb2fd2c325252e1891bd96",
+        videoPublishedAt: "2021-11-01T11:04:57.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 4/6",
+        videoId: "aiPAryg4nHA",
+        created_at: "2021-12-16T12:23:46.739Z",
+        updated_at: "2021-12-16T12:23:46.739Z",
+        __v: 0,
+    },
+    "L6BfO-_SaBY": {
+        _id: "61bb2fd2c325252e1891bd98",
+        videoPublishedAt: "2021-11-01T11:09:12.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "4",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 5/6",
+        videoId: "L6BfO-_SaBY",
+        created_at: "2021-12-16T12:23:46.740Z",
+        updated_at: "2021-12-16T12:23:46.740Z",
+        __v: 0,
+    },
+    RU_utoy4vo4: {
+        _id: "61bb2fd2c325252e1891bd9a",
+        videoPublishedAt: "2021-11-01T11:12:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "5",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 6/6",
+        videoId: "RU_utoy4vo4",
+        created_at: "2021-12-16T12:23:46.741Z",
+        updated_at: "2021-12-16T12:23:46.741Z",
+        __v: 0,
+    },
+    "eLhrLy-Zzes": {
+        _id: "61bb2fd2c325252e1891bd2a",
+        videoPublishedAt: "2021-11-10T20:52:50.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "הקדמה לפיתוח צד שרת | מדריך למתחילים | חלק 1/2",
+        videoId: "eLhrLy-Zzes",
+        created_at: "2021-12-16T12:23:46.656Z",
+        updated_at: "2021-12-16T12:23:46.656Z",
+        __v: 0,
+    },
+    WNdckwnLVW8: {
+        _id: "61bb2fd2c325252e1891bd1e",
+        videoPublishedAt: "2021-10-05T07:20:28.000Z",
+        description: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "6",
+        title: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End | חלק ב",
+        videoId: "WNdckwnLVW8",
+        created_at: "2021-12-16T12:23:46.646Z",
+        updated_at: "2021-12-16T12:23:46.646Z",
+        __v: 0,
+    },
+
+    pj9JZP0YUb0: {
+        _id: "61bb2fd2c325252e1891bd28",
+        videoPublishedAt: "2021-08-29T07:54:36.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "10",
+        title: "מדריך בעברית - JavaScript - Array functions for(), foreEach(), map(), filter(), sort(), reduce()",
+        videoId: "pj9JZP0YUb0",
+        created_at: "2021-12-16T12:23:46.655Z",
+        updated_at: "2021-12-16T12:23:46.655Z",
+        __v: 0,
+    },
     "VNr-J1_R2EM": {
         _id: "61bb2fd2c325252e1891bce8",
         videoPublishedAt: "2021-10-10T09:41:48.000Z",
@@ -151,44 +848,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.614Z",
         __v: 0,
     },
-    "9i3RN_wXcNw": {
-        _id: "61bb2fd2c325252e1891bcfa",
-        videoPublishedAt: "2021-12-03T08:49:36.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "5",
-        title: "שאלות בסיסיות  ב- Javascript | Callback Hell & Promises | מתוך מפגשי פעילות של קהילת קודרז",
-        videoId: "9i3RN_wXcNw",
-        created_at: "2021-12-16T12:23:46.615Z",
-        updated_at: "2021-12-16T12:23:46.615Z",
-        __v: 0,
-    },
+
     W4tnP9qF5p4: {
         _id: "61bb2fd2c325252e1891bd00",
         videoPublishedAt: "2021-12-04T16:03:18.000Z",
@@ -305,34 +965,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.631Z",
         __v: 0,
     },
-    HeCEUmGBfJE: {
-        _id: "61bb2fd2c325252e1891bd10",
-        videoPublishedAt: "2021-09-01T03:14:47.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/HeCEUmGBfJE/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/HeCEUmGBfJE/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/HeCEUmGBfJE/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-        },
-        position: "1",
-        title: "מדריך בעברית JavaScript - LocalStorage VS SessionStorage VS Cookie",
-        videoId: "HeCEUmGBfJE",
-        created_at: "2021-12-16T12:23:46.635Z",
-        updated_at: "2021-12-16T12:23:46.635Z",
-        __v: 0,
-    },
+
     UJeBs0UK8lg: {
         _id: "61bb2fd2c325252e1891bd18",
         videoPublishedAt: "2021-09-05T05:07:06.000Z",
@@ -676,44 +1309,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.702Z",
         __v: 0,
     },
-    yOxNONblkb0: {
-        _id: "61bb2fd2c325252e1891bd94",
-        videoPublishedAt: "2021-11-01T11:04:14.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/yOxNONblkb0/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/yOxNONblkb0/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/yOxNONblkb0/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/yOxNONblkb0/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/yOxNONblkb0/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "2",
-        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 3/6",
-        videoId: "yOxNONblkb0",
-        created_at: "2021-12-16T12:23:46.732Z",
-        updated_at: "2021-12-16T12:23:46.732Z",
-        __v: 0,
-    },
+
     VzBlnOzSNe8: {
         _id: "61bb2fd2c325252e1891bd04",
         videoPublishedAt: "2021-11-17T17:47:39.000Z",
@@ -791,198 +1387,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.627Z",
         __v: 0,
     },
-    ZggTz7GCddU: {
-        _id: "61bb2fd2c325252e1891bd1a",
-        videoPublishedAt: "2021-10-02T11:51:04.000Z",
-        description:
-            "הקוד שלנו תמיד יכול להיות יותר פשוט וקל, הנה סרטון ראשון בסדרת שיפור וייעול הקוד שלנו ב- JavaScript.\n\nוהפעם אני מתמקד בפונקציות, תנאים ואיך ניתן לגרום להם להיות פשוטים ואף יותר יעילים.\n\n",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/ZggTz7GCddU/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/ZggTz7GCddU/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/ZggTz7GCddU/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/ZggTz7GCddU/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/ZggTz7GCddU/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "3",
-        title: "איך לשפר את הקוד שלנו | פרק #1",
-        videoId: "ZggTz7GCddU",
-        created_at: "2021-12-16T12:23:46.643Z",
-        updated_at: "2021-12-16T12:23:46.643Z",
-        __v: 0,
-    },
-    WNdckwnLVW8: {
-        _id: "61bb2fd2c325252e1891bd1e",
-        videoPublishedAt: "2021-10-05T07:20:28.000Z",
-        description: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End\n\n",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/WNdckwnLVW8/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/WNdckwnLVW8/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/WNdckwnLVW8/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/WNdckwnLVW8/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/WNdckwnLVW8/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "6",
-        title: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End | חלק ב",
-        videoId: "WNdckwnLVW8",
-        created_at: "2021-12-16T12:23:46.646Z",
-        updated_at: "2021-12-16T12:23:46.646Z",
-        __v: 0,
-    },
-    EfEJg_Cw570: {
-        _id: "61bb2fd2c325252e1891bd20",
-        videoPublishedAt: "2021-10-03T08:26:10.000Z",
-        description:
-            "נלמד על התגיות:\nfieldset, datalist, color picker, progress, open graph, sub / sup, picture, template\n\n",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/EfEJg_Cw570/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/EfEJg_Cw570/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/EfEJg_Cw570/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/EfEJg_Cw570/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/EfEJg_Cw570/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "4",
-        title: "Cool HTML Tags",
-        videoId: "EfEJg_Cw570",
-        created_at: "2021-12-16T12:23:46.647Z",
-        updated_at: "2021-12-16T12:23:46.647Z",
-        __v: 0,
-    },
-    "eLhrLy-Zzes": {
-        _id: "61bb2fd2c325252e1891bd2a",
-        videoPublishedAt: "2021-11-10T20:52:50.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "0",
-        title: "הקדמה לפיתוח צד שרת | מדריך למתחילים | חלק 1/2",
-        videoId: "eLhrLy-Zzes",
-        created_at: "2021-12-16T12:23:46.656Z",
-        updated_at: "2021-12-16T12:23:46.656Z",
-        __v: 0,
-    },
-    cqjMUjJ1k8E: {
-        _id: "61bb2fd2c325252e1891bd2c",
-        videoPublishedAt: "2021-11-10T21:02:16.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "2",
-        title: "מדריך Node.js | הסבר ראשוני והתקנה",
-        videoId: "cqjMUjJ1k8E",
-        created_at: "2021-12-16T12:23:46.657Z",
-        updated_at: "2021-12-16T12:23:46.657Z",
-        __v: 0,
-    },
+
     BhoBhqyj7SE: {
         _id: "61bb2fd2c325252e1891bd36",
         videoPublishedAt: "2021-10-19T06:48:21.000Z",
@@ -1165,197 +1570,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.709Z",
         __v: 0,
     },
-    fqhcqSNOffI: {
-        _id: "61bb2fd2c325252e1891bd88",
-        videoPublishedAt: "2021-11-26T13:43:06.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "1",
-        title: "ניהול פרויקטים ומשימות פיתוח ומוצר עם Jira | מדריך למפתחים/ות מתחילים ומתקדמים",
-        videoId: "fqhcqSNOffI",
-        created_at: "2021-12-16T12:23:46.725Z",
-        updated_at: "2021-12-16T12:23:46.725Z",
-        __v: 0,
-    },
-    "ayvoqwfVz-8": {
-        _id: "61bb2fd2c325252e1891bd8a",
-        videoPublishedAt: "2021-11-26T11:21:00.000Z",
-        description:
-            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק:  https://bit.ly/2YiXe14\n\nהפודקאסט של קודרז: https://bit.ly/3Cbq3Kz\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "0",
-        title: "איך צוות פיתוח עובד בחברת הייטק? | מדריך מקיף על עולם ה- Agile וה- Scrum | מדריך למתחילים ומתקדמים",
-        videoId: "ayvoqwfVz-8",
-        created_at: "2021-12-16T12:23:46.726Z",
-        updated_at: "2021-12-16T12:23:46.726Z",
-        __v: 0,
-    },
-    ZXRtnwZ2RiQ: {
-        _id: "61bb2fd2c325252e1891bd8e",
-        videoPublishedAt: "2021-11-01T11:00:41.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "1",
-        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 2/6",
-        videoId: "ZXRtnwZ2RiQ",
-        created_at: "2021-12-16T12:23:46.729Z",
-        updated_at: "2021-12-16T12:23:46.729Z",
-        __v: 0,
-    },
-    VtjoExU11d4: {
-        _id: "61bb2fd2c325252e1891bd92",
-        videoPublishedAt: "2021-11-01T10:55:34.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/VtjoExU11d4/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/VtjoExU11d4/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/VtjoExU11d4/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/VtjoExU11d4/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/VtjoExU11d4/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "0",
-        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 1/6",
-        videoId: "VtjoExU11d4",
-        created_at: "2021-12-16T12:23:46.731Z",
-        updated_at: "2021-12-16T12:23:46.731Z",
-        __v: 0,
-    },
-    RU_utoy4vo4: {
-        _id: "61bb2fd2c325252e1891bd9a",
-        videoPublishedAt: "2021-11-01T11:12:44.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/RU_utoy4vo4/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/RU_utoy4vo4/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/RU_utoy4vo4/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/RU_utoy4vo4/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/RU_utoy4vo4/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "5",
-        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 6/6",
-        videoId: "RU_utoy4vo4",
-        created_at: "2021-12-16T12:23:46.741Z",
-        updated_at: "2021-12-16T12:23:46.741Z",
-        __v: 0,
-    },
+
     cENcGAT0BY8: {
         _id: "61cc32cd241e4b76f509d6a2",
         videoPublishedAt: "2021-12-21T09:35:44.000Z",
@@ -1698,34 +1913,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.638Z",
         __v: 0,
     },
-    "5gdZSu9eFRg": {
-        _id: "61bb2fd2c325252e1891bd14",
-        videoPublishedAt: "2021-08-26T12:04:35.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-        },
-        position: "0",
-        title: "Fetch API in JavaScript - מדריך בעברית",
-        videoId: "5gdZSu9eFRg",
-        created_at: "2021-12-16T12:23:46.637Z",
-        updated_at: "2021-12-16T12:23:46.637Z",
-        __v: 0,
-    },
+
     "dt2984bp-EY": {
         _id: "61bb2fd2c325252e1891bd22",
         videoPublishedAt: "2021-10-05T07:16:05.000Z",
@@ -1764,44 +1952,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.648Z",
         __v: 0,
     },
-    pj9JZP0YUb0: {
-        _id: "61bb2fd2c325252e1891bd28",
-        videoPublishedAt: "2021-08-29T07:54:36.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "10",
-        title: "מדריך בעברית - JavaScript - Array functions for(), foreEach(), map(), filter(), sort(), reduce()",
-        videoId: "pj9JZP0YUb0",
-        created_at: "2021-12-16T12:23:46.655Z",
-        updated_at: "2021-12-16T12:23:46.655Z",
-        __v: 0,
-    },
+
     JOB9yT0Q3CI: {
         _id: "61bb2fd2c325252e1891bd38",
         videoPublishedAt: "2021-10-19T06:41:30.000Z",
@@ -2113,44 +2264,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.708Z",
         __v: 0,
     },
-    aiPAryg4nHA: {
-        _id: "61bb2fd2c325252e1891bd96",
-        videoPublishedAt: "2021-11-01T11:04:57.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/aiPAryg4nHA/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/aiPAryg4nHA/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/aiPAryg4nHA/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/aiPAryg4nHA/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/aiPAryg4nHA/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "3",
-        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 4/6",
-        videoId: "aiPAryg4nHA",
-        created_at: "2021-12-16T12:23:46.739Z",
-        updated_at: "2021-12-16T12:23:46.739Z",
-        __v: 0,
-    },
+
     vgaNYj1LGnY: {
         _id: "61cc3278241e4b76f509d683",
         videoPublishedAt: "2021-12-15T09:35:44.000Z",
@@ -2473,101 +2587,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.634Z",
         __v: 0,
     },
-    CfXmQ3eMaZU: {
-        _id: "61bb2fd2c325252e1891bd1c",
-        videoPublishedAt: "2021-11-07T07:50:26.000Z",
-        description:
-            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \nאתגר נובמבר של קודרז מתחיל ויעזור לכם למצוא עבודה באמצעות בניית תיק עבודות מושקע!\n\nקישור להרשמה לאתגר נובמבר 2021 של קודרז:\nhttps://forms.gle/PDMNrgPmH4DEbt9W6\n\n",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-        },
-        position: "7",
-        title: "עידכון ל- react router dom לגרסה v6 | מדריך שדרוג",
-        videoId: "CfXmQ3eMaZU",
-        created_at: "2021-12-16T12:23:46.645Z",
-        updated_at: "2021-12-16T12:23:46.645Z",
-        __v: 0,
-    },
-    YP2EQGMJT48: {
-        _id: "61bb2fd2c325252e1891bd24",
-        videoPublishedAt: "2021-11-16T06:12:12.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/YP2EQGMJT48/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/YP2EQGMJT48/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/YP2EQGMJT48/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/YP2EQGMJT48/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/YP2EQGMJT48/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "8",
-        title: "מדריך NPM ופרסום חבילות",
-        videoId: "YP2EQGMJT48",
-        created_at: "2021-12-16T12:23:46.649Z",
-        updated_at: "2021-12-16T12:23:46.649Z",
-        __v: 0,
-    },
-    "31u9DtccOEc": {
-        _id: "61bb2fd2c325252e1891bd26",
-        videoPublishedAt: "2021-08-27T13:43:20.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/31u9DtccOEc/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/31u9DtccOEc/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/31u9DtccOEc/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-        },
-        position: "9",
-        title: "JavaScript Promise - מדריך שלם בעברית",
-        videoId: "31u9DtccOEc",
-        created_at: "2021-12-16T12:23:46.650Z",
-        updated_at: "2021-12-16T12:23:46.650Z",
-        __v: 0,
-    },
+
     as9m20lq3C8: {
         _id: "61bb2fd2c325252e1891bd30",
         videoPublishedAt: "2021-11-10T21:02:46.000Z",
@@ -3007,44 +3027,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.711Z",
         __v: 0,
     },
-    "L6BfO-_SaBY": {
-        _id: "61bb2fd2c325252e1891bd98",
-        videoPublishedAt: "2021-11-01T11:09:12.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "4",
-        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 5/6",
-        videoId: "L6BfO-_SaBY",
-        created_at: "2021-12-16T12:23:46.740Z",
-        updated_at: "2021-12-16T12:23:46.740Z",
-        __v: 0,
-    },
+
     HzhVTS7pyas: {
         _id: "61da008d84509a41dc332c3b",
         videoPublishedAt: "2022-01-06T17:23:46.593Z",
@@ -3351,24 +3334,6 @@ export default {
         title: "לקיחת אחריות והבנה של דוקומנטציה הן מפתח להצלחה בצוות פיתוח | OJT Class | שיעור 6",
         updated_at: "2022-03-24T08:38:23.614Z",
         videoPublishedAt: "2022-03-18T17:23:46.593Z",
-    },
-    Oh13DF5HAuI: {
-        _id: "623c2e3a32f5c09450241844",
-        videoId: "Oh13DF5HAuI",
-        __v: 0,
-        created_at: "2022-03-24T08:39:22.138Z",
-        description: "",
-        position: "0",
-        thumbnails: {
-            medium: {
-                url: "https://i.ytimg.com/vi/Oh13DF5HAuI/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-        },
-        title: "מפצחים קורות חיים של ג׳וניורים בשיתוף עם #כולא_לייק ושחר פולק",
-        updated_at: "2022-03-24T08:39:22.138Z",
-        videoPublishedAt: "2022-03-21T17:23:46.593Z",
     },
     zllD7ono1cE: {
         _id: "623c2e6332f5c09450241b6f",
