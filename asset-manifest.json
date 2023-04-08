@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alon-alush/static/css/main.36d88966.css",
-    "main.js": "/alon-alush/static/js/main.61c96da1.js",
+    "main.js": "/alon-alush/static/js/main.edb79681.js",
     "static/js/787.5e0bc00d.chunk.js": "/alon-alush/static/js/787.5e0bc00d.chunk.js",
     "static/media/1.png": "/alon-alush/static/media/1.34def0533191e0993275.png",
     "static/media/1.jpg": "/alon-alush/static/media/1.34c5e22a8bbcc1daa0c4.jpg",
@@ -43,11 +43,11 @@
     "index.html": "/alon-alush/index.html",
     "static/media/edit.svg": "/alon-alush/static/media/edit.99271c32821bf00e9b092f6d6491da3d.svg",
     "main.36d88966.css.map": "/alon-alush/static/css/main.36d88966.css.map",
-    "main.61c96da1.js.map": "/alon-alush/static/js/main.61c96da1.js.map",
+    "main.edb79681.js.map": "/alon-alush/static/js/main.edb79681.js.map",
     "787.5e0bc00d.chunk.js.map": "/alon-alush/static/js/787.5e0bc00d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36d88966.css",
-    "static/js/main.61c96da1.js"
+    "static/js/main.edb79681.js"
   ]
 }
