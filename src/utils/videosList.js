@@ -1681,45 +1681,7 @@ export default {
         updated_at: "2021-12-16T12:23:46.603Z",
         __v: 0,
     },
-    _q_B2xs_VXM: {
-        _id: "61bb2fd2c325252e1891bcee",
-        videoPublishedAt: "2021-10-21T14:33:18.000Z",
-        description:
-            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק: \nhttps://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://docs.google.com/forms/d/e/1FAIpQLSeJmlG-y4XKX8iz_cACj4AlIY2Hv-cexT7T7Q8IwX-316Syww/viewform\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/_q_B2xs_VXM/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/_q_B2xs_VXM/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/_q_B2xs_VXM/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/_q_B2xs_VXM/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/_q_B2xs_VXM/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "1",
-        title: "הקלטה מפגש שאלות טכניות שנופלים עליהן בראיונות טכניים CoderZ Workouts",
-        videoId: "_q_B2xs_VXM",
-        created_at: "2021-12-16T12:23:46.605Z",
-        updated_at: "2021-12-16T12:23:46.605Z",
-        __v: 0,
-    },
+
     "9ZHkkVkpJ-8": {
         _id: "61bb2fd2c325252e1891bcf2",
         videoPublishedAt: "2021-10-17T18:40:39.000Z",
@@ -3226,24 +3188,6 @@ export default {
         title: "Raw Data!!! למה צריך אנליסטים בהייטק?",
         updated_at: "2022-03-07T14:05:47.947Z",
         videoPublishedAt: "2022-02-22T17:23:46.593Z",
-    },
-    _Xdo5haGPbc: {
-        _id: "622611681349d1dc0e0d92b2",
-        videoId: "_Xdo5haGPbc",
-        __v: 0,
-        created_at: "2022-03-07T14:06:32.443Z",
-        description: "",
-        position: "0",
-        thumbnails: {
-            medium: {
-                url: "https://i.ytimg.com/vi/_Xdo5haGPbc/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-        },
-        title: "בוחרים טכנולוגיה מתאימה וקיקאוף לפרויקט שנעבוד עליו כצוות פיתוח | OJT Class | שיעור 2",
-        updated_at: "2022-03-07T14:06:32.443Z",
-        videoPublishedAt: "2022-02-28T17:23:46.593Z",
     },
     VuqW_dX8MZg: {
         _id: "622611981349d1dc0e0d9674",
