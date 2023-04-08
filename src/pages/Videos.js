@@ -14,8 +14,8 @@ export default function (props) {
     const [list, setList] = useState(() =>
         Object.keys(videosList).map((videoId) => ({ videoId, open: false })),
     );
-    const { width } = useScreenSize();
-    const { state, setState } = useGlobalState();
+    // const { width } = useScreenSize();
+    // const { state, setState } = useGlobalState();
 
     const onClick = (e, videoId) => {
         console.log("click", videoId);
@@ -30,37 +30,51 @@ export default function (props) {
     // width < mobileThreshold
 
     return (
-        <Container id="projects">
+        <Container id="videos">
             <H3>Videos & Tutorials</H3>
             <CardContainer>
                 {/* {console.log(Object.keys(videosList))} */}
                 {videosList &&
-                    list.map((video, key) => (
-                        <Div>
-                            {video.open ? (
-                                <iframe
-                                    key={key}
-                                    width="100%"
-                                    height="100%"
-                                    src={`https://www.youtube.com/embed/${video.videoId}`}
-                                    title={`${videosList[video.videoId].title}`}
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen
-                                ></iframe>
-                            ) : (
-                                <Img
-                                    key={key}
-                                    onClick={(e) => onClick(e, video.videoId)}
-                                    src={`/alon-alush/images/videos/${video.videoId}.jpg`}
-                                />
-                            )}
-                        </Div>
-                    ))}
+                    list.map((video, key) =>
+                        video.open ? (
+                            <Iframe
+                                key={key}
+                                // width="100%"
+                                // height="100%"
+                                src={`https://www.youtube.com/embed/${video.videoId}`}
+                                title={`${videosList[video.videoId].title}`}
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen={1}
+                            />
+                        ) : (
+                            <Div key={key} onClick={(e) => onClick(e, video.videoId)}>
+                                <Img src={`/alon-alush/images/videos/${video.videoId}.jpg`} />
+                            </Div>
+                        ),
+                    )}
             </CardContainer>
         </Container>
     );
 }
+
+const Iframe = styled.iframe`
+    flex-basis: 100%;
+    margin: 10px;
+    border: unset;
+    height: 320px;
+
+    ${DESKTOP_MQ} {
+        /* width: 25%; */
+        flex-basis: 30%;
+        height: unset;
+    }
+    ${WIDE_MQ} {
+        /* width: 25%; */
+        flex-basis: 30%;
+        height: unset;
+    }
+`;
 
 const Container = styled.div`
     display: flex;
@@ -100,8 +114,10 @@ const Div = styled.div`
     transition: 100ms all ease;
 
     cursor: pointer;
+    :hover > img {
+        opacity: 0.7;
+    }
     :hover {
-        opacity: 0.8;
         &:before {
             position: absolute;
             top: 50%;

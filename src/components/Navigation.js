@@ -55,6 +55,9 @@ export default function () {
                 <StyledLink to="projects" onClick={() => onClick("projects")}>
                     GitHub Projects
                 </StyledLink>
+                <StyledLink to="videos" onClick={() => onClick("videos")}>
+                    Videos & Tutorials
+                </StyledLink>
                 {width < mobileThreshold && (
                     <Row>
                         <A

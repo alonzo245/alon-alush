@@ -15,7 +15,7 @@ import {
 import Resume from "./resume/Resume";
 import Summary from "./Summary";
 import Navigation from "../components/Navigation";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
 import styled from "@emotion/styled";
 import { mobileThreshold } from "../config/utils";
 import Projects from "./Projects";
@@ -25,6 +25,7 @@ import { useGlobalState } from "../hooks/useGlobalState";
 import { useSearchParams } from "react-router-dom";
 import Attributes from "./Attributes";
 import Videos from "./Videos";
+import { BsYoutube } from "react-icons/bs";
 
 export default function () {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -66,35 +67,15 @@ export default function () {
                     )}
 
                     <div>
-                        {state?.edit ? (
-                            <div>
-                                <FaLinkedin
-                                    size={35}
-                                    color={"#999"}
-                                    style={{ marginRight: "10px" }}
-                                />
-                                <LinkInput name="linkedin" placeholder={"LinkedIn Profile url"} />
-                            </div>
-                        ) : state?.user?.linkedin ? (
-                            <A href={state?.user?.linkedin} target={"_blank"}>
-                                <FaLinkedin size={35} color={"#999"} />
-                            </A>
-                        ) : null}
-
-                        {state?.edit ? (
-                            <div>
-                                <FaGithubSquare
-                                    size={35}
-                                    color={"#999"}
-                                    style={{ marginRight: "10px" }}
-                                />
-                                <LinkInput name="github" placeholder={"GitHub Profile url"} />
-                            </div>
-                        ) : state?.user?.linkedin ? (
-                            <A href={state?.user?.github} target={"_blank"}>
-                                <FaGithubSquare size={35} color={"#999"} />
-                            </A>
-                        ) : null}
+                        <A href={state?.user?.linkedin} target={"_blank"}>
+                            <FaLinkedin size={35} color={"#999"} />
+                        </A>
+                        <A href={state?.user?.github} target={"_blank"}>
+                            <FaGithubSquare size={35} color={"#999"} />
+                        </A>
+                        <A href="#videos">
+                            <FaYoutubeSquare size={35} color={"#999"} />
+                        </A>
                     </div>
                 </Row>
             </Hero>
@@ -108,10 +89,10 @@ export default function () {
 }
 
 const A = styled.a`
-    &:first-of-type {
+    /* &:first-of-type {
         margin: 0;
-    }
+    } */
     display: inline-block;
-
+    cursor: pointer;
     margin: 10px 10px;
 `;
