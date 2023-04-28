@@ -114,39 +114,103 @@ const Div = styled.div`
     transition: 100ms all ease;
 
     cursor: pointer;
-    :hover > img {
-        opacity: 0.7;
+
+    & > img {
+        opacity: 0.8;
     }
-    :hover {
-        &:before {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            content: "";
-            z-index: 11111;
-            border: 0;
-            background: transparent;
-            box-sizing: border-box;
-            width: 0;
-            height: 74px;
-            border-color: transparent transparent transparent #ffffff;
-            cursor: pointer;
-            border-style: solid;
-            border-width: 37px 0 37px 60px;
-        }
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        content: "";
+        z-index: 11111;
+        border: 0;
+        background: transparent;
+        box-sizing: border-box;
+        width: 0;
+        height: 74px;
+        border-color: transparent transparent transparent #ffffff;
+        cursor: pointer;
+        border-style: solid;
+        border-width: 37px 0 37px 60px;
     }
 
     ${DESKTOP_MQ} {
         /* width: 25%; */
         flex-basis: 30%;
         height: unset;
+
+        & > img {
+            opacity: 1;
+        }
+
+        &:before {
+            display: none;
+        }
+        :hover {
+            & > img {
+                opacity: 0.7;
+            }
+            &:before {
+                display: block;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 24px;
+                content: "";
+                z-index: 11111;
+                border: 0;
+                background: transparent;
+                box-sizing: border-box;
+                width: 0;
+                height: 74px;
+                border-color: transparent transparent transparent #ffffff;
+                cursor: pointer;
+                border-style: solid;
+                border-width: 37px 0 37px 60px;
+            }
+        }
     }
     ${WIDE_MQ} {
         /* width: 25%; */
         flex-basis: 30%;
         height: unset;
+
+        & > img {
+            opacity: 1;
+        }
+
+        &:before {
+            display: none;
+        }
+        :hover {
+            & > img {
+                opacity: 0.7;
+            }
+            &:before {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 24px;
+                content: "";
+                z-index: 11111;
+                border: 0;
+                background: transparent;
+                box-sizing: border-box;
+                width: 0;
+                height: 74px;
+                border-color: transparent transparent transparent #ffffff;
+                cursor: pointer;
+                border-style: solid;
+                border-width: 37px 0 37px 60px;
+            }
+        }
     }
 `;
 

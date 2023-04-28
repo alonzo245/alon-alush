@@ -31,25 +31,11 @@ export default function () {
     };
     return (
         <>
-            {state?.edit ? (
-                <EditIconWrapper style={{ width: "60%", margin: "0 auto" }}>
-                    <Input
-                        value={state?.user?.attributesTitle}
-                        name={"attributesTitle"}
-                        placeholder={"Enter Resume Title"}
-                    />
-                </EditIconWrapper>
-            ) : (
-                <>
-                    {state?.user?.attributes?.length > 0 ? (
-                        <H3
-                            style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}
-                        >
-                            {state?.user?.attributesTitle}
-                        </H3>
-                    ) : null}
-                </>
-            )}
+            {state?.user?.attributes?.length > 0 ? (
+                <H3 style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}>
+                    {state?.user?.attributesTitle}
+                </H3>
+            ) : null}
 
             {state?.edit ? (
                 <>

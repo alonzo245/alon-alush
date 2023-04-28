@@ -1,4 +1,5 @@
 import {
+    FaAppStore,
     FaAws,
     FaChrome,
     FaCogs,
@@ -15,6 +16,8 @@ import {
     FaSass,
 } from "react-icons/fa";
 import {
+    Si1Password,
+    SiAdobe,
     SiAirtable,
     SiAnsible,
     SiApachecassandra,
@@ -27,18 +30,23 @@ import {
     SiDjango,
     SiElasticsearch,
     SiExpo,
+    SiExpressvpn,
     SiFirebase,
     SiGithubactions,
     SiGnubash,
     SiGraphql,
     SiHelm,
+    SiHotjar,
     SiHubspot,
+    SiIntegromat,
     SiIntellijidea,
     SiJavascript,
     SiJest,
     SiKibana,
     SiKubernetes,
+    SiLoom,
     SiMetabase,
+    SiMiro,
     SiMongodb,
     SiMysql,
     SiNestjs,
@@ -53,9 +61,14 @@ import {
     SiRedis,
     SiSentry,
     SiTerraform,
+    SiTwilio,
+    SiWebflow,
     SiYarn,
     SiZapier,
     SiZoom,
+    SiLens,
+    SiMailgun,
+    SiTypeform,
 } from "react-icons/si";
 import { FiCoffee } from "react-icons/fi";
 import {
@@ -64,6 +77,7 @@ import {
     AiFillHtml5,
     AiOutlineAntDesign,
     AiOutlineDeploymentUnit,
+    AiOutlineDropbox,
     AiOutlineWhatsApp,
 } from "react-icons/ai";
 
@@ -75,12 +89,95 @@ import { BsApple, BsGithub, BsVimeo } from "react-icons/bs";
 import { MdOutlineHttp } from "react-icons/md";
 import { IoLogoBitbucket } from "react-icons/io";
 import { RiSendToBack } from "react-icons/ri";
+import { TbBrandGooglePlay, TbBrandMixpanel } from "react-icons/tb";
 
+import { BsGoogle } from "react-icons/bs";
 import { DiScrum } from "react-icons/di";
 
 export default [
     {
-        icon: false,
+        icon: <SiIntegromat size={35} color={"#9c9a9a"} />,
+        title: "Integromat",
+    },
+
+    {
+        icon: <SiLoom size={35} color={"#9c9a9a"} />,
+        title: "Loom",
+    },
+
+    {
+        icon: <SiWebflow size={35} color={"#9c9a9a"} />,
+        title: "Webflow",
+    },
+
+    {
+        icon: <SiMiro size={35} color={"#9c9a9a"} />,
+        title: "Miro",
+    },
+
+    {
+        icon: <SiAdobe size={35} color={"#9c9a9a"} />,
+        title: "Adobe",
+    },
+
+    {
+        icon: <SiExpressvpn size={35} color={"#9c9a9a"} />,
+        title: "Express VPN",
+    },
+
+    {
+        icon: <CgMonday size={35} color={"#9c9a9a"} />,
+        title: "WhatsApp Api",
+    },
+
+    {
+        icon: <SiHotjar size={35} color={"#9c9a9a"} />,
+        title: "Hotjar",
+    },
+    {
+        icon: <SiAirtable size={35} color={"#9c9a9a"} />,
+        title: "Airtable",
+    },
+    {
+        icon: <SiTwilio size={35} color={"#9c9a9a"} />,
+        title: "Twilio",
+    },
+    {
+        icon: <SiApollographql size={35} color={"#9c9a9a"} />,
+        title: "Apollo GraphQL",
+    },
+    {
+        icon: <FaAppStore size={35} color={"#9c9a9a"} />,
+        title: "Apple Developer",
+    },
+    {
+        icon: <TbBrandGooglePlay size={35} color={"#9c9a9a"} />,
+        title: "Android Developer",
+    },
+    {
+        icon: <BsGoogle size={35} color={"#9c9a9a"} />,
+        title: "GCP",
+    },
+    {
+        icon: <Si1Password size={35} color={"#9c9a9a"} />,
+        title: "1Password",
+    },
+    {
+        icon: <SiSentry size={35} color={"#9c9a9a"} />,
+        title: "Sentry",
+    },
+    {
+        icon: <AiOutlineDropbox size={35} color={"#9c9a9a"} />,
+        title: "Dropbox",
+    },
+
+    {
+        icon: <SiLens size={35} color={"#9c9a9a"} />,
+        title: "Lens",
+    },
+
+    {
+        icon: <SiTypeform size={35} color={"#9c9a9a"} />,
         title: "Typeform",
     },
 
@@ -104,11 +201,11 @@ export default [
         title: "PayEm",
     },
     {
-        icon: false,
+        icon: <SiMailgun size={35} color={"#9c9a9a"} />,
         title: "Mailgun",
     },
     {
-        icon: false,
+        icon: <TbBrandMixpanel size={35} color={"#9c9a9a"} />,
         title: "Mixpanel",
     },
 
