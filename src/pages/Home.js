@@ -82,8 +82,9 @@ export default function () {
             <Resume />
             <Attributes />
             <Summary />
-            <Projects />
             <Videos />
+            <Projects />
+
         </SiteWrapper>
     );
 }
