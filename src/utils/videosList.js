@@ -37,83 +37,6 @@ export default {
         updated_at: "2021-12-16T12:23:46.615Z",
         __v: 0,
     },
-    fqhcqSNOffI: {
-        _id: "61bb2fd2c325252e1891bd88",
-        videoPublishedAt: "2021-11-26T13:43:06.000Z",
-        description: "",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/fqhcqSNOffI/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "1",
-        title: "ניהול פרויקטים ומשימות פיתוח ומוצר עם Jira | מדריך למפתחים/ות מתחילים ומתקדמים",
-        videoId: "fqhcqSNOffI",
-        created_at: "2021-12-16T12:23:46.725Z",
-        updated_at: "2021-12-16T12:23:46.725Z",
-        __v: 0,
-    },
-    "ayvoqwfVz-8": {
-        _id: "61bb2fd2c325252e1891bd8a",
-        videoPublishedAt: "2021-11-26T11:21:00.000Z",
-        description:
-            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק:  https://bit.ly/2YiXe14\n\nהפודקאסט של קודרז: https://bit.ly/3Cbq3Kz\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
-        thumbnails: {
-            default: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/default.jpg",
-                width: 120,
-                height: 90,
-            },
-            medium: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/mqdefault.jpg",
-                width: 320,
-                height: 180,
-            },
-            high: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/hqdefault.jpg",
-                width: 480,
-                height: 360,
-            },
-            standard: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/sddefault.jpg",
-                width: 640,
-                height: 480,
-            },
-            maxres: {
-                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/maxresdefault.jpg",
-                width: 1280,
-                height: 720,
-            },
-        },
-        position: "0",
-        title: "איך צוות פיתוח עובד בחברת הייטק? | מדריך מקיף על עולם ה- Agile וה- Scrum | מדריך למתחילים ומתקדמים",
-        videoId: "ayvoqwfVz-8",
-        created_at: "2021-12-16T12:23:46.726Z",
-        updated_at: "2021-12-16T12:23:46.726Z",
-        __v: 0,
-    },
     "5gdZSu9eFRg": {
         _id: "61bb2fd2c325252e1891bd14",
         videoPublishedAt: "2021-08-26T12:04:35.000Z",
@@ -351,6 +274,83 @@ export default {
         videoId: "cqjMUjJ1k8E",
         created_at: "2021-12-16T12:23:46.657Z",
         updated_at: "2021-12-16T12:23:46.657Z",
+        __v: 0,
+    },
+            fqhcqSNOffI: {
+        _id: "61bb2fd2c325252e1891bd88",
+        videoPublishedAt: "2021-11-26T13:43:06.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "ניהול פרויקטים ומשימות פיתוח ומוצר עם Jira | מדריך למפתחים/ות מתחילים ומתקדמים",
+        videoId: "fqhcqSNOffI",
+        created_at: "2021-12-16T12:23:46.725Z",
+        updated_at: "2021-12-16T12:23:46.725Z",
+        __v: 0,
+    },
+    "ayvoqwfVz-8": {
+        _id: "61bb2fd2c325252e1891bd8a",
+        videoPublishedAt: "2021-11-26T11:21:00.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק:  https://bit.ly/2YiXe14\n\nהפודקאסט של קודרז: https://bit.ly/3Cbq3Kz\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "איך צוות פיתוח עובד בחברת הייטק? | מדריך מקיף על עולם ה- Agile וה- Scrum | מדריך למתחילים ומתקדמים",
+        videoId: "ayvoqwfVz-8",
+        created_at: "2021-12-16T12:23:46.726Z",
+        updated_at: "2021-12-16T12:23:46.726Z",
         __v: 0,
     },
     VtjoExU11d4: {
