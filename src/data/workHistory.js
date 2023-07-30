@@ -22,7 +22,7 @@ export default [
     <li>Leading business processes, managing cross-organizational activities, initiatives and projects.</li>
 </ul>
         `,
-        date: "2022 - Present",
+        date: "2022 - 2023",
     },
     {
         id: "jolt",
