@@ -12,7 +12,7 @@ export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/alon-alush" element={<Home />} />
+            {["/", "/alon-alush"].map(path => (<Route path={path} element={<Home />} />))}
             </Routes>
         </BrowserRouter>
     );
