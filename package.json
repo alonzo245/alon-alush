@@ -2,7 +2,7 @@
     "name": "alon-alush",
     "version": "1.0.0",
     "private": false,
-    "homepage": "https://alonzo245.github.io/alon-alush",
+    "homepage": "https://tech.alonalush.com",
     "dependencies": {
         "@emotion/css": "^11.7.1",
         "@emotion/react": "^11.8.2",
