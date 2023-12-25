@@ -49,7 +49,7 @@ export default function (props) {
                             />
                         ) : (
                             <Div key={key} onClick={(e) => onClick(e, video.videoId)}>
-                                <Img src={`/alon-alush/images/videos/${video.videoId}.jpg`} />
+                                <Img src={`/images/videos/${video.videoId}.jpg`} />
                             </Div>
                         ),
                     )}
