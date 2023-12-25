@@ -235,8 +235,8 @@ a:hover {
     .branch-centered > .item:nth-child(odd) .content .item-title {
         border-radius: 5px;
         padding: 5px;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(84,84,84,0.5830707282913166) 100%);
+        background: rgb(84,84,84);
+        background: linear-gradient(270deg, rgba(84,84,84,0.1) 0%, rgba(58, 58, 58, 0.583) 100%);
         }
     .branch-centered > .item:nth-child(even) .date-title {
         float: right;
@@ -254,8 +254,8 @@ a:hover {
     .branch-centered > .item:nth-child(even) .content .item-title {
         border-radius: 5px;
         padding: 5px;
-        background: rgb(2,0,36);
-        background: linear-gradient(270deg, rgba(2,0,36,0) 0%, rgba(84,84,84,0.5830707282913166) 100%);
+        background: rgb(84,84,84);
+        background: linear-gradient(90deg, rgba(84,84,84,0.1) 0%, rgba(58, 58, 58, 0.583) 100%);
         }
     
     .branch-centered > .item.period .content {

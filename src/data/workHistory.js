@@ -5,7 +5,7 @@ export default [
         id: "singular",
         icon: "s",
         company: "Singular",
-        title: "Software Engineer",
+        title: "Full-Stack Softwer Engineer",
         description: `
         <ul>
         <li>Working on the first-to-market products and creating solutions using the latest technologies.</li>
