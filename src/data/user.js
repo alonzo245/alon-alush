@@ -6,7 +6,7 @@ import githubProjects from "./githubProjects";
 
 export default {
     name: "Alon Alush",
-    currentJobTitle: "Alon Alush CTO @ Jolt.io",
+    currentJobTitle: "Senior Full-Stack Engineer",
     linkedin: "https://il.linkedin.com/in/alonalush",
     github: "https://github.com/alonzo245",
     resumeTitle: "My Resume",

@@ -2,6 +2,21 @@ import { externalLink } from "../utils";
 //************************************************************************************//
 export default [
     {
+        id: "singular",
+        icon: "s",
+        company: "Singular",
+        title: "Software Engineer",
+        description: `
+        <ul>
+        <li>Working on the first-to-market products and creating solutions using the latest technologies.</li>
+        <li>Responsible for designing, developing and maintaining end-to-end (client and server) features and web applications</li>
+        <li>Work closely with our design and product teams to translate their requirements into functional, user-friendly features. </li>
+        <li>some of the tech stack I'm working with: React, Python, Django, MySQL, PostgreSQL, AWS, Redis, Druid, Snowflake, etc.</li>
+        </ul>
+        `,
+        date: "2023 - Present",
+    },
+    {
         id: "jolt",
         icon: "jolt",
         company: "Jolt.io",
