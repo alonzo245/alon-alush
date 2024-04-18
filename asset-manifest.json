@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5917537a.css",
-    "main.js": "/static/js/main.fdc18158.js",
+    "main.js": "/static/js/main.d689e92e.js",
     "static/js/787.5e0bc00d.chunk.js": "/static/js/787.5e0bc00d.chunk.js",
     "static/media/1.png": "/static/media/1.34def0533191e0993275.png",
     "static/media/1.jpg": "/static/media/1.34c5e22a8bbcc1daa0c4.jpg",
@@ -33,6 +33,7 @@
     "static/media/django.jpg": "/static/media/django.e7ffaf2e8aa90d5d6d83.jpg",
     "static/media/sass.png": "/static/media/sass.95acddf06be5308d9a94.png",
     "static/media/graphql.png": "/static/media/graphql.67d291ac2e67eefefbae.png",
+    "static/media/ziprecruiter.png": "/static/media/ziprecruiter.5e14bd998c9bffcde822.png",
     "static/media/reactnative.png": "/static/media/reactnative.725dde2175e19c49c582.png",
     "static/media/vuejs.png": "/static/media/vuejs.db5bd7fbb87a093eda9e.png",
     "static/media/nodejs.png": "/static/media/nodejs.f972682b47d48845a5b8.png",
@@ -43,11 +44,11 @@
     "index.html": "/index.html",
     "static/media/edit.svg": "/static/media/edit.99271c32821bf00e9b092f6d6491da3d.svg",
     "main.5917537a.css.map": "/static/css/main.5917537a.css.map",
-    "main.fdc18158.js.map": "/static/js/main.fdc18158.js.map",
+    "main.d689e92e.js.map": "/static/js/main.d689e92e.js.map",
     "787.5e0bc00d.chunk.js.map": "/static/js/787.5e0bc00d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5917537a.css",
-    "static/js/main.fdc18158.js"
+    "static/js/main.d689e92e.js"
   ]
 }
