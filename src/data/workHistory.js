@@ -2,10 +2,27 @@ import { externalLink } from "../utils";
 //************************************************************************************//
 export default [
     {
+        id: "ziprecruiter",
+        icon: "ziprecruiter",
+        company: "Zip Recruiter",
+        title: "Full-Stack Engineer",
+        description: `
+        
+        As a fullstack developer, I leverage my expertise in both front-end and back-end technologies to create comprehensive digital solutions. <br>
+        From designing intuitive user interfaces to architecting scalable server-side systems. <br>
+        Utilizing a diverse skill set encompassing languages such as JavaScript, Python, go, SQL, NOSQL and more... <br>
+        I strive to deliver high-quality, performant software. <br>
+        Dedicated to deliver cutting-edge solutions that drive business to success.
+        <br>
+        <br>
+`,
+        date: "2024 - Present",
+    },
+    {
         id: "singular",
         icon: "s",
         company: "Singular",
-        title: "Full-Stack Softwer Engineer",
+        title: "Full-Stack Engineer",
         description: `
         <ul>
         <li>Working on the first-to-market products and creating solutions using the latest technologies.</li>
@@ -13,8 +30,9 @@ export default [
         <li>Work closely with our design and product teams to translate their requirements into functional, user-friendly features. </li>
         <li>Tech stack I'm working with: React, Python, Django, MySQL, PostgreSQL, AWS, Redis, Druid, Snowflake, etc.</li>
         </ul>
+        <br>
         `,
-        date: "2023 - Present",
+        date: "2023 - 2024",
     },
     {
         id: "jolt",
@@ -36,6 +54,8 @@ export default [
     <li>Researching and suggesting new technologies to improve scale and performance, data-driven and result-oriented.</li>
     <li>Leading business processes, managing cross-organizational activities, initiatives and projects.</li>
 </ul>
+<br>
+<br>
         `,
         date: "2022 - 2023",
     },
@@ -58,6 +78,8 @@ Responsible for ensuring that design requirements are met.
     <li>Recommending technological developments and improvements inefficiency.</li>
     <li>Developing teams to ensure quality end products.</li>
 </ul>
+<br>
+<br>
         `,
         date: "2022 - Present",
     },
