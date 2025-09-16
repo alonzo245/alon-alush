@@ -8,13 +8,30 @@ export default [
         title: "Full-Stack Engineer",
         description: `
         
-        As a fullstack developer, I leverage my expertise in both front-end and back-end technologies to create comprehensive digital solutions. <br>
-        From designing intuitive user interfaces to architecting scalable server-side systems. <br>
-        Utilizing a diverse skill set encompassing languages such as JavaScript, Python, go, SQL, NOSQL and more... <br>
-        I strive to deliver high-quality, performant software. <br>
-        Dedicated to deliver cutting-edge solutions that drive business to success.
-        <br>
-        <br>
+As a Senior Full-Stack Engineer, I delivered multiple high-impact projects that shaped ZipRecruiter’s core job seeker and employer experience.
+      <br><br>
+      
+I led end-to-end initiatives with a strong focus on backend & frontend development across a broad range of technologies. I worked extensively with Go, Python, JavaScript, Node.js, and TypeScript, building scalable services and APIs, and drove the migration of legacy systems into a modern Next.js 15 architecture.
+      <br><br>
+      
+On the infrastructure and data side, I contributed to projects involving AWS, Spark, SQL/NoSQL databases (MongoDB, DynamoDB), Databricks, and data pipelines. I strengthened observability and reliability by implementing monitoring with Prometheus, Grafana, and Thanos, improving alerting, logging, and deployment pipelines.
+      <br><br>
+      
+I actively contributed to A/B testing and experimentation platforms (Statsig, internal tooling), ensuring that new features were data-driven and aligned with business goals.
+      <br><br>
+      
+I invested heavily in cross-team collaboration and organizational impact. I partnered with infrastructure teams to deliver reusable blueprints and infrastructure code, collaborated with US-based teams to align on product and technical goals, and proactively addressed technical debt to ensure long-term scalability.
+      <br><br>
+      
+I played an active role in mentorship and knowledge sharing, acting as a buddy for new hires, supporting peers through pair programming, and leading the IL Frontend interest group to drive best practices. Additionally, I lectured on web and AI technologies at the company’s Tech Weeks in the US.
+      <br><br>
+      
+Recognized for my high motivation, energy, and positive influence on team culture, I consistently balanced multiple priorities while maintaining delivery velocity and quality. My ability to combine hands-on technical depth with leadership and cross-organizational contributions positioned me as a role model for execution, collaboration, and innovation within the engineering organization.
+      <br><br>
+
+Tech Stack:
+Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, NoSQL (MongoDB, DynamoDB), Databricks, Prometheus, Grafana, Thanos, Argo, Kubernetes, Git, A/B testing platforms (Statsig, internal tools), CI/CD pipelines.
+        <br><br>
 `,
         date: "2024 - Present",
     },

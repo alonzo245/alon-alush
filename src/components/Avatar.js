@@ -17,25 +17,9 @@ export default function () {
     return (
         <Container>
             <Mask>
-                {state?.edit && (
-                    <Edit>
-                        <AvatarAiFillEdit size={50} color={"#fff"} />
-                    </Edit>
-                )}
+              
                 <Img src={Alon} alt={"Alon ALush"} />
-                {/* {play ? (
-                    <Img src={Alon} alt={"Alon ALush"} />
-                ) : (
-                    <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${"BFuWc2Hwhdc"}`}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title="Embedded youtube"
-                    />
-                )} */}
+             
             </Mask>
         </Container>
     );
