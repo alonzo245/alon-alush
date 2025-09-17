@@ -5,7 +5,7 @@ export default [
         id: "ziprecruiter",
         icon: "ziprecruiter",
         company: "Zip Recruiter",
-        title: "Full-Stack Engineer",
+        title: "Senior Full-Stack Engineer",
         description: `
         
 As a Senior Full-Stack Engineer, I delivered multiple high-impact projects that shaped ZipRecruiter’s core job seeker and employer experience.
