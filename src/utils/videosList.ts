@@ -1,0 +1,3329 @@
+interface VideoThumbnail {
+    url: string;
+    width: number;
+    height: number;
+}
+
+interface VideoThumbnails {
+    default?: VideoThumbnail;
+    medium?: VideoThumbnail;
+    high?: VideoThumbnail;
+    standard?: VideoThumbnail;
+    maxres?: VideoThumbnail;
+}
+
+export interface VideoListItem {
+    _id: string;
+    videoPublishedAt: string;
+    description: string;
+    thumbnails: VideoThumbnails;
+    position: string;
+    title: string;
+    videoId: string;
+    created_at?: string;
+    updated_at?: string;
+    __v?: number;
+}
+
+const videosList: { [key: string]: VideoListItem } = {
+    "9i3RN_wXcNw": {
+        _id: "61bb2fd2c325252e1891bcfa",
+        videoPublishedAt: "2021-12-03T08:49:36.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/9i3RN_wXcNw/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "5",
+        title: "שאלות בסיסיות  ב- Javascript | Callback Hell & Promises | מתוך מפגשי פעילות של קהילת קודרז",
+        videoId: "9i3RN_wXcNw",
+        created_at: "2021-12-16T12:23:46.615Z",
+        updated_at: "2021-12-16T12:23:46.615Z",
+        __v: 0,
+    },
+    "5gdZSu9eFRg": {
+        _id: "61bb2fd2c325252e1891bd14",
+        videoPublishedAt: "2021-08-26T12:04:35.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/5gdZSu9eFRg/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "0",
+        title: "Fetch API in JavaScript - מדריך בעברית",
+        videoId: "5gdZSu9eFRg",
+        created_at: "2021-12-16T12:23:46.637Z",
+        updated_at: "2021-12-16T12:23:46.637Z",
+        __v: 0,
+    },
+    CfXmQ3eMaZU: {
+        _id: "61bb2fd2c325252e1891bd1c",
+        videoPublishedAt: "2021-11-07T07:50:26.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \nאתגר נובמבר של קודרז מתחיל ויעזור לכם למצוא עבודה באמצעות בניית תיק עבודות מושקע!\n\nקישור להרשמה לאתגר נובמבר 2021 של קודרז:\nhttps://forms.gle/PDMNrgPmH4DEbt9W6\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/CfXmQ3eMaZU/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "7",
+        title: "עידכון ל- react router dom לגרסה v6 | מדריך שדרוג",
+        videoId: "CfXmQ3eMaZU",
+        created_at: "2021-12-16T12:23:46.645Z",
+        updated_at: "2021-12-16T12:23:46.645Z",
+        __v: 0,
+    },
+    "31u9DtccOEc": {
+        _id: "61bb2fd2c325252e1891bd26",
+        videoPublishedAt: "2021-08-27T13:43:20.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/31u9DtccOEc/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/31u9DtccOEc/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/31u9DtccOEc/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "9",
+        title: "JavaScript Promise - מדריך שלם בעברית",
+        videoId: "31u9DtccOEc",
+        created_at: "2021-12-16T12:23:46.650Z",
+        updated_at: "2021-12-16T12:23:46.650Z",
+        __v: 0,
+    },
+    ZggTz7GCddU: {
+        _id: "61bb2fd2c325252e1891bd1a",
+        videoPublishedAt: "2021-10-02T11:51:04.000Z",
+        description:
+            "הקוד שלנו תמיד יכול להיות יותר פשוט וקל, הנה סרטון ראשון בסדרת שיפור וייעול הקוד שלנו ב- JavaScript.\n\nוהפעם אני מתמקד בפונקציות, תנאים ואיך ניתן לגרום להם להיות פשוטים ואף יותר יעילים.\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ZggTz7GCddU/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "איך לשפר את הקוד שלנו | פרק #1",
+        videoId: "ZggTz7GCddU",
+        created_at: "2021-12-16T12:23:46.643Z",
+        updated_at: "2021-12-16T12:23:46.643Z",
+        __v: 0,
+    },
+    EfEJg_Cw570: {
+        _id: "61bb2fd2c325252e1891bd20",
+        videoPublishedAt: "2021-10-03T08:26:10.000Z",
+        description:
+            "נלמד על התגיות:\nfieldset, datalist, color picker, progress, open graph, sub / sup, picture, template\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/EfEJg_Cw570/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "4",
+        title: "Cool HTML Tags",
+        videoId: "EfEJg_Cw570",
+        created_at: "2021-12-16T12:23:46.647Z",
+        updated_at: "2021-12-16T12:23:46.647Z",
+        __v: 0,
+    },
+    YP2EQGMJT48: {
+        _id: "61bb2fd2c325252e1891bd24",
+        videoPublishedAt: "2021-11-16T06:12:12.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/YP2EQGMJT48/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "8",
+        title: "מדריך NPM ופרסום חבילות",
+        videoId: "YP2EQGMJT48",
+        created_at: "2021-12-16T12:23:46.649Z",
+        updated_at: "2021-12-16T12:23:46.649Z",
+        __v: 0,
+    },
+    cqjMUjJ1k8E: {
+        _id: "61bb2fd2c325252e1891bd2c",
+        videoPublishedAt: "2021-11-10T21:02:16.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/cqjMUjJ1k8E/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "2",
+        title: "מדריך Node.js | הסבר ראשוני והתקנה",
+        videoId: "cqjMUjJ1k8E",
+        created_at: "2021-12-16T12:23:46.657Z",
+        updated_at: "2021-12-16T12:23:46.657Z",
+        __v: 0,
+    },
+    fqhcqSNOffI: {
+        _id: "61bb2fd2c325252e1891bd88",
+        videoPublishedAt: "2021-11-26T13:43:06.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/fqhcqSNOffI/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "ניהול פרויקטים ומשימות פיתוח ומוצר עם Jira | מדריך למפתחים/ות מתחילים ומתקדמים",
+        videoId: "fqhcqSNOffI",
+        created_at: "2021-12-16T12:23:46.725Z",
+        updated_at: "2021-12-16T12:23:46.725Z",
+        __v: 0,
+    },
+    "ayvoqwfVz-8": {
+        _id: "61bb2fd2c325252e1891bd8a",
+        videoPublishedAt: "2021-11-26T11:21:00.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק:  https://bit.ly/2YiXe14\n\nהפודקאסט של קודרז: https://bit.ly/3Cbq3Kz\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ayvoqwfVz-8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "איך צוות פיתוח עובד בחברת הייטק? | מדריך מקיף על עולם ה- Agile וה- Scrum | מדריך למתחילים ומתקדמים",
+        videoId: "ayvoqwfVz-8",
+        created_at: "2021-12-16T12:23:46.726Z",
+        updated_at: "2021-12-16T12:23:46.726Z",
+        __v: 0,
+    },
+    VtjoExU11d4: {
+        _id: "61bb2fd2c325252e1891bd92",
+        videoPublishedAt: "2021-11-01T10:55:34.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/VtjoExU11d4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 1/6",
+        videoId: "VtjoExU11d4",
+        created_at: "2021-12-16T12:23:46.731Z",
+        updated_at: "2021-12-16T12:23:46.731Z",
+        __v: 0,
+    },
+    ZXRtnwZ2RiQ: {
+        _id: "61bb2fd2c325252e1891bd8e",
+        videoPublishedAt: "2021-11-01T11:00:41.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ZXRtnwZ2RiQ/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 2/6",
+        videoId: "ZXRtnwZ2RiQ",
+        created_at: "2021-12-16T12:23:46.729Z",
+        updated_at: "2021-12-16T12:23:46.729Z",
+        __v: 0,
+    },
+    yOxNONblkb0: {
+        _id: "61bb2fd2c325252e1891bd94",
+        videoPublishedAt: "2021-11-01T11:04:14.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/yOxNONblkb0/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "2",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 3/6",
+        videoId: "yOxNONblkb0",
+        created_at: "2021-12-16T12:23:46.732Z",
+        updated_at: "2021-12-16T12:23:46.732Z",
+        __v: 0,
+    },
+    aiPAryg4nHA: {
+        _id: "61bb2fd2c325252e1891bd96",
+        videoPublishedAt: "2021-11-01T11:04:57.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/aiPAryg4nHA/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 4/6",
+        videoId: "aiPAryg4nHA",
+        created_at: "2021-12-16T12:23:46.739Z",
+        updated_at: "2021-12-16T12:23:46.739Z",
+        __v: 0,
+    },
+    "L6BfO-_SaBY": {
+        _id: "61bb2fd2c325252e1891bd98",
+        videoPublishedAt: "2021-11-01T11:09:12.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/L6BfO-_SaBY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "4",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 5/6",
+        videoId: "L6BfO-_SaBY",
+        created_at: "2021-12-16T12:23:46.740Z",
+        updated_at: "2021-12-16T12:23:46.740Z",
+        __v: 0,
+    },
+    RU_utoy4vo4: {
+        _id: "61bb2fd2c325252e1891bd9a",
+        videoPublishedAt: "2021-11-01T11:12:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/RU_utoy4vo4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "5",
+        title: "Git and GitHub | מדריך למתחילים וג׳וניורים | חלק 6/6",
+        videoId: "RU_utoy4vo4",
+        created_at: "2021-12-16T12:23:46.741Z",
+        updated_at: "2021-12-16T12:23:46.741Z",
+        __v: 0,
+    },
+    "eLhrLy-Zzes": {
+        _id: "61bb2fd2c325252e1891bd2a",
+        videoPublishedAt: "2021-11-10T20:52:50.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/eLhrLy-Zzes/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "הקדמה לפיתוח צד שרת | מדריך למתחילים | חלק 1/2",
+        videoId: "eLhrLy-Zzes",
+        created_at: "2021-12-16T12:23:46.656Z",
+        updated_at: "2021-12-16T12:23:46.656Z",
+        __v: 0,
+    },
+    WNdckwnLVW8: {
+        _id: "61bb2fd2c325252e1891bd1e",
+        videoPublishedAt: "2021-10-05T07:20:28.000Z",
+        description: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/WNdckwnLVW8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "6",
+        title: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End | חלק ב",
+        videoId: "WNdckwnLVW8",
+        created_at: "2021-12-16T12:23:46.646Z",
+        updated_at: "2021-12-16T12:23:46.646Z",
+        __v: 0,
+    },
+
+    pj9JZP0YUb0: {
+        _id: "61bb2fd2c325252e1891bd28",
+        videoPublishedAt: "2021-08-29T07:54:36.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/pj9JZP0YUb0/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "10",
+        title: "מדריך בעברית - JavaScript - Array functions for(), foreEach(), map(), filter(), sort(), reduce()",
+        videoId: "pj9JZP0YUb0",
+        created_at: "2021-12-16T12:23:46.655Z",
+        updated_at: "2021-12-16T12:23:46.655Z",
+        __v: 0,
+    },
+    "VNr-J1_R2EM": {
+        _id: "61bb2fd2c325252e1891bce8",
+        videoPublishedAt: "2021-10-10T09:41:48.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/VNr-J1_R2EM/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/VNr-J1_R2EM/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/VNr-J1_R2EM/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/VNr-J1_R2EM/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/VNr-J1_R2EM/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "2",
+        title: "נתיב הלמידה לפיתוח Back-End לשנת 2022 | חלק 3/4",
+        videoId: "VNr-J1_R2EM",
+        created_at: "2021-12-16T12:23:46.597Z",
+        updated_at: "2021-12-16T12:23:46.597Z",
+        __v: 0,
+    },
+    "8apWfcc4lXE": {
+        _id: "61bb2fd2c325252e1891bce6",
+        videoPublishedAt: "2021-10-10T09:35:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/8apWfcc4lXE/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/8apWfcc4lXE/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/8apWfcc4lXE/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/8apWfcc4lXE/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/8apWfcc4lXE/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "נתיב הלמידה לפיתוח Back-End לשנת 2022 | חלק 1/4",
+        videoId: "8apWfcc4lXE",
+        created_at: "2021-12-16T12:23:46.593Z",
+        updated_at: "2021-12-16T12:23:46.593Z",
+        __v: 0,
+    },
+    vdmDW3PnLM4: {
+        _id: "61bb2fd2c325252e1891bcf4",
+        videoPublishedAt: "2021-12-03T07:33:04.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/vdmDW3PnLM4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/vdmDW3PnLM4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/vdmDW3PnLM4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/vdmDW3PnLM4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/vdmDW3PnLM4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "שאלות בסיסיות  ב- Javascript | Init Object, Scope & IIFE | מתוך מפגשי פעילות של קהילת קודרז",
+        videoId: "vdmDW3PnLM4",
+        created_at: "2021-12-16T12:23:46.611Z",
+        updated_at: "2021-12-16T12:23:46.611Z",
+        __v: 0,
+    },
+    OEIvrSoLEDw: {
+        _id: "61bb2fd2c325252e1891bcf8",
+        videoPublishedAt: "2021-12-03T08:19:42.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/OEIvrSoLEDw/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/OEIvrSoLEDw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/OEIvrSoLEDw/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/OEIvrSoLEDw/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/OEIvrSoLEDw/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "4",
+        title: "שאלות בסיסיות  ב- Javascript | Hoisting in JavaScript | מתוך מפגשי פעילות של קהילת קודרז",
+        videoId: "OEIvrSoLEDw",
+        created_at: "2021-12-16T12:23:46.614Z",
+        updated_at: "2021-12-16T12:23:46.614Z",
+        __v: 0,
+    },
+
+    W4tnP9qF5p4: {
+        _id: "61bb2fd2c325252e1891bd00",
+        videoPublishedAt: "2021-12-04T16:03:18.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/W4tnP9qF5p4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/W4tnP9qF5p4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/W4tnP9qF5p4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/W4tnP9qF5p4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/W4tnP9qF5p4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "8",
+        title: "שאלות בסיסיות ב- Javascript | Web Optimization | מתוך מפגשי פעילות של קהילת קודרז",
+        videoId: "W4tnP9qF5p4",
+        created_at: "2021-12-16T12:23:46.622Z",
+        updated_at: "2021-12-16T12:23:46.622Z",
+        __v: 0,
+    },
+    nvUt0D1H7g4: {
+        _id: "61bb2fd2c325252e1891bd02",
+        videoPublishedAt: "2021-10-14T16:39:04.000Z",
+        description:
+            "האקסלרטור מפתחי ג׳וניורים של אוקטובר כבר בשיאו והגיע הזמן להגיש את האתגרים שלכם לא יאוחר מה- 25/10/21.\n\nעדיין לא התחלתם את האתגר של קודרז שיעזור לכם לבנוצת תיק עבודות אישי ועל הדרך ילמד אתכם לקחת משימה ולהפוך אותה לניסיון מעשי בפיתוח? \n\nניתן להירשם בקישור הבא:\nhttps://forms.gle/QwKWjug4D9yWBiNo8\n\nבהצלחה!",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/nvUt0D1H7g4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/nvUt0D1H7g4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/nvUt0D1H7g4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/nvUt0D1H7g4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/nvUt0D1H7g4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "עדכון Coderz | 14/10/21",
+        videoId: "nvUt0D1H7g4",
+        created_at: "2021-12-16T12:23:46.624Z",
+        updated_at: "2021-12-16T12:23:46.624Z",
+        __v: 0,
+    },
+    "4hv_R6lpHZ8": {
+        _id: "61bb2fd2c325252e1891bd0a",
+        videoPublishedAt: "2021-09-26T08:36:22.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך.\n \nמפגש CoderZ Workouts היום בשעה 17:00 ממשיכים לעבוד על האתגר האישי - תיק העבודות שלכם ונדבר על מכשולים מנטליים שעוצרים אותנו בחיפוש העבודה ואיך אפשר להתגבר עליהם",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/4hv_R6lpHZ8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/4hv_R6lpHZ8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/4hv_R6lpHZ8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/4hv_R6lpHZ8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/4hv_R6lpHZ8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "5",
+        title: "מפגש CoderZ Workouts היום בשעה 17:00 ממשיכים לעבוד על האתגר האישי 26.9.21",
+        videoId: "4hv_R6lpHZ8",
+        created_at: "2021-12-16T12:23:46.631Z",
+        updated_at: "2021-12-16T12:23:46.631Z",
+        __v: 0,
+    },
+
+    UJeBs0UK8lg: {
+        _id: "61bb2fd2c325252e1891bd18",
+        videoPublishedAt: "2021-09-05T05:07:06.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/UJeBs0UK8lg/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/UJeBs0UK8lg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/UJeBs0UK8lg/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "2",
+        title: "איך האינטרנט עובד? מדריך בעברית",
+        videoId: "UJeBs0UK8lg",
+        created_at: "2021-12-16T12:23:46.642Z",
+        updated_at: "2021-12-16T12:23:46.642Z",
+        __v: 0,
+    },
+    "aEu6QsBh-8o": {
+        _id: "61bb2fd2c325252e1891bd2e",
+        videoPublishedAt: "2021-11-10T20:53:17.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/aEu6QsBh-8o/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/aEu6QsBh-8o/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/aEu6QsBh-8o/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/aEu6QsBh-8o/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/aEu6QsBh-8o/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "הקדמה לפיתוח צד שרת | מדריך למתחילים | חלק 2/2",
+        videoId: "aEu6QsBh-8o",
+        created_at: "2021-12-16T12:23:46.658Z",
+        updated_at: "2021-12-16T12:23:46.658Z",
+        __v: 0,
+    },
+    "8F_iyjuPbvY": {
+        _id: "61bb2fd2c325252e1891bd3e",
+        videoPublishedAt: "2021-10-18T06:57:37.000Z",
+        description:
+            "עקבו אחרי עמית שין:\nאתר רשמי: https://amitsh.com\nיוטיוב: https://www.youtube.com/playlist?list=PLobGLCa6IPmhHCZn3q0GFs5hNimxgzjMK\nטוויטר: https://twitter.com/amit_sheen\n\nכניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק: https://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/8F_iyjuPbvY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/8F_iyjuPbvY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/8F_iyjuPbvY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/8F_iyjuPbvY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/8F_iyjuPbvY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "5",
+        title: "קודרז פודקאסט | מתארח: עמית שין | החלקים החשובים שאולי פיספסתם בעיצוב לווב | פרק #3 חלק 3/4",
+        videoId: "8F_iyjuPbvY",
+        created_at: "2021-12-16T12:23:46.669Z",
+        updated_at: "2021-12-16T12:23:46.669Z",
+        __v: 0,
+    },
+    dcRQqMM0QvY: {
+        _id: "61bb2fd2c325252e1891bd44",
+        videoPublishedAt: "2021-10-18T07:01:37.000Z",
+        description:
+            "עקבו אחרי עמית שין:\nאתר רשמי: https://amitsh.com\nיוטיוב: https://www.youtube.com/playlist?list=PLobGLCa6IPmhHCZn3q0GFs5hNimxgzjMK\nטוויטר: https://twitter.com/amit_sheen\n\nכניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק: https://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/dcRQqMM0QvY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/dcRQqMM0QvY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/dcRQqMM0QvY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/dcRQqMM0QvY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/dcRQqMM0QvY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "6",
+        title: "קודרז פודקאסט | מתארח: עמית שין | החלקים החשובים שאולי פיספסתם בעיצוב לווב | פרק #3 חלק 4/4",
+        videoId: "dcRQqMM0QvY",
+        created_at: "2021-12-16T12:23:46.673Z",
+        updated_at: "2021-12-16T12:23:46.673Z",
+        __v: 0,
+    },
+    "9pwwNeXlG1A": {
+        _id: "61bb2fd2c325252e1891bd4c",
+        videoPublishedAt: "2021-10-06T18:58:01.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה בפייסבוק: https://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://lnkd.in/dKaj_8PS\n\nאם אתה FED בנשמה זה המקום שלך 👇\nערוץ ישראלי לכל קהילת ה-Front end בארץ.\nמאמרים, אירועים, מדריכים וקורסים, משרות ועוד...\nhttps://t.me/FedCastIL\n\nפוסט שמתפרסם מידי יום ראשון עבור מפתחים מקהילת Fed cast מעולם הפרונט אנד שנצפה ע״י מאות אנשים שמחפשים מתכנתים איכותיים דרך הלינק הזה https://lnkd.in/d7svibk\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/9pwwNeXlG1A/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/9pwwNeXlG1A/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/9pwwNeXlG1A/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/9pwwNeXlG1A/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/9pwwNeXlG1A/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "7",
+        title: "CoderZ פודקאסט | פרק #2 | מתארח : אדיר קנדל | מה לבחור  Angular, React, Vue?",
+        videoId: "9pwwNeXlG1A",
+        created_at: "2021-12-16T12:23:46.677Z",
+        updated_at: "2021-12-16T12:23:46.677Z",
+        __v: 0,
+    },
+    TnF1VJXcgfQ: {
+        _id: "61bb2fd2c325252e1891bd52",
+        videoPublishedAt: "2021-11-09T10:07:56.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/TnF1VJXcgfQ/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/TnF1VJXcgfQ/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/TnF1VJXcgfQ/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "17",
+        title: "קודרז פודקאסט #8 | חלק 2/7 | לעבוד במשרת פיתוח דרוש הרבה יותר מלכתוב קוד | מתארח: שחר פולק",
+        videoId: "TnF1VJXcgfQ",
+        created_at: "2021-12-16T12:23:46.685Z",
+        updated_at: "2021-12-16T12:23:46.685Z",
+        __v: 0,
+    },
+    Nz_61nlGrZo: {
+        _id: "61bb2fd2c325252e1891bd56",
+        videoPublishedAt: "2021-11-09T10:16:32.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/Nz_61nlGrZo/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/Nz_61nlGrZo/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/Nz_61nlGrZo/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "19",
+        title: "קודרז פודקאסט #8 | חלק 3/7 | לעבוד במשרת פיתוח דרוש הרבה יותר מלכתוב קוד | מתארח: שחר פולק",
+        videoId: "Nz_61nlGrZo",
+        created_at: "2021-12-16T12:23:46.688Z",
+        updated_at: "2021-12-16T12:23:46.688Z",
+        __v: 0,
+    },
+    hzlrOe684cM: {
+        _id: "61bb2fd2c325252e1891bd58",
+        videoPublishedAt: "2021-11-09T10:23:52.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/hzlrOe684cM/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/hzlrOe684cM/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/hzlrOe684cM/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "21",
+        title: "קודרז פודקאסט #8 | חלק 4/7 | לעבוד במשרת פיתוח דרוש הרבה יותר מלכתוב קוד | מתארח: שחר פולק",
+        videoId: "hzlrOe684cM",
+        created_at: "2021-12-16T12:23:46.689Z",
+        updated_at: "2021-12-16T12:23:46.689Z",
+        __v: 0,
+    },
+    EWrW6yPWjFk: {
+        _id: "61bb2fd2c325252e1891bd64",
+        videoPublishedAt: "2021-11-09T20:44:22.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/EWrW6yPWjFk/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/EWrW6yPWjFk/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/EWrW6yPWjFk/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/EWrW6yPWjFk/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/EWrW6yPWjFk/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "25",
+        title: "שאלות מכשילות בראיונות עבודה של משרות פיתוח | טיפים איך לשרוד ראיון ולעבור אותו | מתארח: אדיר קנדל",
+        videoId: "EWrW6yPWjFk",
+        created_at: "2021-12-16T12:23:46.700Z",
+        updated_at: "2021-12-16T12:23:46.700Z",
+        __v: 0,
+    },
+    "6DpHul4Ed7E": {
+        _id: "61bb2fd2c325252e1891bd6a",
+        videoPublishedAt: "2021-11-25T06:38:32.000Z",
+        description: "המעבר מפיתוח צד שרת לצד לקוח ואיך עושים את זה בלי דאגות\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/6DpHul4Ed7E/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/6DpHul4Ed7E/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/6DpHul4Ed7E/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/6DpHul4Ed7E/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/6DpHul4Ed7E/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "30",
+        title: "שני כהן מפתחת צד שרת מסבירה למה צריך להעיז ולאתגר את עצמך כל פעם מחדש עם קוד",
+        videoId: "6DpHul4Ed7E",
+        created_at: "2021-12-16T12:23:46.702Z",
+        updated_at: "2021-12-16T12:23:46.702Z",
+        __v: 0,
+    },
+
+    VzBlnOzSNe8: {
+        _id: "61bb2fd2c325252e1891bd04",
+        videoPublishedAt: "2021-11-17T17:47:39.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/VzBlnOzSNe8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/VzBlnOzSNe8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/VzBlnOzSNe8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/VzBlnOzSNe8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/VzBlnOzSNe8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "אתגר קודרז נובמבר 2021 הפרויקט המוביל 🎖",
+        videoId: "VzBlnOzSNe8",
+        created_at: "2021-12-16T12:23:46.625Z",
+        updated_at: "2021-12-16T12:23:46.625Z",
+        __v: 0,
+    },
+    zV13IeBfAls: {
+        _id: "61bb2fd2c325252e1891bd08",
+        videoPublishedAt: "2021-10-01T09:39:44.000Z",
+        description:
+            "בחודש אוקטובר אני רוצה לעזור לקבוצה של חמישה 💻 מתכנתות/ים שייקחו חלק אקטיבי בבניית תיק עבודות מקצועי ועזרה במציאת עבודה בשוק התכנות בהייטק הישראלי.\nקישור לטופס הרשמה: https://lnkd.in/dkTbYrUe\n🚀 התוכנית בגדול ליצור האצה בכדי למצוא עבודה ולהתחיל לתת ערך ותוצאות מהיום הראשון כג׳וניורים!\n🤷‍♂️ מה צריך בשביל להיכנס לתוכנית האצה הזאת?\nמי שסיים לימודי תואר/קורס/לימודיי אונליין.\nצריך לפחות שעה כל יום לשבת ולכתוב קוד.\nחדורי מטרה למציאת עבודה גם כשקשה.\nרצון לספר בוידאו בסוף התהליך על החוויה במציאת עבודה בהייטק, האתגרים והדרך להתמודד איתם.\nבמידה ותהיה התאמה אצור קשר במייל ובהצלחה לכולם.",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/zV13IeBfAls/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/zV13IeBfAls/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/zV13IeBfAls/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/zV13IeBfAls/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/zV13IeBfAls/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "4",
+        title: "תוכנית האצה אוקטובר בכדי למצוא עבודה למתכנתים/ות בהייטק",
+        videoId: "zV13IeBfAls",
+        created_at: "2021-12-16T12:23:46.627Z",
+        updated_at: "2021-12-16T12:23:46.627Z",
+        __v: 0,
+    },
+
+    BhoBhqyj7SE: {
+        _id: "61bb2fd2c325252e1891bd36",
+        videoPublishedAt: "2021-10-19T06:48:21.000Z",
+        description:
+            "אתר קודבוקס: \nhttps://codebox.co.il/home\n\nעקבו אחרי עופר גוליברודה:\nhttps://www.linkedin.com/in/ofer-golibroda-55083b81/\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/BhoBhqyj7SE/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/BhoBhqyj7SE/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/BhoBhqyj7SE/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/BhoBhqyj7SE/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/BhoBhqyj7SE/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "קודרז פודקאסט | מתארח עופר גוליברודה | מיזם קודבוקס ואיך זה קשור למפתחים ג׳וניורים  | פרק #4 חלק 2/3",
+        videoId: "BhoBhqyj7SE",
+        created_at: "2021-12-16T12:23:46.662Z",
+        updated_at: "2021-12-16T12:23:46.662Z",
+        __v: 0,
+    },
+    O_y3YKLQKow: {
+        _id: "61bb2fd2c325252e1891bd42",
+        videoPublishedAt: "2021-10-28T08:54:58.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/O_y3YKLQKow/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/O_y3YKLQKow/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/O_y3YKLQKow/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/O_y3YKLQKow/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/O_y3YKLQKow/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "9",
+        title: "קודרז פודקאסט | מתארח יאיר כהן | להיות מפתח ווב בגיל 22 והאתגרים שאפשר להתגבר עליהם",
+        videoId: "O_y3YKLQKow",
+        created_at: "2021-12-16T12:23:46.672Z",
+        updated_at: "2021-12-16T12:23:46.672Z",
+        __v: 0,
+    },
+    "1rTLriviA5A": {
+        _id: "61bb2fd2c325252e1891bd46",
+        videoPublishedAt: "2021-10-06T11:41:03.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה בפייסבוק: https://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://docs.google.com/forms/d/e/1FAIpQLSeJmlG-y4XKX8iz_cACj4AlIY2Hv-cexT7T7Q8IwX-316Syww/viewform\n\nאם אתה FED בנשמה זה המקום שלך \nערוץ ישראלי לכל קהילת ה-Front end בארץ.\nמאמרים, אירועים, מדריכים וקורסים, משרות ועוד...\nhttps://t.me/FedCastIL\n\nפוסט שמתפרסם מידי יום ראשון עבור מפתחים מקהילת Fed cast מעולם הפרונט אנד שנצפה ע״י מאות אנשים שמחפשים מתכנתים איכותיים דרך הלינק הזה https://lnkd.in/d7svibk\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/1rTLriviA5A/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/1rTLriviA5A/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/1rTLriviA5A/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/1rTLriviA5A/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/1rTLriviA5A/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "8",
+        title: "CoderZ פודקאסט | פרק #1 | מתארח : אדיר קנדל | המדריך לג׳וניור בהייטק הישראלי",
+        videoId: "1rTLriviA5A",
+        created_at: "2021-12-16T12:23:46.674Z",
+        updated_at: "2021-12-16T12:23:46.674Z",
+        __v: 0,
+    },
+    Ym0vZG1ZXCE: {
+        _id: "61bb2fd2c325252e1891bd5a",
+        videoPublishedAt: "2021-11-09T10:37:47.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/Ym0vZG1ZXCE/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/Ym0vZG1ZXCE/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/Ym0vZG1ZXCE/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "23",
+        title: "קודרז פודקאסט #8 | חלק 6/7 | לעבוד במשרת פיתוח דרוש הרבה יותר מלכתוב קוד | מתארח: שחר פולק",
+        videoId: "Ym0vZG1ZXCE",
+        created_at: "2021-12-16T12:23:46.690Z",
+        updated_at: "2021-12-16T12:23:46.690Z",
+        __v: 0,
+    },
+    dfJzxduSwx4: {
+        _id: "61bb2fd2c325252e1891bd72",
+        videoPublishedAt: "2021-12-01T16:54:22.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/dfJzxduSwx4/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/dfJzxduSwx4/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/dfJzxduSwx4/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/dfJzxduSwx4/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/dfJzxduSwx4/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "33",
+        title: "פרדוקס גיוס ג׳וניורים בהייטק | ואיך יוצאים מהלופ הזה? | מתארחת: חני האנס",
+        videoId: "dfJzxduSwx4",
+        created_at: "2021-12-16T12:23:46.709Z",
+        updated_at: "2021-12-16T12:23:46.709Z",
+        __v: 0,
+    },
+
+    cENcGAT0BY8: {
+        _id: "61cc32cd241e4b76f509d6a2",
+        videoPublishedAt: "2021-12-21T09:35:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/cENcGAT0BY8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/cENcGAT0BY8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/cENcGAT0BY8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/cENcGAT0BY8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/cENcGAT0BY8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "קודרז פודקאסט | כל מה שטוב בפיתוח פולסטאק בימינו | מתארח: אדיר קנדל",
+        videoId: "cENcGAT0BY8",
+    },
+    "H5u18OADR-M": {
+        _id: "61d2cd7f2c471e065a5c4371",
+        videoPublishedAt: "2021-12-30T09:35:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/H5u18OADR-M/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/H5u18OADR-M/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/H5u18OADR-M/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/H5u18OADR-M/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/H5u18OADR-M/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "איך להתמודד עם אנשים שאנחנו לא סובלים במקום העבודה ולגשר על פערים אישיים בצוות פיתוח",
+        videoId: "H5u18OADR-M",
+        created_at: "2021-12-30T12:23:46.593Z",
+        updated_at: "2021-12-30T12:23:46.593Z",
+    },
+    YBPJoo5c760: {
+        _id: "61bb2fd2c325252e1891bcec",
+        videoPublishedAt: "2021-10-10T09:39:28.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/YBPJoo5c760/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/YBPJoo5c760/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/YBPJoo5c760/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/YBPJoo5c760/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/YBPJoo5c760/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "נתיב הלמידה לפיתוח Back-End לשנת 2022 | חלק 4/4",
+        videoId: "YBPJoo5c760",
+        created_at: "2021-12-16T12:23:46.603Z",
+        updated_at: "2021-12-16T12:23:46.603Z",
+        __v: 0,
+    },
+
+    "9ZHkkVkpJ-8": {
+        _id: "61bb2fd2c325252e1891bcf2",
+        videoPublishedAt: "2021-10-17T18:40:39.000Z",
+        description:
+            'קישור להרשמה לעוד מפגשים שעוזרים לכם להיכנס להייטק הישראלי:\nhttps://lnkd.in/dy5J7HCP\n\n* עדכון וקישור לזום יופיע בלוח שנה שלכם עם תזכורת למייל *\n(אם נרשמתם בטופס הנ"ל תקבלו זימון למייל)\n\n** במידה ואתם רוצים שנסיר אתכם מהרשימה ניתן לשלוח לי הודעה בפרטי ואסיר אתכם מהזימון למפגשים עתידיים',
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/9ZHkkVkpJ-8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/9ZHkkVkpJ-8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/9ZHkkVkpJ-8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/9ZHkkVkpJ-8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/9ZHkkVkpJ-8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "שאלות תשובות ותמיכה שלי בנושא אתר הפורטפוליו | CoderZ Workouts  | 17.10.21",
+        videoId: "9ZHkkVkpJ-8",
+        created_at: "2021-12-16T12:23:46.607Z",
+        updated_at: "2021-12-16T12:23:46.607Z",
+        __v: 0,
+    },
+    J8rtKfwU7jA: {
+        _id: "61bb2fd2c325252e1891bcf6",
+        videoPublishedAt: "2021-10-13T13:27:01.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/J8rtKfwU7jA/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/J8rtKfwU7jA/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/J8rtKfwU7jA/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/J8rtKfwU7jA/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/J8rtKfwU7jA/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "7",
+        title: "CoderZ Code Review (PR) | Episode #1 - Portfolio Website with Ana",
+        videoId: "J8rtKfwU7jA",
+        created_at: "2021-12-16T12:23:46.613Z",
+        updated_at: "2021-12-16T12:23:46.613Z",
+        __v: 0,
+    },
+    ooGZeGqcnbg: {
+        _id: "61bb2fd2c325252e1891bcfe",
+        videoPublishedAt: "2021-10-17T10:26:54.000Z",
+        description:
+            '🚀 שאלות תשובות ותמיכה שלי בנושא אתר הפורטפוליו - CoderZ Workouts  🚀\n📣  היום 17/10/21 בשעה 18:30  📣\n\n\n*** המפגש הוא גם לחדשים עם שאלות ***\nקישור להרשמה לסשן הקרוב והבאים בטופס:\nhttps://forms.gle/xdgacFi3ewejnCJf6\n\n\n* עדכון וקישור לזום יופיע בלוח שנה שלכם עם תזכורת למייל *\n(אם נרשמתם בטופס הנ"ל תקבלו זימון למייל)\n\n\n** במידה ואתם רוצים שנסיר אתכם מהרשימה ניתן לשלוח לי הודעה בפרטי ואסיר אתכם מהזימון למפגשים עתידיים',
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ooGZeGqcnbg/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ooGZeGqcnbg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ooGZeGqcnbg/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/ooGZeGqcnbg/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/ooGZeGqcnbg/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "🚀 שאלות תשובות ותמיכה שלי בנושא אתר הפורטפוליו - CoderZ Workouts  🚀 היום 17/10/21 בשעה 18:30",
+        videoId: "ooGZeGqcnbg",
+        created_at: "2021-12-16T12:23:46.620Z",
+        updated_at: "2021-12-16T12:23:46.620Z",
+        __v: 0,
+    },
+    oCWlZSZqOdo: {
+        _id: "61bb2fd2c325252e1891bd06",
+        videoPublishedAt: "2021-11-04T17:37:09.000Z",
+        description:
+            "אתגר נובמבר של קודרז מתחיל ויעזור לכם למצוא עבודה באמצעות בניית תיק עבודות מושקע!\n\nקישור להרשמה לאתגר נובמבר 2021 של קודרז:\nhttps://forms.gle/PDMNrgPmH4DEbt9W6\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/oCWlZSZqOdo/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/oCWlZSZqOdo/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/oCWlZSZqOdo/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/oCWlZSZqOdo/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/oCWlZSZqOdo/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "2",
+        title: "אתגר נובמבר של קודרז מתחיל ויעזור לכם למצוא עבודה באמצעות בניית תיק עבודות מושקע!",
+        videoId: "oCWlZSZqOdo",
+        created_at: "2021-12-16T12:23:46.626Z",
+        updated_at: "2021-12-16T12:23:46.626Z",
+        __v: 0,
+    },
+    fIsjlJZ3XrQ: {
+        _id: "61bb2fd2c325252e1891bd16",
+        videoPublishedAt: "2021-10-26T13:50:15.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/fIsjlJZ3XrQ/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/fIsjlJZ3XrQ/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/fIsjlJZ3XrQ/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/fIsjlJZ3XrQ/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/fIsjlJZ3XrQ/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "כיצד להתקבל למשרת פיתוח בהייטק? | מדריך וטיפים שיעזרו | חלק 1/2",
+        videoId: "fIsjlJZ3XrQ",
+        created_at: "2021-12-16T12:23:46.638Z",
+        updated_at: "2021-12-16T12:23:46.638Z",
+        __v: 0,
+    },
+
+    "dt2984bp-EY": {
+        _id: "61bb2fd2c325252e1891bd22",
+        videoPublishedAt: "2021-10-05T07:16:05.000Z",
+        description: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/dt2984bp-EY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/dt2984bp-EY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/dt2984bp-EY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/dt2984bp-EY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/dt2984bp-EY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "5",
+        title: "מה צריך לדעת ב- 2022 בפיתוח פרונטאנד Front-End | חלק א",
+        videoId: "dt2984bp-EY",
+        created_at: "2021-12-16T12:23:46.648Z",
+        updated_at: "2021-12-16T12:23:46.648Z",
+        __v: 0,
+    },
+
+    JOB9yT0Q3CI: {
+        _id: "61bb2fd2c325252e1891bd38",
+        videoPublishedAt: "2021-10-19T06:41:30.000Z",
+        description:
+            "אתר קודבוקס: \nhttps://codebox.co.il/home\n\nעקבו אחרי עופר גוליברודה:\nhttps://www.linkedin.com/in/ofer-golibroda-55083b81/\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/JOB9yT0Q3CI/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/JOB9yT0Q3CI/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/JOB9yT0Q3CI/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/JOB9yT0Q3CI/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/JOB9yT0Q3CI/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "קודרז פודקאסט | מתארח עופר גוליברודה | מיזם קודבוקס ואיך זה קשור למפתחים ג׳וניורים  | פרק #4 חלק 1/3",
+        videoId: "JOB9yT0Q3CI",
+        created_at: "2021-12-16T12:23:46.663Z",
+        updated_at: "2021-12-16T12:23:46.663Z",
+        __v: 0,
+    },
+    "-ajlRB9H-Lg": {
+        _id: "61bb2fd2c325252e1891bd3a",
+        videoPublishedAt: "2021-10-19T06:56:16.000Z",
+        description:
+            "אתר קודבוקס: \nhttps://codebox.co.il/home\n\nעקבו אחרי עופר גוליברודה:\nhttps://www.linkedin.com/in/ofer-golibroda-55083b81/\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/-ajlRB9H-Lg/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/-ajlRB9H-Lg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/-ajlRB9H-Lg/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/-ajlRB9H-Lg/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/-ajlRB9H-Lg/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "2",
+        title: "קודרז פודקאסט | מתארח עופר גוליברודה | מיזם קודבוקס ואיך זה קשור למפתחים ג׳וניורים  | פרק #4 חלק 3/3",
+        videoId: "-ajlRB9H-Lg",
+        created_at: "2021-12-16T12:23:46.667Z",
+        updated_at: "2021-12-16T12:23:46.667Z",
+        __v: 0,
+    },
+    C0Oos5hg5nw: {
+        _id: "61bb2fd2c325252e1891bd3c",
+        videoPublishedAt: "2021-10-18T06:34:35.000Z",
+        description:
+            "עקבו אחרי עמית שין:\nאתר רשמי: https://amitsh.com\nיוטיוב: https://www.youtube.com/playlist?list=PLobGLCa6IPmhHCZn3q0GFs5hNimxgzjMK\nטוויטר: https://twitter.com/amit_sheen\n\nכניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק: https://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/C0Oos5hg5nw/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/C0Oos5hg5nw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/C0Oos5hg5nw/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/C0Oos5hg5nw/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/C0Oos5hg5nw/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "קודרז פודקאסט | מתארח: עמית שין | החלקים החשובים שאולי פיספסתם בעיצוב לווב | פרק #3 חלק 1/4",
+        videoId: "C0Oos5hg5nw",
+        created_at: "2021-12-16T12:23:46.668Z",
+        updated_at: "2021-12-16T12:23:46.668Z",
+        __v: 0,
+    },
+    WdHkjevJeWU: {
+        _id: "61bb2fd2c325252e1891bd40",
+        videoPublishedAt: "2021-10-18T06:48:09.000Z",
+        description:
+            "עקבו אחרי עמית שין:\nאתר רשמי: https://amitsh.com\nיוטיוב: https://www.youtube.com/playlist?list=PLobGLCa6IPmhHCZn3q0GFs5hNimxgzjMK\nטוויטר: https://twitter.com/amit_sheen\n\nכניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק: https://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/WdHkjevJeWU/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/WdHkjevJeWU/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/WdHkjevJeWU/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/WdHkjevJeWU/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/WdHkjevJeWU/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "4",
+        title: "קודרז פודקאסט | מתארח: עמית שין | החלקים החשובים שאולי פיספסתם בעיצוב לווב | פרק #3 חלק 2/4",
+        videoId: "WdHkjevJeWU",
+        created_at: "2021-12-16T12:23:46.670Z",
+        updated_at: "2021-12-16T12:23:46.670Z",
+        __v: 0,
+    },
+    NjnWB58NHqA: {
+        _id: "61bb2fd2c325252e1891bd4e",
+        videoPublishedAt: "2021-11-02T13:30:01.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/NjnWB58NHqA/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/NjnWB58NHqA/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/NjnWB58NHqA/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/NjnWB58NHqA/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/NjnWB58NHqA/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "12",
+        title: "איך מנהלים מתמודדים עם בחירה של מועמד/ת למשרת פיתוח ומה צריך ללמוד מזה | חלק 3/5",
+        videoId: "NjnWB58NHqA",
+        created_at: "2021-12-16T12:23:46.682Z",
+        updated_at: "2021-12-16T12:23:46.682Z",
+        __v: 0,
+    },
+    YlIf3KJVxHQ: {
+        _id: "61bb2fd2c325252e1891bd54",
+        videoPublishedAt: "2021-11-03T20:08:15.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה בפייסבוק: https://bit.ly/2YiXe14\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://lnkd.in/dKaj_8PS\n\nאם אתה FED בנשמה זה המקום שלך 👇\nערוץ ישראלי לכל קהילת ה-Front end בארץ.\nמאמרים, אירועים, מדריכים וקורסים, משרות ועוד...\nhttps://t.me/FedCastIL\n\nפוסט שמתפרסם מידי יום ראשון עבור מפתחים מקהילת Fed cast מעולם הפרונט אנד שנצפה ע״י מאות אנשים שמחפשים מתכנתים איכותיים דרך הלינק הזה https://lnkd.in/d7svibk\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *\n\n ⬅️ לייזי רנדר עם Vue כדי לשפר ביצועים\nhttps://medium.com/js-dojo/lazy-rendering-in-vue-to-improve-performance-dcccd445d5f\n⬅️ המסע לשיפור אפליקציית React פי 10\nhttps://medium.com/technogise/journey-of-improving-react-app-performance-by-10x-9195d4b483d4\n\n⬅️ המדריך המלא ל- Google Web Vitals לשיפור ביצועי האתר שלכם\nhttps://blog.asayer.io/the-complete-guide-to-google-s-core-web-vitals-performance-metrics\n⬅️ הסבר גרפי מתומצת ויעיל על טכניקות טעינת סקריפטים בעמוד לשיפור ביצועים\nhttps://medium.com/better-programming/improve-page-load-performance-with-these-different-script-loading-techniques-b0d912eae7b1\n⬅️ מה זה PRPL ואיך זה הולך לעזור לאפליקציות Web שלכם לשפר ביצועים?\nhttps://addyosmani.com/blog/the-prpl-pattern/\n⬅️ רשימה של שש טכניקות וכלים לאבחון גודל הבאנדל ב- Webpack\nhttps://blog.bitsrc.io/6-tools-and-techniques-to-analyze-webpack-bundle-size-817337f8cf91\n⬅️ ארבעה דוגמאות לזליגת זיכרון ואיך לטפל בהם\nhttps://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/YlIf3KJVxHQ/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/YlIf3KJVxHQ/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/YlIf3KJVxHQ/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/YlIf3KJVxHQ/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/YlIf3KJVxHQ/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "15",
+        title: "קודרז פודקאסט #6 | למה מתכנתים/ות לא משתמשים בכלי הכי חשוב ואופטימיזציה נכונה לאפליקציות שלנו ברשת",
+        videoId: "YlIf3KJVxHQ",
+        created_at: "2021-12-16T12:23:46.687Z",
+        updated_at: "2021-12-16T12:23:46.687Z",
+        __v: 0,
+    },
+    zQPHmEP70DI: {
+        _id: "61bb2fd2c325252e1891bd68",
+        videoPublishedAt: "2021-11-23T20:53:03.000Z",
+        description:
+            "קבוצות מומלצות על ידי ליטל: \nהופכות למפתחות\nShe codes\nהייטקיסטיות בצפון\nבאות\n\n",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/zQPHmEP70DI/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/zQPHmEP70DI/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/zQPHmEP70DI/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/zQPHmEP70DI/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/zQPHmEP70DI/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "29",
+        title: "הסיפור שלה בהייטק; מתארחת: ליטל שלו, מנהלת פיתוח",
+        videoId: "zQPHmEP70DI",
+        created_at: "2021-12-16T12:23:46.702Z",
+        updated_at: "2021-12-16T12:23:46.702Z",
+        __v: 0,
+    },
+    pqp4wasExhk: {
+        _id: "61bb2fd2c325252e1891bd70",
+        videoPublishedAt: "2021-11-27T18:01:34.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק:  https://bit.ly/2YiXe14\n\nהפודקאסט של קודרז: https://bit.ly/3Cbq3Kz\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/pqp4wasExhk/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/pqp4wasExhk/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/pqp4wasExhk/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/pqp4wasExhk/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/pqp4wasExhk/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "31",
+        title: "איך להבין את הלא מובן מראש כשמחפשים משרות פיתוח כג׳וניורים/ות | מתארח: עוז עובדיה",
+        videoId: "pqp4wasExhk",
+        created_at: "2021-12-16T12:23:46.708Z",
+        updated_at: "2021-12-16T12:23:46.708Z",
+        __v: 0,
+    },
+
+    vgaNYj1LGnY: {
+        _id: "61cc3278241e4b76f509d683",
+        videoPublishedAt: "2021-12-15T09:35:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/vgaNYj1LGnY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/vgaNYj1LGnY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/vgaNYj1LGnY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/vgaNYj1LGnY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/vgaNYj1LGnY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "פיתוח אפליקצייה לקודרז בשבועיים? תכנון, ניהול מוצר, כתיבת קוד, ניהול זמנים, בדיקות, עיצוב וחוסר שינה",
+        videoId: "vgaNYj1LGnY",
+    },
+    "1lMyhT9NQFc": {
+        _id: "61cc32fd241e4b76f509d6b5",
+        videoPublishedAt: "2021-12-23T09:35:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/1lMyhT9NQFc/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/1lMyhT9NQFc/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/1lMyhT9NQFc/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/1lMyhT9NQFc/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/1lMyhT9NQFc/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "קודרז פודקאסט | אנה מספרת איך קודרז עזרה והדריכה אותה להתקבל למשרה ראשונה בפיתוח בהייטק",
+        videoId: "1lMyhT9NQFc",
+    },
+    PBt4p3UfNgU: {
+        _id: "61cc332c241e4b76f509d6c8",
+        videoPublishedAt: "2021-12-28T09:35:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/PBt4p3UfNgU/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/PBt4p3UfNgU/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/PBt4p3UfNgU/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/PBt4p3UfNgU/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/PBt4p3UfNgU/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "קהילת #כולא_לייק עוזרת להיכנס להייטק, ואיך הופכים שירות של עירייה לחכם יותר | מתארח: שמעון מויאל",
+        videoId: "PBt4p3UfNgU",
+    },
+    "9Yu8GfYxgQc": {
+        _id: "61d2cdc72c471e065a5c4390",
+        videoPublishedAt: "2021-12-30T09:35:44.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/9Yu8GfYxgQc/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/9Yu8GfYxgQc/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/9Yu8GfYxgQc/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/9Yu8GfYxgQc/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/9Yu8GfYxgQc/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "איך להתבלט בפיתוח בהייטק ע״י העברת הרצאות, כתיבת מאמרים, ונוודות דיגיטלית ב-2022",
+        videoId: "9Yu8GfYxgQc",
+        created_at: "2021-12-30T12:23:46.593Z",
+        updated_at: "2021-12-30T12:23:46.593Z",
+    },
+    "5CY7usNfEdc": {
+        _id: "61bb2fd2c325252e1891bcea",
+        videoPublishedAt: "2021-10-10T09:40:49.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/5CY7usNfEdc/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/5CY7usNfEdc/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/5CY7usNfEdc/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/5CY7usNfEdc/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/5CY7usNfEdc/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "1",
+        title: "נתיב הלמידה לפיתוח Back-End לשנת 2022 | חלק 2/4",
+        videoId: "5CY7usNfEdc",
+        created_at: "2021-12-16T12:23:46.598Z",
+        updated_at: "2021-12-16T12:23:46.598Z",
+        __v: 0,
+    },
+    IWoIOTwa_Dg: {
+        _id: "61bb2fd2c325252e1891bcf0",
+        videoPublishedAt: "2021-11-08T09:36:55.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/IWoIOTwa_Dg/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/IWoIOTwa_Dg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/IWoIOTwa_Dg/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "2",
+        title: "מכתב מקדים עם שליחת קורות חיים למשרות פיתוח | מדריך חשוב ליישום כשמחפשים עבודה",
+        videoId: "IWoIOTwa_Dg",
+        created_at: "2021-12-16T12:23:46.606Z",
+        updated_at: "2021-12-16T12:23:46.606Z",
+        __v: 0,
+    },
+    pOZdORU5a3g: {
+        _id: "61bb2fd2c325252e1891bcfc",
+        videoPublishedAt: "2021-12-04T15:10:46.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/pOZdORU5a3g/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/pOZdORU5a3g/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/pOZdORU5a3g/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/pOZdORU5a3g/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/pOZdORU5a3g/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "6",
+        title: "שאלות בסיסיות ב- Javascript | Primitive types & Deep comparison | מתוך מפגשי פעילות של קהילת קודרז",
+        videoId: "pOZdORU5a3g",
+        created_at: "2021-12-16T12:23:46.616Z",
+        updated_at: "2021-12-16T12:23:46.616Z",
+        __v: 0,
+    },
+    "0K6ZJG5GuYY": {
+        _id: "61bb2fd2c325252e1891bd0c",
+        videoPublishedAt: "2021-08-29T20:34:01.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/0K6ZJG5GuYY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/0K6ZJG5GuYY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/0K6ZJG5GuYY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/0K6ZJG5GuYY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/0K6ZJG5GuYY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "0",
+        title: "תסמונת המתחזה בראיונות עבודה בהייטק | איך להתמודד עם זה?",
+        videoId: "0K6ZJG5GuYY",
+        created_at: "2021-12-16T12:23:46.633Z",
+        updated_at: "2021-12-16T12:23:46.633Z",
+        __v: 0,
+    },
+    v7WK3ZYPwII: {
+        _id: "61bb2fd2c325252e1891bd0e",
+        videoPublishedAt: "2021-10-26T13:50:19.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/v7WK3ZYPwII/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/v7WK3ZYPwII/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/v7WK3ZYPwII/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/v7WK3ZYPwII/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/v7WK3ZYPwII/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "כיצד להתקבל למשרת פיתוח בהייטק? | מדריך וטיפים שיעזרו | חלק 2/2",
+        videoId: "v7WK3ZYPwII",
+        created_at: "2021-12-16T12:23:46.634Z",
+        updated_at: "2021-12-16T12:23:46.634Z",
+        __v: 0,
+    },
+
+    as9m20lq3C8: {
+        _id: "61bb2fd2c325252e1891bd30",
+        videoPublishedAt: "2021-11-10T21:02:46.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/as9m20lq3C8/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/as9m20lq3C8/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/as9m20lq3C8/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/as9m20lq3C8/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/as9m20lq3C8/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "3",
+        title: "מדריך Node.js | הרצת פקודה ראשונה",
+        videoId: "as9m20lq3C8",
+        created_at: "2021-12-16T12:23:46.659Z",
+        updated_at: "2021-12-16T12:23:46.659Z",
+        __v: 0,
+    },
+    KDQngRGoNfw: {
+        _id: "61bb2fd2c325252e1891bd48",
+        videoPublishedAt: "2021-11-02T13:29:14.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/KDQngRGoNfw/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/KDQngRGoNfw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/KDQngRGoNfw/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/KDQngRGoNfw/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/KDQngRGoNfw/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "10",
+        title: "איך מנהלים מתמודדים עם בחירה של מועמד/ת למשרת פיתוח ומה צריך ללמוד מזה | חלק 1/5",
+        videoId: "KDQngRGoNfw",
+        created_at: "2021-12-16T12:23:46.675Z",
+        updated_at: "2021-12-16T12:23:46.675Z",
+        __v: 0,
+    },
+    X78IR4F_1oM: {
+        _id: "61bb2fd2c325252e1891bd4a",
+        videoPublishedAt: "2021-11-02T13:29:37.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/X78IR4F_1oM/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/X78IR4F_1oM/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/X78IR4F_1oM/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/X78IR4F_1oM/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/X78IR4F_1oM/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "11",
+        title: "איך מנהלים מתמודדים עם בחירה של מועמד/ת למשרת פיתוח ומה צריך ללמוד מזה | חלק 2/5",
+        videoId: "X78IR4F_1oM",
+        created_at: "2021-12-16T12:23:46.676Z",
+        updated_at: "2021-12-16T12:23:46.676Z",
+        __v: 0,
+    },
+    uPSrPkR4Opk: {
+        _id: "61bb2fd2c325252e1891bd50",
+        videoPublishedAt: "2021-11-02T13:30:29.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/uPSrPkR4Opk/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/uPSrPkR4Opk/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/uPSrPkR4Opk/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/uPSrPkR4Opk/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/uPSrPkR4Opk/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "13",
+        title: "איך מנהלים מתמודדים עם בחירה של מועמד/ת למשרת פיתוח ומה צריך ללמוד מזה | חלק 4/5",
+        videoId: "uPSrPkR4Opk",
+        created_at: "2021-12-16T12:23:46.683Z",
+        updated_at: "2021-12-16T12:23:46.683Z",
+        __v: 0,
+    },
+    IrzsH1NDRb0: {
+        _id: "61bb2fd2c325252e1891bd5c",
+        videoPublishedAt: "2021-11-09T10:07:21.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/IrzsH1NDRb0/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/IrzsH1NDRb0/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/IrzsH1NDRb0/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/IrzsH1NDRb0/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/IrzsH1NDRb0/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "16",
+        title: "קודרז פודקאסט #8 | חלק 1/7 | לעבוד במשרת פיתוח דרוש הרבה יותר מלכתוב קוד | מתארח: שחר פולק",
+        videoId: "IrzsH1NDRb0",
+        created_at: "2021-12-16T12:23:46.691Z",
+        updated_at: "2021-12-16T12:23:46.691Z",
+        __v: 0,
+    },
+    ohbOjHaTTh0: {
+        _id: "61bb2fd2c325252e1891bd5e",
+        videoPublishedAt: "2021-11-09T10:36:06.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/ohbOjHaTTh0/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/ohbOjHaTTh0/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/ohbOjHaTTh0/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "22",
+        title: "קודרז פודקאסט #8 | חלק 5/7 | לעבוד במשרת פיתוח דרוש הרבה יותר מלכתוב קוד | מתארח: שחר פולק",
+        videoId: "ohbOjHaTTh0",
+        created_at: "2021-12-16T12:23:46.692Z",
+        updated_at: "2021-12-16T12:23:46.692Z",
+        __v: 0,
+    },
+    "6PliLNM2aUQ": {
+        _id: "61bb2fd2c325252e1891bd60",
+        videoPublishedAt: "2021-11-09T20:53:17.000Z",
+        description:
+            "\n\nאם אתה FED בנשמה זה המקום שלך 👇\nערוץ ישראלי לכל קהילת ה-Front end בארץ.\nמאמרים, אירועים, מדריכים וקורסים, משרות ועוד...\nhttps://t.me/FedCastIL",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/6PliLNM2aUQ/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/6PliLNM2aUQ/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/6PliLNM2aUQ/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+        },
+        position: "24",
+        title: "קודרז פודקאסט #8 |  לעבוד במשרת פיתוח דרוש הרבה יותר מלכתוב קוד | מתארח: שחר פולק",
+        videoId: "6PliLNM2aUQ",
+        created_at: "2021-12-16T12:23:46.693Z",
+        updated_at: "2021-12-16T12:23:46.693Z",
+        __v: 0,
+    },
+    "Vsm-tipEzFw": {
+        _id: "61bb2fd2c325252e1891bd62",
+        videoPublishedAt: "2021-11-02T13:30:52.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/Vsm-tipEzFw/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/Vsm-tipEzFw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/Vsm-tipEzFw/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/Vsm-tipEzFw/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/Vsm-tipEzFw/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "14",
+        title: "איך מנהלים מתמודדים עם בחירה של מועמד/ת למשרת פיתוח ומה צריך ללמוד מזה | חלק 5/5",
+        videoId: "Vsm-tipEzFw",
+        created_at: "2021-12-16T12:23:46.694Z",
+        updated_at: "2021-12-16T12:23:46.694Z",
+        __v: 0,
+    },
+    RuF41y5Kp9Y: {
+        _id: "61bb2fd2c325252e1891bd66",
+        videoPublishedAt: "2021-11-19T15:00:07.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישור לקבוצה פיתוח בפייסבוק: \nhttps://bit.ly/2YiXe14\n\nאם אתה FED בנשמה זה המקום שלך 👇\nערוץ ישראלי לכל קהילת ה-Front end בארץ.\nמאמרים, אירועים, מדריכים וקורסים, משרות ועוד...\nhttps://t.me/FedCastIL\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts:\nhttps://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *\n\n** תוכן השיחה הוא על סמך דעתם האישית של הדוברים ואינו מחליף ייעוץ משפטי או פנסיוני מקצועי, אנו ממליצים למאזינים והצופים להיעזר באנשי מקצוע לשם כך, האזנה וצפייה נעימה",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/RuF41y5Kp9Y/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/RuF41y5Kp9Y/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/RuF41y5Kp9Y/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/RuF41y5Kp9Y/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/RuF41y5Kp9Y/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "26",
+        title: "קודרז פודקאסט מה עושים כשמקבלים חוזה? ניהול משא ומתן והתמקחות ומה באמת חשוב לדעת  | מתארח: אדיר קנדל",
+        videoId: "RuF41y5Kp9Y",
+        created_at: "2021-12-16T12:23:46.701Z",
+        updated_at: "2021-12-16T12:23:46.701Z",
+        __v: 0,
+    },
+    "0n5KB9uwqkc": {
+        _id: "61bb2fd2c325252e1891bd6c",
+        videoPublishedAt: "2021-11-22T15:49:41.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/0n5KB9uwqkc/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/0n5KB9uwqkc/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/0n5KB9uwqkc/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/0n5KB9uwqkc/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/0n5KB9uwqkc/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "27",
+        title: "הקשר הבלתי נראה בין מחלקת פיתוח למחלקת השיווק וכלים להזנקת הקריירה | מתארח: תום אורבך",
+        videoId: "0n5KB9uwqkc",
+        created_at: "2021-12-16T12:23:46.703Z",
+        updated_at: "2021-12-16T12:23:46.703Z",
+        __v: 0,
+    },
+    KJ6lz248WlE: {
+        _id: "61bb2fd2c325252e1891bd6e",
+        videoPublishedAt: "2021-12-01T05:44:49.000Z",
+        description:
+            "כניסה לעולם הפיתוח בהייטק יכול להיות יותר קל אם נשקיע היכן שצריך, להצטרף לקהילה שלנו? \n\nקישורים לכל התוכן של קודרז: https://github.com/coderz-dev/coderz-news\n\nקישור לקבוצה פיתוח בפייסבוק:  https://bit.ly/2YiXe14\n\nמתארח: אדיר קנדל\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://docs.google.com/forms/d/e/1FAIpQLSeJmlG-y4XKX8iz_cACj4AlIY2Hv-cexT7T7Q8IwX-316Syww/viewform\n\nאם אתה FED בנשמה זה המקום שלך 👇 ערוץ ישראלי לכל קהילת ה-Front end בארץ. מאמרים, אירועים, מדריכים וקורסים, משרות ועוד... https://t.me/FedCastIL\n\nקישור להרצאה:\nשיפור ביצועים של אתרים ואפליקציות Web - בהנחיית אדיר קנדל מפתח בחברת !Yahoo\nhttps://youtu.be/fBHnuLnHxYc\n\nהפודקאסט של קודרז: https://bit.ly/3Cbq3Kz\n\nקישור להרשמה לסשנים בזום של CoderZ Workouts: https://forms.gle/xdgacFi3ewejnCJf6\n\n* עדכון לסשנים יופיעו בלוח השנה שלכם עם תזכורת למייל ובקבוצת פייסבוק *",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/KJ6lz248WlE/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/KJ6lz248WlE/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/KJ6lz248WlE/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/KJ6lz248WlE/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/KJ6lz248WlE/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "32",
+        title: "מיקרוסרביסים או מונוליט? יתרונות וחסרונות ומה צריך לבחור כשמתחילים פרויקט חדש",
+        videoId: "KJ6lz248WlE",
+        created_at: "2021-12-16T12:23:46.704Z",
+        updated_at: "2021-12-16T12:23:46.704Z",
+        __v: 0,
+    },
+    Nl0hPNb6xEY: {
+        _id: "61bb2fd2c325252e1891bd78",
+        videoPublishedAt: "2021-12-02T19:21:38.000Z",
+        description: "",
+        thumbnails: {
+            default: {
+                url: "https://i.ytimg.com/vi/Nl0hPNb6xEY/default.jpg",
+                width: 120,
+                height: 90,
+            },
+            medium: {
+                url: "https://i.ytimg.com/vi/Nl0hPNb6xEY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+            high: {
+                url: "https://i.ytimg.com/vi/Nl0hPNb6xEY/hqdefault.jpg",
+                width: 480,
+                height: 360,
+            },
+            standard: {
+                url: "https://i.ytimg.com/vi/Nl0hPNb6xEY/sddefault.jpg",
+                width: 640,
+                height: 480,
+            },
+            maxres: {
+                url: "https://i.ytimg.com/vi/Nl0hPNb6xEY/maxresdefault.jpg",
+                width: 1280,
+                height: 720,
+            },
+        },
+        position: "34",
+        title: "חיזוקים וטיפים למתראיינים במשרות פיתוח בהייטק  | מתארחת: גל פרבר מפתחת תוכנה",
+        videoId: "Nl0hPNb6xEY",
+        created_at: "2021-12-16T12:23:46.711Z",
+        updated_at: "2021-12-16T12:23:46.711Z",
+        __v: 0,
+    },
+
+    HzhVTS7pyas: {
+        _id: "61da008d84509a41dc332c3b",
+        videoPublishedAt: "2022-01-06T17:23:46.593Z",
+        description: "",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/HzhVTS7pyas/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        position: "0",
+        title: "הדרך הכי טובה להצליח בפיתוח בהייטק הישראלי היא להיכשל וללמוד מזה, ולמה נטאפ חברה מעולה לעבוד בה",
+        videoId: "HzhVTS7pyas",
+        created_at: "2022-01-08T21:22:21.337Z",
+        updated_at: "2022-01-08T21:22:21.337Z",
+        __v: 0,
+    },
+    e4_o2nvV_1U: {
+        _id: "61dd752c109d9ed34d53f47b",
+        videoPublishedAt: "2022-01-06T17:23:46.593Z",
+        description: "",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/e4_o2nvV_1U/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        position: "0",
+        title: "איך מנהלים מתמודדים עם בחירה של מועמד/ת למשרת פיתוח ומה צריך ללמוד מזה",
+        videoId: "e4_o2nvV_1U",
+        created_at: "2022-01-11T12:16:44.656Z",
+        updated_at: "2022-01-11T13:02:11.076Z",
+        __v: 0,
+    },
+    "0GLOAjsOjGk": {
+        _id: "61dd7fc06085bc869dd4d8d6",
+        videoId: "0GLOAjsOjGk",
+        __v: 0,
+        created_at: "2022-01-11T13:01:52.752Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/0GLOAjsOjGk/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "החלקים החשובים שאולי פיספסתם בעיצוב לווב",
+        updated_at: "2022-01-11T13:01:52.752Z",
+        videoPublishedAt: "2022-01-06T17:23:46.593Z",
+    },
+    EUouA5wd7jo: {
+        _id: "61dd7fdd6085bc869dd4daef",
+        videoId: "EUouA5wd7jo",
+        __v: 0,
+        created_at: "2022-01-11T13:02:21.130Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/EUouA5wd7jo/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "מיזם קודבוקס ואיך זה קשור למפתחים ג׳וניורים",
+        updated_at: "2022-01-11T13:02:21.130Z",
+        videoPublishedAt: "2022-01-06T17:23:46.593Z",
+    },
+
+    SCZQFmFDugQ: {
+        _id: "61ecf346454370bf1675b60a",
+        videoId: "SCZQFmFDugQ",
+        __v: 0,
+        created_at: "2022-01-23T06:18:46.864Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/SCZQFmFDugQ/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "DevOps, מזה? מיזה? מהם עושים? ומתי צריך אותם?",
+        updated_at: "2022-01-23T06:18:46.864Z",
+        videoPublishedAt: "2022-01-18T17:23:46.593Z",
+    },
+    sRIAqVONmaI: {
+        _id: "61ecf382454370bf1675bacd",
+        videoId: "sRIAqVONmaI",
+        __v: 0,
+        created_at: "2022-01-23T06:19:46.742Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/sRIAqVONmaI/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "לכתוב טסטים לאפליקציות מונע חרדות ותורם לשינה רציפה, תלמדו משי רזניק איך מתחילים ועושים את זה",
+        updated_at: "2022-01-23T06:19:46.742Z",
+        videoPublishedAt: "2022-01-20T17:23:46.593Z",
+    },
+    dR0nE695wgY: {
+        _id: "61f7e1b4c534686638ea2dcc",
+        videoId: "dR0nE695wgY",
+        __v: 0,
+        created_at: "2022-01-31T13:18:44.133Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/dR0nE695wgY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "פריימוורקים פינקו את מתפתחי הפרונט יותר מידי? דיון בעקבות פוסט שנוי במחלוקת",
+        updated_at: "2022-01-31T13:18:44.133Z",
+        videoPublishedAt: "2022-01-27T17:23:46.593Z",
+    },
+    "1Yn0_MLNlHw": {
+        _id: "6226109e1349d1dc0e0d8268",
+        videoId: "1Yn0_MLNlHw",
+        __v: 0,
+        created_at: "2022-03-07T14:03:10.227Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/1Yn0_MLNlHw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "Coderz Live! למה מרגישים מתחזים בתהליך ראיונות עבודה",
+        updated_at: "2022-03-07T14:03:10.227Z",
+        videoPublishedAt: "2022-02-14T17:23:46.593Z",
+    },
+    yWaOomozXJw: {
+        _id: "622610ea1349d1dc0e0d8857",
+        videoId: "yWaOomozXJw",
+        __v: 0,
+        created_at: "2022-03-07T14:04:26.224Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/yWaOomozXJw/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "Coderz Live! איך מושכים חברות אליכם בחיפוש עבודה בהייטק?",
+        updated_at: "2022-03-07T14:04:26.224Z",
+        videoPublishedAt: "2022-02-14T17:23:46.593Z",
+    },
+    vwEWb11Ggdg: {
+        _id: "622611191349d1dc0e0d8c14",
+        videoId: "vwEWb11Ggdg",
+        __v: 0,
+        created_at: "2022-03-07T14:05:13.282Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/vwEWb11Ggdg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "Coderz Live! OJT Class | מה צריך ללמוד בשביל להתחיל לעבוד בפיתוח מהיום הראשון בעבודה",
+        updated_at: "2022-03-07T14:05:13.282Z",
+        videoPublishedAt: "2022-02-14T17:23:46.593Z",
+    },
+    y0SQ_l8xnBA: {
+        _id: "6226113b1349d1dc0e0d8f04",
+        videoId: "y0SQ_l8xnBA",
+        __v: 0,
+        created_at: "2022-03-07T14:05:47.947Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/y0SQ_l8xnBA/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "Raw Data!!! למה צריך אנליסטים בהייטק?",
+        updated_at: "2022-03-07T14:05:47.947Z",
+        videoPublishedAt: "2022-02-22T17:23:46.593Z",
+    },
+    VuqW_dX8MZg: {
+        _id: "622611981349d1dc0e0d9674",
+        videoId: "VuqW_dX8MZg",
+        __v: 0,
+        created_at: "2022-03-07T14:07:20.358Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/VuqW_dX8MZg/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "עבודת צוות עם לוח משימות, קיקאוף לפרויקט וחשיבה על משימות טכניות | OJT Class | שיעור 3",
+        updated_at: "2022-03-07T14:07:20.358Z",
+        videoPublishedAt: "2022-03-01T17:23:46.593Z",
+    },
+    QwCrOBg45IY: {
+        _id: "622611cc1349d1dc0e0d9ac4",
+        videoId: "QwCrOBg45IY",
+        __v: 0,
+        created_at: "2022-03-07T14:08:12.900Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/QwCrOBg45IY/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "גיט פלואו ואיך עובדים בצוות עם ריאקט סטוריבוק, שמירת סדר של קוד ולבחור בין וונילה או ריאקט",
+        updated_at: "2022-03-07T14:08:12.900Z",
+        videoPublishedAt: "2022-03-02T17:23:46.593Z",
+    },
+    "tU7l_B-nnVM": {
+        _id: "623c2d5432f5c09450240682",
+        videoId: "tU7l_B-nnVM",
+        __v: 0,
+        created_at: "2022-03-24T08:35:32.819Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/tU7l_B-nnVM/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "איך כותבים מסמך משימות פיתוח טכני לפני שפותחים טיקטים בלוח העבודה | OJT Class | שיעור 4",
+        updated_at: "2022-03-24T08:35:32.819Z",
+        videoPublishedAt: "2022-03-08T17:23:46.593Z",
+    },
+    zFFncdBPeBk: {
+        _id: "623c2dda32f5c094502410f6",
+        videoId: "zFFncdBPeBk",
+        __v: 0,
+        created_at: "2022-03-24T08:37:46.703Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/zFFncdBPeBk/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "צריך מוטיבציה בשביל לפתח | OJT Class | שיעור 5",
+        updated_at: "2022-03-24T08:37:46.703Z",
+        videoPublishedAt: "2022-03-14T17:23:46.593Z",
+    },
+    mNXGRDXo3eA: {
+        _id: "623c2dff32f5c09450241413",
+        videoId: "mNXGRDXo3eA",
+        __v: 0,
+        created_at: "2022-03-24T08:38:23.614Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/mNXGRDXo3eA/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "לקיחת אחריות והבנה של דוקומנטציה הן מפתח להצלחה בצוות פיתוח | OJT Class | שיעור 6",
+        updated_at: "2022-03-24T08:38:23.614Z",
+        videoPublishedAt: "2022-03-18T17:23:46.593Z",
+    },
+    zllD7ono1cE: {
+        _id: "623c2e6332f5c09450241b6f",
+        videoId: "zllD7ono1cE",
+        __v: 0,
+        created_at: "2022-03-24T08:40:03.195Z",
+        description: "",
+        position: "0",
+        thumbnails: {
+            medium: {
+                url: "https://i.ytimg.com/vi/zllD7ono1cE/mqdefault.jpg",
+                width: 320,
+                height: 180,
+            },
+        },
+        title: "איך מסבירים בצוות על סטטוס משימות וצימוד עבודה ליעול הפיתוח | OJT Class | שיעור 7",
+        updated_at: "2022-03-24T08:40:03.195Z",
+        videoPublishedAt: "2022-03-22T17:23:46.593Z",
+    },
+};
+
+export default videosList;
