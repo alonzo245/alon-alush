@@ -15,7 +15,7 @@ import {
 } from "./ResumeEditItem.style";
 import { WorkHistoryItem } from "../data/workHistory";
 
-export default function ResumeEditItem(): JSX.Element {
+export default function ResumeEditItem(): React.JSX.Element {
     const { setState, state } = useGlobalState();
 
     const onClick = (): void => {

@@ -22,14 +22,14 @@ interface ProjectsProps {
     [key: string]: any;
 }
 
-const projectSourceUrlButton = (url: string): JSX.Element => (
+const projectSourceUrlButton = (url: string): React.JSX.Element => (
     <Btn href={url} target="_blank" rel="noopener noreferrer">
         <span style={{ marginRight: "10px" }}>View Source</span>
         <FaGithub size={20} color={"$999"} />
     </Btn>
 );
 
-export default function Projects(props: ProjectsProps): JSX.Element {
+export default function Projects(props: ProjectsProps): React.JSX.Element {
     const { state, setState } = useGlobalState();
 
     return state?.edit ? (

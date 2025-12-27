@@ -9,7 +9,7 @@ import Hamburger from "hamburger-react";
 import Alon from "../assets/images/alon-alush-resized.jpg";
 import { AiFillEdit } from "react-icons/ai";
 
-export default function Avatar(): JSX.Element {
+export default function Avatar(): React.JSX.Element {
     const { width } = useScreenSize();
     const { state, setState } = useGlobalState();
     const [play, setPlay] = useState<boolean>(false);

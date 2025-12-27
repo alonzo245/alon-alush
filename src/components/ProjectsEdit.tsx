@@ -30,14 +30,14 @@ interface ProjectsEditProps {
     [key: string]: any;
 }
 
-const projectSourceUrlButton = (url: string): JSX.Element => (
+const projectSourceUrlButton = (url: string): React.JSX.Element => (
     <Btn href={url} target="_blank" rel="noopener noreferrer">
         <span style={{ marginRight: "10px" }}>View Source</span>
         <FaGithub size={20} color={"$999"} />
     </Btn>
 );
 
-export default function ProjectsEdit(props: ProjectsEditProps): JSX.Element {
+export default function ProjectsEdit(props: ProjectsEditProps): React.JSX.Element {
     const { state, setState } = useGlobalState();
 
     const onClick = (): void => {
@@ -105,7 +105,9 @@ export default function ProjectsEdit(props: ProjectsEditProps): JSX.Element {
                                     <Badge2
                                         key={technology}
                                         style={{
-                                            backgroundImage: `url(${techImages[technology as keyof typeof techImages]})`,
+                                            backgroundImage: `url(${
+                                                techImages[technology as keyof typeof techImages]
+                                            })`,
                                         }}
                                     />
                                 ))}
@@ -118,4 +120,3 @@ export default function ProjectsEdit(props: ProjectsEditProps): JSX.Element {
         </Container>
     );
 }
-

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { ExpandModal, ModalTitle, ModalCloseTarget } from "react-spring-modal";
+import React from "react";
 import { useGlobalState } from "../hooks/useGlobalState";
 import "react-spring-modal/styles.css";
 import { Carousel } from "react-responsive-carousel";
@@ -9,13 +8,8 @@ import useScreenSize from "../hooks/useScreenSize";
 import { DESKTOP_MQ, mobileThreshold, WIDE_MQ } from "../config/utils"; // requires a loader
 import workFeatures from "../assets/workFeatures";
 import styled from "@emotion/styled";
-import { DIV } from "./ResumeEditItem.style";
 
-interface FeatureCarouselProps {
-    [key: string]: any;
-}
-
-export default function FeatureCarousel(data: FeatureCarouselProps): JSX.Element {
+export default function FeatureCarousel(): React.JSX.Element {
     const { width } = useScreenSize();
 
     const { setState, state } = useGlobalState();

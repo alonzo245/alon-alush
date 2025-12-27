@@ -11,7 +11,7 @@ import { P, H3, Container, Row, Close, Content, H6, TechList } from "./Modal.sty
 import workFeatures from "../assets/workFeatures";
 import styled from "@emotion/styled";
 
-export default function Modal(): JSX.Element {
+export default function Modal(): React.JSX.Element {
     const { width } = useScreenSize();
 
     const { setState, state } = useGlobalState();

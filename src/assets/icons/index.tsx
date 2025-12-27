@@ -9,10 +9,14 @@ import {
     SiRedis,
 } from "react-icons/si";
 import { FaAws, FaMobileAlt, FaNodeJs, FaReact } from "react-icons/fa";
-import { AiFillEdit, AiOutlineAntDesign } from "react-icons/ai";
+import { AiOutlineAntDesign } from "react-icons/ai";
 
-export const icon = (name: string = "", size: number = 30, color: string = "#C1C1C1"): JSX.Element | null => {
-    const icons: { [key: string]: JSX.Element } = {
+export const icon = (
+    name: string = "",
+    size: number = 30,
+    color: string = "#C1C1C1",
+): React.JSX.Element | null => {
+    const icons: { [key: string]: React.JSX.Element } = {
         aws: <FaAws size={size} color={color} />,
         eks: <SiKubernetes size={size} color={color} />,
         kubernetes: <SiKubernetes size={size} color={color} />,
@@ -31,4 +35,3 @@ export const icon = (name: string = "", size: number = 30, color: string = "#C1C
 
     return icons[name] ? icons[name] : null;
 };
-

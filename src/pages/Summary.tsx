@@ -4,7 +4,7 @@ import { useGlobalState } from "../hooks/useGlobalState";
 import SummaryEditItem from "../components/SummaryEditItem";
 import { SummaryItem } from "../data/summary";
 
-export default function Summary(): JSX.Element {
+export default function Summary(): React.JSX.Element {
     const { setState, state } = useGlobalState();
 
     return (

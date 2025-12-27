@@ -5,7 +5,7 @@ import { AiOutlineCloseCircle, AiOutlinePlus } from "react-icons/ai";
 import { DIV, Row, Input, Textarea, Button, Button2 } from "./ResumeEditItem.style";
 import { SummaryItem } from "../data/summary";
 
-export default function SummaryEditItem(): JSX.Element | null {
+export default function SummaryEditItem(): React.JSX.Element | null {
     const { setState, state } = useGlobalState();
 
     const onClick = (): void => {

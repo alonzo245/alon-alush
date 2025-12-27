@@ -11,7 +11,7 @@ import ResumeEditItem from "../../components/ResumeEditItem";
 import { EditIconWrapper } from "../Home.style";
 import { WorkHistoryItem } from "../../data/workHistory";
 
-export default function Resume(): JSX.Element {
+export default function Resume(): React.JSX.Element {
     const { setState, state } = useGlobalState();
     const [opened, setOpened] = useState<number[]>([]);
     const [resume, setResume] = useState<WorkHistoryItem[]>(() => [...(state?.user?.resume || [])]);

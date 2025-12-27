@@ -7,7 +7,7 @@ import useScreenSize from "../hooks/useScreenSize";
 import { MOBILE_MQ, mobileThreshold } from "../config/utils";
 import Hamburger from "hamburger-react";
 
-export default function Header(): JSX.Element | null {
+export default function Header(): React.JSX.Element | null {
     const { width } = useScreenSize();
     const { state, setState } = useGlobalState();
     const ref = useRef<HTMLDivElement>(null);

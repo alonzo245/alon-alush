@@ -9,7 +9,7 @@ import useScreenSize from "../hooks/useScreenSize";
 import styled from "@emotion/styled";
 import { useGlobalState } from "../hooks/useGlobalState";
 
-export default function Navigation(): JSX.Element | null {
+export default function Navigation(): React.JSX.Element | null {
     const [open, setOpen] = useState<boolean>(false);
     const node = useRef<HTMLDivElement>(null);
     const { width } = useScreenSize();
@@ -97,7 +97,7 @@ interface BurgerProps {
     setOpen: (section?: string) => boolean;
 }
 
-const Burger = ({ open, setOpen }: BurgerProps): JSX.Element => {
+const Burger = ({ open, setOpen }: BurgerProps): React.JSX.Element => {
     return (
         <BurgerContainer open={open}>
             <StyledBurger open={open} onClick={() => setOpen()}>

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import useScreenSize from "../hooks/useScreenSize";
+import React, { useEffect } from "react";
 import {
     SiteWrapper,
     Header,
@@ -10,14 +9,12 @@ import {
     H1Input,
     H2Input,
     EditIconWrapper,
-    LinkInput,
 } from "./Home.style";
 import Resume from "./resume/Resume";
 import Summary from "./Summary";
 import Navigation from "../components/Navigation";
 import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
 import styled from "@emotion/styled";
-import { mobileThreshold } from "../config/utils";
 import Projects from "./Projects";
 import Modal from "../components/Modal";
 import Avatar from "../components/Avatar";
@@ -25,13 +22,10 @@ import { useGlobalState } from "../hooks/useGlobalState";
 import { useSearchParams } from "react-router-dom";
 import Attributes from "./Attributes";
 import Videos from "./Videos";
-import { BsYoutube } from "react-icons/bs";
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
     const [searchParams, setSearchParams] = useSearchParams();
     const { state, setState } = useGlobalState();
-    const { width } = useScreenSize();
-    // console.log(searchParams?.get("edit"));
 
     useEffect(() => {
         if (searchParams?.get("edit")) {
@@ -91,9 +85,6 @@ export default function Home(): JSX.Element {
 }
 
 const A = styled.a`
-    /* &:first-of-type {
-        margin: 0;
-    } */
     display: inline-block;
     cursor: pointer;
     margin: 10px 10px;

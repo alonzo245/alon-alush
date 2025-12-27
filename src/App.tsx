@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
-export default function App(): JSX.Element {
+export default function App(): React.JSX.Element {
 
     return (
         <BrowserRouter>

@@ -96,7 +96,7 @@ import { BsGoogle } from "react-icons/bs";
 import { DiScrum } from "react-icons/di";
 
 export interface TechIcon {
-    icon: JSX.Element | false;
+    icon: React.JSX.Element | false;
     title: string;
 }
 

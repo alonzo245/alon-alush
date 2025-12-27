@@ -10,7 +10,7 @@ interface JobFeaturesProps {
     id: string;
 }
 
-export default function JobFeatures({ id }: JobFeaturesProps): JSX.Element {
+export default function JobFeatures({ id }: JobFeaturesProps): React.JSX.Element {
     const { setState, state } = useGlobalState();
     const { width } = useScreenSize();
 

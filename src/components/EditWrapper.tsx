@@ -9,7 +9,7 @@ interface EditWrapperProps {
     children: ReactNode;
 }
 
-export default function EditWrapper({ children }: EditWrapperProps): JSX.Element {
+export default function EditWrapper({ children }: EditWrapperProps): React.JSX.Element {
     const { width } = useScreenSize();
     const { state, setState } = useGlobalState();
     const [play, setPlay] = useState<boolean>(false);

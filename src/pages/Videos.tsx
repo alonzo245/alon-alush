@@ -19,15 +19,12 @@ interface VideoItem {
     open: boolean;
 }
 
-export default function Videos(props: VideosProps): JSX.Element {
+export default function Videos(props: VideosProps): React.JSX.Element {
     const [list, setList] = useState<VideoItem[]>(() =>
         Object.keys(videosList).map((videoId) => ({ videoId, open: false })),
     );
-    // const { width } = useScreenSize();
-    // const { state, setState } = useGlobalState();
 
     const onClick = (e: React.MouseEvent, videoId: string): void => {
-        console.log("click", videoId);
         setList(
             list.map((video) => {
                 if (videoId === video.videoId) return { videoId, open: true };
@@ -36,20 +33,15 @@ export default function Videos(props: VideosProps): JSX.Element {
         );
     };
 
-    // width < mobileThreshold
-
     return (
         <Container id="videos">
             <H3>Videos & Tutorials</H3>
             <CardContainer>
-                {/* {console.log(Object.keys(videosList))} */}
                 {videosList &&
                     list.map((video, key) =>
                         video.open ? (
                             <Iframe
                                 key={key}
-                                // width="100%"
-                                // height="100%"
                                 src={`https://www.youtube.com/embed/${video.videoId}`}
                                 title={`${(videosList as any)[video.videoId]?.title || ""}`}
                                 frameBorder="0"
@@ -248,7 +240,7 @@ interface AsyncImageProps {
     [key: string]: any;
 }
 
-const AsyncImage = (props: AsyncImageProps): JSX.Element | null => {
+const AsyncImage = (props: AsyncImageProps): React.JSX.Element | null => {
     const [loadedSrc, setLoadedSrc] = React.useState<string | null>(null);
     React.useEffect(() => {
         setLoadedSrc(null);

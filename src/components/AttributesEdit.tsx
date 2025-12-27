@@ -13,13 +13,12 @@ import { DIV } from "./ResumeEditItem.style";
 import { TechIcon } from "../data/techIcons";
 import { AttributeCategory } from "../data/user";
 
-export default function AttributesEdit(): JSX.Element {
+export default function AttributesEdit(): React.JSX.Element {
     const { setState, state } = useGlobalState();
     const [iconTitles, setIconTitles] = useState<string[]>([]);
 
     useEffect(() => {
         setIconTitles([...techIcons?.map((icon) => icon?.title)]);
-        // console.log([...techIcons?.map((icon) => icon?.title)]);
     }, []);
 
     const onClick = (attr: AttributeCategory, action: "remove" | "add"): void => {

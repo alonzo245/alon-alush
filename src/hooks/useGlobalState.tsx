@@ -43,7 +43,7 @@ interface GlobalStateProviderProps {
     children: ReactNode;
 }
 
-export const GlobalStateProvider = ({ children }: GlobalStateProviderProps): JSX.Element => {
+export const GlobalStateProvider = ({ children }: GlobalStateProviderProps): React.JSX.Element => {
     const [state, setGlobalState] = useState<GlobalState>(initialState);
 
     const setState = (stateToUpdate: Partial<GlobalState>) => {

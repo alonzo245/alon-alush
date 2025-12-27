@@ -10,7 +10,7 @@ import { MdFilterNone } from "react-icons/md";
 import { FaBorderNone } from "react-icons/fa";
 import { AttributeCategory } from "../data/user";
 
-export default function Attributes(): JSX.Element {
+export default function Attributes(): React.JSX.Element {
     const { setState, state } = useGlobalState();
 
     return (
@@ -27,9 +27,7 @@ export default function Attributes(): JSX.Element {
 
                             <Section>
                                 {section?.items?.map((iconName: string, k: number) => {
-                                    // console.log(iconName);
                                     const i = techIcons?.find((item) => item?.title === iconName);
-                                    // console.log("dddddd", i);
                                     return (
                                         <TechItem key={k}>
                                             {i && i.icon ? (
