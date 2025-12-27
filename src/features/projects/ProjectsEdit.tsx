@@ -1,6 +1,5 @@
 import React from "react";
 import techImages from "../../assets/images/tech";
-import { FaGithub } from "react-icons/fa";
 import { useGlobalState } from "../../shared/hooks/useGlobalState";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GitHubProject } from "../../constants/data/githubProjects";
