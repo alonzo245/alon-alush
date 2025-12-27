@@ -1,7 +1,5 @@
-import React from "react";
 import workHistory from "./workHistory";
 import summary from "./summary";
-import techIcons from "./techIcons";
 import githubProjects from "./githubProjects";
 
 export interface AttributeCategory {

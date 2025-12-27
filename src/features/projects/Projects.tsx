@@ -5,10 +5,6 @@ import { useGlobalState } from "../../shared/hooks/useGlobalState";
 import ProjectsEdit from "./ProjectsEdit";
 import { GitHubProject } from "../../constants/data/githubProjects";
 
-interface ProjectsProps {
-    [key: string]: any;
-}
-
 const projectSourceUrlButton = (url: string): React.JSX.Element => (
     <a
         href={url}

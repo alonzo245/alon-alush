@@ -59,9 +59,9 @@ const P = ({ open, dangerouslySetInnerHTML }: PProps): React.JSX.Element => {
 };
 
 export default function Resume(): React.JSX.Element {
-    const { setState, state } = useGlobalState();
+    const { state } = useGlobalState();
     const [opened, setOpened] = useState<number[]>([]);
-    const [resume, setResume] = useState<WorkHistoryItem[]>(() => [...(state?.user?.resume || [])]);
+    const [resume] = useState<WorkHistoryItem[]>(() => [...(state?.user?.resume || [])]);
 
     const toggleHidden = (key: number): void => {
         if (opened?.includes(key)) {

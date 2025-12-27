@@ -4,7 +4,7 @@ import SummaryEditItem from "./SummaryEditItem";
 import { SummaryItem } from "../../constants/data/summary";
 
 export default function Summary(): React.JSX.Element {
-    const { setState, state } = useGlobalState();
+    const { state } = useGlobalState();
 
     return (
         <div

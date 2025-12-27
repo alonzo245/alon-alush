@@ -1,6 +1,6 @@
 import { useEffect, RefObject } from "react";
 
-export default (
+const useClickOutside = (
     elementRef: RefObject<HTMLElement | null>,
     handler: (event: MouseEvent | TouchEvent) => void,
 ): void => {
@@ -19,3 +19,5 @@ export default (
         };
     }, [elementRef, handler]);
 };
+
+export default useClickOutside;

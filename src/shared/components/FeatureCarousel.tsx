@@ -12,7 +12,7 @@ import styled from "@emotion/styled";
 export default function FeatureCarousel(): React.JSX.Element {
     const { width } = useScreenSize();
 
-    const { setState, state } = useGlobalState();
+    const { state } = useGlobalState();
     return (
         <StyledCarousel
             labels={undefined}

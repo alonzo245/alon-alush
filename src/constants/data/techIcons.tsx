@@ -7,7 +7,6 @@ import {
     FaCss3Alt,
     FaDocker,
     FaHtml5,
-    FaInfinity,
     FaJenkins,
     FaJira,
     FaMobileAlt,
@@ -71,13 +70,10 @@ import {
     SiMailgun,
     SiTypeform,
 } from "react-icons/si";
-import { FiCoffee } from "react-icons/fi";
 import {
     AiFillAndroid,
     AiFillGitlab,
-    AiFillHtml5,
     AiOutlineAntDesign,
-    AiOutlineDeploymentUnit,
     AiOutlineDropbox,
     AiOutlineWhatsApp,
 } from "react-icons/ai";

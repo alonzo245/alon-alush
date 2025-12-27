@@ -29,18 +29,6 @@ const EditIconWrapper = ({
     </div>
 );
 
-const projectSourceUrlButton = (url: string): React.JSX.Element => (
-    <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full text-[#e9e9e9] px-[0.4rem] py-[0.4rem] cursor-pointer text-[0.7rem] outline-none flex items-center mx-[5px] h-[36px] border border-dashed border-[#999] no-underline transition-all duration-200 ease-in desktop:hover:bg-white desktop:hover:text-[#2d2d2d] wide:hover:bg-white wide:hover:text-[#2d2d2d]"
-    >
-        <span style={{ marginRight: "10px" }}>View Source</span>
-        <FaGithub size={20} color={"$999"} />
-    </a>
-);
-
 export default function ProjectsEdit(): React.JSX.Element {
     const { state, setState } = useGlobalState();
 

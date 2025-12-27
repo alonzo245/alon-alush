@@ -1,5 +1,4 @@
 import React, { useContext, useState, ReactNode } from "react";
-import jwt_decode from "jwt-decode";
 import user from "../../constants/data/user";
 
 interface User {

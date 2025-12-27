@@ -1,25 +1,11 @@
 import React from "react";
 import techIcons from "../../constants/data/techIcons";
 import { useGlobalState } from "../../shared/hooks/useGlobalState";
-import AttributesEdit from "./AttributesEdit";
-import editIcon from "../../assets/svg/edit.svg";
 import { FaBorderNone } from "react-icons/fa";
 import { AttributeCategory } from "../../constants/data/user";
 
-const EditIconWrapper = ({ children }: { children: React.ReactNode }): React.JSX.Element => (
-    <div className="relative">
-        <div
-            className="absolute left-[-25px] top-[10px] block w-5 h-5 bg-no-repeat bg-[top_left]"
-            style={{
-                backgroundImage: `url(${editIcon})`,
-            }}
-        />
-        {children}
-    </div>
-);
-
 export default function Attributes(): React.JSX.Element {
-    const { setState, state } = useGlobalState();
+    const { state } = useGlobalState();
 
     return (
         <>
