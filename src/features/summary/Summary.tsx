@@ -1,7 +1,7 @@
 import React from "react";
-import { useGlobalState } from "../hooks/useGlobalState";
-import SummaryEditItem from "../components/SummaryEditItem";
-import { SummaryItem } from "../data/summary";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import SummaryEditItem from "./SummaryEditItem";
+import { SummaryItem } from "../../constants/data/summary";
 
 export default function Summary(): React.JSX.Element {
     const { setState, state } = useGlobalState();

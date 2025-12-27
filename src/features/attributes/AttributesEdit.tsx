@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import techIcons from "../data/techIcons";
-import { useGlobalState } from "../hooks/useGlobalState";
-import { TechIcon } from "../data/techIcons";
-import { AttributeCategory } from "../data/user";
+import techIcons from "../../constants/data/techIcons";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import { TechIcon } from "../../constants/data/techIcons";
+import { AttributeCategory } from "../../constants/data/user";
 
 export default function AttributesEdit(): React.JSX.Element {
     const { setState, state } = useGlobalState();
     const [iconTitles, setIconTitles] = useState<string[]>([]);
 
     useEffect(() => {
-        setIconTitles([...techIcons?.map((icon) => icon?.title)]);
+        setIconTitles([...techIcons?.map((icon: TechIcon) => icon?.title)]);
     }, []);
 
     const onClick = (attr: AttributeCategory, action: "remove" | "add"): void => {
@@ -81,7 +81,7 @@ export default function AttributesEdit(): React.JSX.Element {
             ) : (
                 <div className="flex-wrap flex flex-row justify-center mb-5 desktop:px-[90px] wide:px-[130px]">
                     {(state?.user?.attributes || []).map((i: AttributeCategory, k: number) => {
-                        const techIcon = techIcons.find((icon) => icon.title === i.title);
+                        const techIcon = techIcons.find((icon: TechIcon) => icon.title === i.title);
                         return (
                             <div
                                 key={k}

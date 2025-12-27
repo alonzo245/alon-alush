@@ -1,7 +1,7 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./features/home/Home";
 
 export default function App(): React.JSX.Element {
 

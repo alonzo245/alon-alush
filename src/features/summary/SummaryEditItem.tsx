@@ -1,8 +1,8 @@
 import React from "react";
-import { useGlobalState } from "../hooks/useGlobalState";
-import { EditIconWrapper2 } from "../pages/Home";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import { EditIconWrapper2 } from "../home/Home";
 import { AiOutlineCloseCircle, AiOutlinePlus } from "react-icons/ai";
-import { SummaryItem } from "../data/summary";
+import { SummaryItem } from "../../constants/data/summary";
 
 export default function SummaryEditItem(): React.JSX.Element | null {
     const { setState, state } = useGlobalState();

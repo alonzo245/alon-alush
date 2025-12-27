@@ -1,8 +1,10 @@
 import React from "react";
-import techIcons from "../data/techIcons";
-import { useGlobalState } from "../hooks/useGlobalState";
-import AttributesEdit from "../components/AttributesEdit";
-import editIcon from "../assets/svg/edit.svg";
+import techIcons from "../../constants/data/techIcons";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import AttributesEdit from "./AttributesEdit";
+import editIcon from "../../assets/svg/edit.svg";
+import { FaBorderNone } from "react-icons/fa";
+import { AttributeCategory } from "../../constants/data/user";
 
 const EditIconWrapper = ({ children }: { children: React.ReactNode }): React.JSX.Element => (
     <div className="relative">
@@ -15,8 +17,6 @@ const EditIconWrapper = ({ children }: { children: React.ReactNode }): React.JSX
         {children}
     </div>
 );
-import { FaBorderNone } from "react-icons/fa";
-import { AttributeCategory } from "../data/user";
 
 export default function Attributes(): React.JSX.Element {
     const { setState, state } = useGlobalState();

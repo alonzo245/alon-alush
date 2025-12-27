@@ -1,16 +1,14 @@
 import React from "react";
-import { useGlobalState } from "../hooks/useGlobalState";
-import workFeatures from "../data/workFeatures";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import workFeatures from "../../constants/data/workFeatures";
 import { BsCodeSlash } from "react-icons/bs";
-import useScreenSize from "../hooks/useScreenSize";
 
 interface JobFeaturesProps {
     id: string;
 }
 
 export default function JobFeatures({ id }: JobFeaturesProps): React.JSX.Element {
-    const { setState, state } = useGlobalState();
-    const { width } = useScreenSize();
+    const { setState } = useGlobalState();
 
     return (
         <div className="flex justify-start items-start mb-[10px] pb-[10px] pt-[10px] overflow-y-hidden overflow-x-auto flex-col flex-wrap w-full h-[82px]">

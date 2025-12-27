@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import useClickOutside from "../hooks/useClickOutside";
 import { animateScroll as scroll, Link } from "react-scroll";
-import { mobileThreshold } from "../config/utils";
+import { mobileThreshold } from "../../constants/config";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import useScreenSize from "../hooks/useScreenSize";
 import { useGlobalState } from "../hooks/useGlobalState";

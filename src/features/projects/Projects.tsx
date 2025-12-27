@@ -1,10 +1,9 @@
 import React from "react";
-import githubProjects from "../data/githubProjects";
-import techImages from "../assets/images/tech";
+import techImages from "../../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
-import { useGlobalState } from "../hooks/useGlobalState";
-import ProjectsEdit from "../components/ProjectsEdit";
-import { GitHubProject } from "../data/githubProjects";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import ProjectsEdit from "./ProjectsEdit";
+import { GitHubProject } from "../../constants/data/githubProjects";
 
 interface ProjectsProps {
     [key: string]: any;
@@ -22,8 +21,8 @@ const projectSourceUrlButton = (url: string): React.JSX.Element => (
     </a>
 );
 
-export default function Projects(props: ProjectsProps): React.JSX.Element {
-    const { state, setState } = useGlobalState();
+export default function Projects(): React.JSX.Element {
+    const { state } = useGlobalState();
 
     return state?.edit ? (
         <ProjectsEdit />

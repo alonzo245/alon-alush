@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
-import Resume from "./resume/Resume";
-import Summary from "./Summary";
-import Navigation from "../components/Navigation";
+import Resume from "../resume/Resume";
+import Summary from "../summary/Summary";
+import Navigation from "../../shared/components/Navigation";
 import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
-import Projects from "./Projects";
-import Modal from "../components/Modal";
-import Avatar from "../components/Avatar";
-import { useGlobalState } from "../hooks/useGlobalState";
+import Projects from "../projects/Projects";
+import Modal from "../../shared/components/Modal";
+import Avatar from "./Avatar";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
 import { useSearchParams } from "react-router-dom";
-import Attributes from "./Attributes";
-import Videos from "./Videos";
-import editIcon from "../assets/svg/edit.svg";
+import Attributes from "../attributes/Attributes";
+import Videos from "../videos/Videos";
+import editIcon from "../../assets/svg/edit.svg";
 
 const EditIconWrapper = ({ children }: { children: React.ReactNode }): React.JSX.Element => (
     <div className="relative">
@@ -25,7 +25,7 @@ const EditIconWrapper = ({ children }: { children: React.ReactNode }): React.JSX
 );
 
 const EditIconWrapper2 = ({ children }: { children: React.ReactNode }): React.JSX.Element => {
-    const editIconPath2 = require("../assets/svg/edit.svg");
+    const editIconPath2 = require("../../assets/svg/edit.svg");
     return (
         <div className="relative w-full">
             <div
@@ -40,7 +40,7 @@ const EditIconWrapper2 = ({ children }: { children: React.ReactNode }): React.JS
 };
 
 export default function Home(): React.JSX.Element {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const { state, setState } = useGlobalState();
 
     useEffect(() => {
@@ -56,10 +56,7 @@ export default function Home(): React.JSX.Element {
             <header>
                 <Navigation />
             </header>
-            <div
-                className="flex justify-between items-center flex-col mx-auto w-full desktop:flex-row desktop:items-center desktop:my-5 desktop:mx-auto desktop:w-[90%] wide:flex-row wide:items-center wide:my-5 wide:mx-auto"
-                id="hero"
-            >
+            <div className="flex justify-between items-center flex-col mx-auto w-full desktop:flex-row desktop:items-center desktop:my-5 desktop:mx-auto desktop:w-[90%] wide:flex-row wide:items-center wide:my-5 wide:mx-auto" id="hero">
                 <Avatar />
                 <div className="relative w-[480px] min-w-[480px] flex flex-col text-center items-center desktop:ml-5 desktop:min-w-[670px] desktop:items-start desktop:text-left wide:ml-[60px] wide:min-w-[830px] wide:items-start wide:text-left">
                     {state?.edit ? (
@@ -78,9 +75,7 @@ export default function Home(): React.JSX.Element {
                     {state?.edit ? (
                         <EditIconWrapper>
                             <input
-                                className={`text-[#5600ff] text-[22px] text-center mt-5 border-0 outline-0 font-bold bg-transparent w-full border-b border-dashed border-[#88888840] placeholder:text-[#999] placeholder:border-b placeholder:border-dashed placeholder:border-[#888] focus:text-[#5600ff] focus:border-b focus:border-dashed focus:border-[#888] hover:text-[#5600ff] hover:border-b hover:border-dashed hover:border-[#888] wide:text-left wide:text-[56px] desktop:text-left desktop:text-[46px] ${
-                                    state?.edit ? "editIcon" : ""
-                                }`}
+                                className={`text-[#5600ff] text-[22px] text-center mt-5 border-0 outline-0 font-bold bg-transparent w-full border-b border-dashed border-[#88888840] placeholder:text-[#999] placeholder:border-b placeholder:border-dashed placeholder:border-[#888] focus:text-[#5600ff] focus:border-b focus:border-dashed focus:border-[#888] hover:text-[#5600ff] hover:border-b hover:border-dashed hover:border-[#888] wide:text-left wide:text-[56px] desktop:text-left desktop:text-[46px] ${state?.edit ? "editIcon" : ""}`}
                                 name="h2"
                                 placeholder={"What's you job title?"}
                             />

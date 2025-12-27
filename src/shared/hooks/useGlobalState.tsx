@@ -1,6 +1,6 @@
 import React, { useContext, useState, ReactNode } from "react";
 import jwt_decode from "jwt-decode";
-import user from "../data/user";
+import user from "../../constants/data/user";
 
 interface User {
     [key: string]: any;

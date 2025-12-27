@@ -1,4 +1,4 @@
-import { externalLink } from "../utils";
+import { externalLink } from "../../lib/utils";
 
 export interface WorkHistoryItem {
     id: string;

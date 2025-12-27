@@ -1,18 +1,15 @@
 import { AiFillEdit } from "react-icons/ai";
 
-import React, { useState, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import styled from "@emotion/styled";
 import { useGlobalState } from "../hooks/useGlobalState";
-import useScreenSize from "../hooks/useScreenSize";
 
 interface EditWrapperProps {
     children: ReactNode;
 }
 
 export default function EditWrapper({ children }: EditWrapperProps): React.JSX.Element {
-    const { width } = useScreenSize();
-    const { state, setState } = useGlobalState();
-    const [play, setPlay] = useState<boolean>(false);
+    const { state } = useGlobalState();
 
     return (
         <Container>

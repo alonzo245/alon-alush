@@ -1,14 +1,10 @@
 import React from "react";
-import techImages from "../assets/images/tech";
+import techImages from "../../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
-import { useGlobalState } from "../hooks/useGlobalState";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
 import { AiOutlinePlus } from "react-icons/ai";
-import { GitHubProject } from "../data/githubProjects";
-import editIcon from "../assets/svg/edit.svg";
-
-interface ProjectsEditProps {
-    [key: string]: any;
-}
+import { GitHubProject } from "../../constants/data/githubProjects";
+import editIcon from "../../assets/svg/edit.svg";
 
 const EditIconWrapper = ({
     children,
@@ -45,7 +41,7 @@ const projectSourceUrlButton = (url: string): React.JSX.Element => (
     </a>
 );
 
-export default function ProjectsEdit(props: ProjectsEditProps): React.JSX.Element {
+export default function ProjectsEdit(): React.JSX.Element {
     const { state, setState } = useGlobalState();
 
     const onClick = (): void => {

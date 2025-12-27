@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./resume.style.css";
 import images from "../../assets/images";
 import { MdWorkOutline } from "react-icons/md";
-import { useGlobalState } from "../../hooks/useGlobalState";
-import workFeatures from "../../data/workFeatures";
-import JobFeatures from "../../components/JobFeatures";
-import ResumeEditItem from "../../components/ResumeEditItem";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import workFeatures from "../../constants/data/workFeatures";
+import JobFeatures from "./JobFeatures";
+import ResumeEditItem from "./ResumeEditItem";
 import editIcon from "../../assets/svg/edit.svg";
-import { WorkHistoryItem } from "../../data/workHistory";
+import { WorkHistoryItem } from "../../constants/data/workHistory";
 
 const EditIconWrapper = ({
     children,

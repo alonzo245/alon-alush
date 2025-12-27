@@ -1,9 +1,9 @@
-import React, { forwardRef, useEffect, useRef, useState } from "react";
-import "../pages/resume/resume.style.css";
-import { useGlobalState } from "../hooks/useGlobalState";
+import React from "react";
+import "./resume.style.css";
+import { useGlobalState } from "../../shared/hooks/useGlobalState";
 import { AiFillEdit, AiOutlinePlus } from "react-icons/ai";
-import { EditIconWrapper2 } from "../pages/Home";
-import { WorkHistoryItem } from "../data/workHistory";
+import { EditIconWrapper2 } from "../home/Home";
+import { WorkHistoryItem } from "../../constants/data/workHistory";
 
 export default function ResumeEditItem(): React.JSX.Element {
     const { setState, state } = useGlobalState();

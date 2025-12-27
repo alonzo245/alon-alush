@@ -5,8 +5,8 @@ import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.min.css";
 import useScreenSize from "../hooks/useScreenSize";
-import { DESKTOP_MQ, mobileThreshold, WIDE_MQ } from "../config/utils"; // requires a loader
-import workFeatures from "../assets/workFeatures";
+import { mobileThreshold, DESKTOP_MQ, WIDE_MQ } from "../../constants/config";
+import workFeatures from "../../assets/workFeatures";
 import styled from "@emotion/styled";
 
 export default function FeatureCarousel(): React.JSX.Element {

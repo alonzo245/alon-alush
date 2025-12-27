@@ -3,11 +3,11 @@ import { ExpandModal } from "react-spring-modal";
 import { useGlobalState } from "../hooks/useGlobalState";
 import "react-spring-modal/styles.css";
 import useScreenSize from "../hooks/useScreenSize";
-import { mobileThreshold } from "../config/utils";
+import { mobileThreshold } from "../../constants/config";
 import FeatureCarousel from "./FeatureCarousel";
 import { IoMdClose } from "react-icons/io";
-import { icon } from "../assets/icons";
-import workFeatures from "../assets/workFeatures";
+import { icon } from "../../assets/icons";
+import workFeatures from "../../assets/workFeatures";
 
 export default function Modal(): React.JSX.Element {
     const { width } = useScreenSize();
