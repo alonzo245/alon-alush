@@ -9,10 +9,10 @@ const projectSourceUrlButton = (url: string): React.JSX.Element => (
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full text-[#e9e9e9] px-[0.4rem] py-[0.4rem] cursor-pointer text-[0.7rem] outline-none flex items-center mx-[5px] h-[36px] border border-dashed border-[#999] no-underline transition-all duration-200 ease-in desktop:hover:bg-white desktop:hover:text-[#2d2d2d] wide:hover:bg-white wide:hover:text-[#2d2d2d]"
+        className="w-full text-white px-4 py-2.5 cursor-pointer text-sm font-medium outline-none flex items-center justify-center gap-2 border border-dashed border-white/30 rounded-md no-underline transition-all duration-300 ease-in-out hover:bg-white/10 hover:border-white/50 hover:shadow-lg active:scale-[0.98]"
     >
-        <span style={{ marginRight: "10px" }}>View Source</span>
-        <FaGithub size={20} color={"$999"} />
+        <span>View Source</span>
+        <FaGithub size={18} />
     </a>
 );
 
@@ -20,41 +20,62 @@ export default function Projects(): React.JSX.Element {
     const { state } = useGlobalState();
 
     return (
-        <div className="flex flex-col items-center justify-center w-full mx-auto" id="projects">
-            <h3 className="text-[30px] mb-5 mt-[50px] desktop:mt-0 wide:mt-0">
+        <div
+            className="flex flex-col items-center justify-center w-full mx-auto px-4"
+            id="projects"
+        >
+            <h3 className="text-4xl font-bold mb-12 mt-12 desktop:mt-8 wide:mt-8 text-white">
                 {state?.user?.projectsTitle}
             </h3>
-            <div className="flex flex-wrap justify-center mt-[10px] w-full desktop:w-full desktop:flex-wrap wide:w-full wide:flex-wrap">
+            <div className="flex flex-wrap justify-center gap-6 w-full max-w-7xl">
                 {(state?.user?.projects || []).map((project: GitHubProject, key: number) => (
                     <div
                         key={key}
-                        className="m-[10px] h-[320px] text-white p-[5px] flex flex-col items-center transition-all duration-200 ease-in w-[320px] rounded-[10px] border border-dashed border-[#999] desktop:w-[240px] desktop:hover:bg-[#5600ff] desktop:hover:text-white wide:w-[240px] wide:hover:bg-[#5600ff] wide:hover:text-white"
+                        className="group relative bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm text-white p-6 flex flex-col w-full max-w-[320px] rounded-xl border border-white/10 shadow-xl transition-all duration-300 ease-in-out hover:border-[#5600ff]/50 hover:shadow-2xl hover:shadow-[#5600ff]/20 hover:-translate-y-1 desktop:w-[280px] wide:w-[300px]"
+                        style={{
+                            backgroundImage: `linear-gradient(135deg, rgba(86, 0, 255, 0.05) 0%, rgba(0, 0, 0, 0.2) 100%)`,
+                        }}
                     >
-                        <div className="justify-items-center items-center p-[5px] text-[0.9rem] w-full h-[62%]">
-                            <h6 className="text-base font-bold border-b border-dashed border-[#999] h-[50px] w-full text-center leading-[1.4] text-[#ffffff80] mb-5 flex justify-center items-center">
-                                <span>{project.name.replace(/[_,-]/g, " ")}</span>
+                        {/* Card Content */}
+                        <div className="flex flex-col flex-grow mb-4">
+                            {/* Title */}
+                            <h6 className="text-xl font-bold mb-3 text-white border-b border-dashed border-white/20 pb-3 text-center">
+                                <span className="capitalize">
+                                    {project.name.replace(/[_,-]/g, " ")}
+                                </span>
                             </h6>
-                            <p>{project.description}</p>
+
+                            {/* Description */}
+                            <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-grow line-clamp-4">
+                                {project.description}
+                            </p>
+
+                            {/* Technology Icons */}
+                            <div className="flex flex-wrap items-center gap-2 mb-4 pt-3 border-t border-dashed border-white/10">
+                                {project.technologies &&
+                                    project.technologies.map((technology: string) => (
+                                        <div
+                                            key={technology}
+                                            className="rounded-lg w-8 h-8 bg-white/5 border border-white/10 p-1.5 flex items-center justify-center transition-all duration-200 hover:bg-white/10 hover:scale-110"
+                                            style={{
+                                                backgroundImage: `url(${
+                                                    techImages[
+                                                        technology as keyof typeof techImages
+                                                    ]
+                                                })`,
+                                                backgroundSize: "contain",
+                                                backgroundRepeat: "no-repeat",
+                                                backgroundPosition: "center",
+                                            }}
+                                            title={technology}
+                                        />
+                                    ))}
+                            </div>
                         </div>
 
-                        <div className="justify-items-center items-center flex-wrap flex w-full mx-[5px] justify-start">
-                            {project.technologies &&
-                                project.technologies.map((technology: string) => (
-                                    <div
-                                        key={technology}
-                                        className="rounded-[15px] w-[33px] h-[33px] bg-contain bg-center m-[5px]"
-                                        style={{
-                                            backgroundImage: `url(${
-                                                techImages[technology as keyof typeof techImages]
-                                            })`,
-                                        }}
-                                    />
-                                ))}
-                        </div>
-
-                        <div className="flex justify-center relative w-full flex-grow items-end pb-[5px]">
+                        {/* Button */}
+                        <div className="mt-auto pt-2">
                             {project.url && projectSourceUrlButton(project.url)}
-                            {/*{project.demoUrl && projectUrlButton(project.demoUrl)}*/}
                         </div>
                     </div>
                 ))}
