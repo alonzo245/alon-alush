@@ -3,16 +3,6 @@ import "../pages/resume/resume.style.css";
 import { useGlobalState } from "../hooks/useGlobalState";
 import { AiFillEdit, AiOutlinePlus } from "react-icons/ai";
 import { EditIconWrapper2 } from "../pages/Home.style";
-import {
-    ImgContainer,
-    LI,
-    LI2,
-    Input,
-    Input2,
-    Input3,
-    Textarea,
-    DIV,
-} from "./ResumeEditItem.style";
 import { WorkHistoryItem } from "../data/workHistory";
 
 export default function ResumeEditItem(): React.JSX.Element {
@@ -41,33 +31,36 @@ export default function ResumeEditItem(): React.JSX.Element {
         <>
             {(state?.user?.resume || []).map((item: WorkHistoryItem, i: number) => {
                 return (
-                    <LI className="item" key={i}>
+                    <li className="item rounded-[10px]" key={i}>
                         <div className="date-title">
                             <span>
                                 <EditIconWrapper2>
-                                    <Input
+                                    <input
+                                        className="uppercase text-[#627fc6] bg-transparent border-0 outline-0 font-bold min-w-[250px] border-b border-dashed border-[#88888840] w-full pl-[23px] placeholder:text-[#627fc6] focus:border-[#888] hover:border-[#888]"
                                         value={item?.company}
                                         placeholder={"Enter Company name"}
                                     />
                                 </EditIconWrapper2>
                                 <br />
                                 <EditIconWrapper2>
-                                    <Input3
+                                    <input
+                                        className="text-[#acbac4] bg-transparent border-0 outline-0 font-bold min-w-[250px] border-b border-dashed border-[#88888840] w-full pl-[23px] placeholder:text-[#acbac4] focus:text-[#999] focus:border-[#888] hover:text-[#999] hover:border-[#888]"
                                         value={item?.date}
                                         placeholder={"Enter Work Duration"}
                                     />
                                 </EditIconWrapper2>
                             </span>
                         </div>
-                        <ImgContainer className="node-icon">
-                            <div>
+                        <div className="node-icon">
+                            <div className="h-[45px] w-[45px] rounded-[45px] bg-[#5600ff] flex items-center justify-center absolute top-0 left-0 translate-x-[-13px] border-[3px] border-white transition-[background,border] duration-300 ease-in-out hover:cursor-pointer hover:bg-[#5600ff40]">
                                 <AiFillEdit size={20} color={"#fff"} />
                             </div>
-                        </ImgContainer>
+                        </div>
                         <div className="content">
                             <h3 className="item-title">
                                 <EditIconWrapper2>
-                                    <Input2
+                                    <input
+                                        className="uppercase text-[#627fc6] bg-transparent border-0 outline-0 font-bold text-[20px] min-w-[250px] border-b border-dashed border-[#88888840] w-full pl-[23px] placeholder:text-[#627fc6] focus:text-[#627fc6] focus:border-[#888] hover:text-[#627fc6] hover:border-[#888]"
                                         value={item?.title}
                                         placeholder={"What's you job title?"}
                                     />
@@ -81,24 +74,24 @@ export default function ResumeEditItem(): React.JSX.Element {
                             {/*    open={opened?.includes(k) ? "open" : ""}*/}
                             {/*/>*/}
                             <EditIconWrapper2>
-                                <Textarea
+                                <textarea
+                                    className="text-[#acbac4] bg-transparent border-0 outline-0 min-w-[250px] border-b border-dashed border-[#88888840] w-full pl-[23px] placeholder:text-[#acbac4] focus:text-[#acbac4] focus:border-[#888] hover:text-[#acbac4] hover:border-[#888]"
                                     rows={10}
                                     value={item?.description || ""}
                                     placeholder={"What did you worked on over there?"}
                                 />
                             </EditIconWrapper2>
                         </div>
-                    </LI>
+                    </li>
                 );
             })}
-            <LI2 className="item" onClick={onClick}>
-                <ImgContainer className="node-icon">
-                    <div>
+            <li className="item rounded-[10px] pb-[45px] !important" onClick={onClick}>
+                <div className="node-icon">
+                    <div className="h-[45px] w-[45px] rounded-[45px] bg-[#5600ff] flex items-center justify-center absolute top-0 left-0 translate-x-[-13px] border-[3px] border-white transition-[background,border] duration-300 ease-in-out hover:cursor-pointer hover:bg-[#5600ff40]">
                         <AiOutlinePlus size={20} color={"#fff"} />
                     </div>
-                </ImgContainer>
-            </LI2>
+                </div>
+            </li>
         </>
     );
 }
-

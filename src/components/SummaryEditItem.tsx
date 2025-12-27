@@ -2,7 +2,6 @@ import React from "react";
 import { useGlobalState } from "../hooks/useGlobalState";
 import { EditIconWrapper2 } from "../pages/Home.style";
 import { AiOutlineCloseCircle, AiOutlinePlus } from "react-icons/ai";
-import { DIV, Row, Input, Textarea, Button, Button2 } from "./ResumeEditItem.style";
 import { SummaryItem } from "../data/summary";
 
 export default function SummaryEditItem(): React.JSX.Element | null {
@@ -51,18 +50,29 @@ export default function SummaryEditItem(): React.JSX.Element | null {
     if (!state?.edit) return null;
 
     return (
-        <Row>
-            <Button onClick={onClick}>
+        <div className="flex flex-1 px-[30px] mx-auto flex-col w-full desktop:my-10 desktop:px-20 wide:my-10 wide:px-20">
+            <div
+                className="my-[10px] mx-auto p-[15px] bg-[#66666640] rounded-[10px] cursor-pointer transition-all duration-200 ease-in hover:bg-[#77777780]"
+                onClick={onClick}
+            >
                 <span>
                     <AiOutlinePlus size={15} color={"#fff"} />
                 </span>
                 Add another summary
-            </Button>
+            </div>
             {(state?.user?.summary || [])?.map((item: SummaryItem, i: number) => {
                 return (
-                    <DIV key={i}>
+                    <div
+                        key={i}
+                        className="flex-none leading-[1.2] p-5 bg-[#99999920] rounded-[10px] w-full self-center mb-5 [&_li]:py-[3px] desktop:max-w-[1000px] wide:max-w-[1000px]"
+                    >
                         <EditIconWrapper2>
-                            <Input value={item?.title} name="h1" placeholder={"Title"} />
+                            <input
+                                className="uppercase text-[#acbac4] bg-transparent border-0 outline-0 font-bold min-w-[250px] border-b border-dashed border-[#88888840] w-full pl-[23px] placeholder:text-[#acbac4] focus:text-[#999] focus:border-[#888] hover:text-[#999] hover:border-[#888]"
+                                value={item?.title}
+                                name="h1"
+                                placeholder={"Title"}
+                            />
                         </EditIconWrapper2>
                         <ul>
                             {(item?.bullets || []).map((bullet: string, k: number) => {
@@ -74,17 +84,26 @@ export default function SummaryEditItem(): React.JSX.Element | null {
                                             color={"#fff"}
                                             style={{ display: "flex", marginTop: "10px" }}
                                         />
-                                        <Textarea value={bullet} placeholder={"Another one...?"} />
+                                        <textarea
+                                            className="text-[#acbac4] bg-transparent border-0 outline-0 min-w-[250px] border-b border-dashed border-[#88888840] w-full pl-[23px] placeholder:text-[#acbac4] focus:text-[#acbac4] focus:border-[#888] hover:text-[#acbac4] hover:border-[#888]"
+                                            value={bullet}
+                                            placeholder={"Another one...?"}
+                                        />
                                     </li>
                                 );
                             })}
                             <li style={{ listStyle: "none" }}>
-                                <Button2 onClick={() => onClick2(i)}>Add bullet</Button2>
+                                <div
+                                    className="my-[10px] mx-auto p-[15px] bg-[#66666640] rounded-[10px] cursor-pointer transition-all duration-200 ease-in w-full self-center text-center hover:bg-[#77777780] desktop:w-[200px] wide:w-[200px]"
+                                    onClick={() => onClick2(i)}
+                                >
+                                    Add bullet
+                                </div>
                             </li>
                         </ul>
-                    </DIV>
+                    </div>
                 );
             })}
-        </Row>
+        </div>
     );
 }

@@ -81,7 +81,7 @@ a:hover {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 15px;
+    /* width: 15px; */
 }
 
 .node-icon:after {
@@ -235,9 +235,9 @@ a:hover {
     .branch-centered > .item:nth-child(odd) .content .item-title {
         border-radius: 5px;
         padding: 5px;
-        background: rgb(84,84,84);
-        background: linear-gradient(270deg, rgba(84,84,84,0.1) 0%, rgba(58, 58, 58, 0.583) 100%);
-        }
+        background: rgb(84, 84, 84);
+        background: linear-gradient(270deg, rgba(84, 84, 84, 0.1) 0%, rgba(58, 58, 58, 0.583) 100%);
+    }
     .branch-centered > .item:nth-child(even) .date-title {
         float: right;
         text-align: left;
@@ -254,10 +254,10 @@ a:hover {
     .branch-centered > .item:nth-child(even) .content .item-title {
         border-radius: 5px;
         padding: 5px;
-        background: rgb(84,84,84);
-        background: linear-gradient(90deg, rgba(84,84,84,0.1) 0%, rgba(58, 58, 58, 0.583) 100%);
-        }
-    
+        background: rgb(84, 84, 84);
+        background: linear-gradient(90deg, rgba(84, 84, 84, 0.1) 0%, rgba(58, 58, 58, 0.583) 100%);
+    }
+
     .branch-centered > .item.period .content {
         float: none;
         padding: 0;

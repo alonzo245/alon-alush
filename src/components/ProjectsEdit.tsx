@@ -1,40 +1,48 @@
 import React from "react";
-import githubProjects from "../data/githubProjects";
 import techImages from "../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
-import {
-    Badge2,
-    CardContent,
-    Container,
-    Btn,
-    Card,
-    CardBadges,
-    CardButton,
-    CardContainerEdit,
-    H3,
-    H6,
-    Input3,
-    Textarea,
-    CardEdit,
-    Input1,
-    Input2,
-    CardAddProject,
-} from "./ProjectsEdit.style";
-import { EditIconWrapper, Input } from "./AttributesEdit.style";
 import { useGlobalState } from "../hooks/useGlobalState";
-import { EditIconWrapper2 } from "../pages/Home.style";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GitHubProject } from "../data/githubProjects";
+import editIcon from "../assets/svg/edit.svg";
 
 interface ProjectsEditProps {
     [key: string]: any;
 }
 
+const EditIconWrapper = ({
+    children,
+    style,
+}: {
+    children: React.ReactNode;
+    style?: React.CSSProperties;
+}): React.JSX.Element => (
+    <div
+        className="relative"
+        style={{
+            ...style,
+        }}
+    >
+        <div
+            className="absolute left-[-25px] top-[10px] block w-5 h-5 bg-no-repeat bg-[top_left]"
+            style={{
+                backgroundImage: `url(${editIcon})`,
+            }}
+        />
+        {children}
+    </div>
+);
+
 const projectSourceUrlButton = (url: string): React.JSX.Element => (
-    <Btn href={url} target="_blank" rel="noopener noreferrer">
+    <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full text-[#e9e9e9] px-[0.4rem] py-[0.4rem] cursor-pointer text-[0.7rem] outline-none flex items-center mx-[5px] h-[36px] border border-dashed border-[#999] no-underline transition-all duration-200 ease-in desktop:hover:bg-white desktop:hover:text-[#2d2d2d] wide:hover:bg-white wide:hover:text-[#2d2d2d]"
+    >
         <span style={{ marginRight: "10px" }}>View Source</span>
         <FaGithub size={20} color={"$999"} />
-    </Btn>
+    </a>
 );
 
 export default function ProjectsEdit(props: ProjectsEditProps): React.JSX.Element {
@@ -60,10 +68,11 @@ export default function ProjectsEdit(props: ProjectsEditProps): React.JSX.Elemen
     };
 
     return (
-        <Container id="projects">
+        <div className="flex flex-col items-center justify-center w-full mx-auto" id="projects">
             {state?.edit ? (
                 <EditIconWrapper style={{ width: "60%", margin: "0 auto" }}>
-                    <Input
+                    <input
+                        className="bg-transparent border-0 outline-0 font-bold min-w-[250px] border-b border-dashed border-[#88888840] text-left text-[#627fc6] pl-[30px] text-[30px] w-full text-center mb-5 placeholder:text-[#627fc6] focus:border-[#888] hover:border-[#888]"
                         value={state?.user?.projectsTitle}
                         name={"attributesTitle"}
                         placeholder={"Enter Title for your projects"}
@@ -72,38 +81,51 @@ export default function ProjectsEdit(props: ProjectsEditProps): React.JSX.Elemen
             ) : (
                 <>
                     {(state?.user?.attributes?.length || 0) > 0 ? (
-                        <H3
+                        <h3
+                            className="text-[30px] mb-5 mt-[50px] desktop:mt-0 wide:mt-0"
                             style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}
                         >
                             {state?.user?.projectsTitle}
-                        </H3>
+                        </h3>
                     ) : null}
                 </>
             )}
-            <CardContainerEdit>
-                <CardAddProject onClick={onClick}>
-                    <div>
+            <div className="flex flex-wrap justify-center mt-[10px] w-full desktop:w-full desktop:flex-wrap wide:w-full wide:flex-wrap">
+                <div
+                    className="m-[10px] h-[320px] text-white p-[5px] transition-all duration-200 ease-in w-[320px] rounded-[10px] border border-dashed border-[#999] cursor-pointer flex justify-center items-center desktop:w-[240px] desktop:hover:bg-[#444] desktop:hover:border-[#ffffff] desktop:hover:text-white desktop:hover:[&>div]:bg-white desktop:hover:[&>div]:border-[#ffffff] wide:w-[240px] wide:hover:bg-[#444] wide:hover:border-[#ffffff] wide:hover:text-white"
+                    onClick={onClick}
+                >
+                    <div className="transition-all duration-200 ease-in flex justify-center items-center h-[50px] w-[50px] border border-dashed border-white rounded-[50px]">
                         <AiOutlinePlus size={40} color={"#999"} />
                     </div>
-                </CardAddProject>
+                </div>
                 {(state?.user?.projects || []).map((project: GitHubProject, key: number) => (
-                    <CardEdit key={key}>
-                        <CardContent>
-                            <H6>
-                                <Input1 value={project.name} placeholder={"Enter Work Duration"} />
-                            </H6>
-                            <Textarea
+                    <div
+                        key={key}
+                        className="m-[10px] h-[320px] text-white p-[5px] flex flex-col items-center transition-all duration-200 ease-in w-[320px] rounded-[10px] border border-dashed border-[#999] desktop:w-[240px] desktop:hover:text-white wide:w-[240px] wide:hover:text-white"
+                    >
+                        <div className="justify-items-center items-center p-[5px] text-[0.9rem] w-full h-[62%]">
+                            <h6 className="text-base font-bold border-b border-dashed border-[#999] h-[50px] w-full text-center leading-[1.4] text-[#ffffff80] mb-5 flex justify-center items-center">
+                                <input
+                                    className="text-[#acbac4] bg-transparent border-0 outline-0 font-bold text-[18px] p-[10px] placeholder:text-[#acbac4] focus:text-[#999] hover:text-[#999]"
+                                    value={project.name}
+                                    placeholder={"Enter Work Duration"}
+                                />
+                            </h6>
+                            <textarea
+                                className="text-[#acbac4] bg-transparent border-0 outline-0 w-full placeholder:text-[#acbac4] focus:text-[#acbac4] focus:border-b focus:border-dashed focus:border-[#888] hover:text-[#acbac4] hover:border-b hover:border-dashed hover:border-[#888]"
                                 rows={4}
                                 value={project.description}
                                 placeholder={"What did you worked on over there?"}
                             />
-                        </CardContent>
+                        </div>
 
-                        <CardBadges>
+                        <div className="justify-items-center items-center flex-wrap flex w-full mx-[5px] justify-start">
                             {project.technologies &&
                                 project.technologies.map((technology: string) => (
-                                    <Badge2
+                                    <div
                                         key={technology}
+                                        className="rounded-[15px] w-[33px] h-[33px] bg-contain bg-center m-[5px]"
                                         style={{
                                             backgroundImage: `url(${
                                                 techImages[technology as keyof typeof techImages]
@@ -111,12 +133,16 @@ export default function ProjectsEdit(props: ProjectsEditProps): React.JSX.Elemen
                                         }}
                                     />
                                 ))}
-                        </CardBadges>
+                        </div>
 
-                        <Input2 value={project.url} placeholder={"project url"} />
-                    </CardEdit>
+                        <input
+                            className="text-[#acbac4] bg-[#00000040] border-0 outline-0 font-bold text-[18px] p-[10px] rounded-[10px] placeholder:text-[#acbac4] focus:text-[#999] hover:text-[#999]"
+                            value={project.url}
+                            placeholder={"project url"}
+                        />
+                    </div>
                 ))}
-            </CardContainerEdit>
-        </Container>
+            </div>
+        </div>
     );
 }

@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import techIcons from "../data/techIcons";
-import { H3 } from "./Attributes.style";
 import { useGlobalState } from "../hooks/useGlobalState";
 import { EditIconWrapper } from "./Home.style";
 import AttributesEdit from "../components/AttributesEdit";
-import styled from "@emotion/styled";
-import { DESKTOP_MQ, WIDE_MQ } from "../config/utils";
-import { MdFilterNone } from "react-icons/md";
 import { FaBorderNone } from "react-icons/fa";
 import { AttributeCategory } from "../data/user";
 
@@ -15,21 +11,29 @@ export default function Attributes(): React.JSX.Element {
 
     return (
         <>
-            <H3 style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}>
+            <h3
+                className="text-[50px] mb-[10px] mt-0 desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0"
+                style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}
+            >
                 {state?.user?.attributesTitle}
-            </H3>
+            </h3>
 
-            <Sections>
+            <div className="mx-auto w-[90%] flex flex-col items-center justify-start">
                 {(state?.user?.attributes || []).map((section: AttributeCategory, key: number) => {
                     return (
                         <React.Fragment key={key}>
-                            <Title>{section?.title}</Title>
+                            <div className="w-full text-center py-5 text-[#627fc6] text-[26px] font-bold">
+                                {section?.title}
+                            </div>
 
-                            <Section>
+                            <div className="flex flex-wrap justify-center items-center w-full desktop:w-1/2 wide:w-1/2">
                                 {section?.items?.map((iconName: string, k: number) => {
                                     const i = techIcons?.find((item) => item?.title === iconName);
                                     return (
-                                        <TechItem key={k}>
+                                        <div
+                                            key={k}
+                                            className="p-[10px] flex flex-col justify-center items-center w-20 text-center"
+                                        >
                                             {i && i.icon ? (
                                                 i.icon
                                             ) : (
@@ -45,76 +49,14 @@ export default function Attributes(): React.JSX.Element {
                                             >
                                                 {i?.title || iconName}
                                             </p>
-                                        </TechItem>
+                                        </div>
                                     );
                                 })}
-                            </Section>
+                            </div>
                         </React.Fragment>
                     );
                 })}
-            </Sections>
+            </div>
         </>
     );
 }
-
-const Title = styled.div`
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    color: #627fc6;
-    font-size: 26px;
-    font-weight: bold;
-    ${DESKTOP_MQ} {
-    }
-
-    ${WIDE_MQ} {
-    }
-`;
-
-const TechItem = styled.div`
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    text-align: center;
-
-    ${DESKTOP_MQ} {
-    }
-
-    ${WIDE_MQ} {
-    }
-`;
-
-const Section = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    ${DESKTOP_MQ} {
-        width: 50%;
-    }
-
-    ${WIDE_MQ} {
-        width: 50%;
-    }
-`;
-
-const Sections = styled.div`
-    margin: 0 auto;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    ${DESKTOP_MQ} {
-        /* flex-direction: row; */
-    }
-
-    ${WIDE_MQ} {
-        /* flex-direction: row; */
-    }
-`;

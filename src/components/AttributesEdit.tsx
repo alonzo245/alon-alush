@@ -1,15 +1,6 @@
 import React, { useEffect, useState } from "react";
 import techIcons from "../data/techIcons";
-import {
-    H3,
-    RowIcons,
-    TechItem,
-    Input,
-    TechItemEdit,
-    EditIconWrapper,
-} from "./AttributesEdit.style";
 import { useGlobalState } from "../hooks/useGlobalState";
-import { DIV } from "./ResumeEditItem.style";
 import { TechIcon } from "../data/techIcons";
 import { AttributeCategory } from "../data/user";
 
@@ -40,14 +31,17 @@ export default function AttributesEdit(): React.JSX.Element {
     return (
         <>
             {(state?.user?.attributes?.length || 0) > 0 ? (
-                <H3 style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}>
+                <h3
+                    className="text-[30px] mb-[10px] mt-0 desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0"
+                    style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}
+                >
                     {state?.user?.attributesTitle}
-                </H3>
+                </h3>
             ) : null}
 
             {state?.edit ? (
                 <>
-                    <RowIcons>
+                    <div className="flex-wrap flex flex-row justify-center mb-5 desktop:px-[90px] wide:px-[130px]">
                         {techIcons.map((icon: TechIcon, i: number) => {
                             const iconEntity = (
                                 <div key={i}>
@@ -67,8 +61,9 @@ export default function AttributesEdit(): React.JSX.Element {
                                 (attr: AttributeCategory) => attr.title === icon?.title,
                             );
                             return (
-                                <TechItemEdit
+                                <div
                                     key={i}
+                                    className="p-[7px] flex flex-col justify-center items-center w-[70px] cursor-pointer border border-solid border-[#ffffff20] rounded-[10px] m-[3px] hover:bg-[#00000030] desktop:p-[7px] wide:p-[7px]"
                                     onClick={() =>
                                         onClick(
                                             { title: icon.title, items: [] },
@@ -78,17 +73,20 @@ export default function AttributesEdit(): React.JSX.Element {
                                     style={{ border: `1px solid ${checked ? "green" : ""}` }}
                                 >
                                     {iconEntity}
-                                </TechItemEdit>
+                                </div>
                             );
                         })}
-                    </RowIcons>
+                    </div>
                 </>
             ) : (
-                <RowIcons>
+                <div className="flex-wrap flex flex-row justify-center mb-5 desktop:px-[90px] wide:px-[130px]">
                     {(state?.user?.attributes || []).map((i: AttributeCategory, k: number) => {
                         const techIcon = techIcons.find((icon) => icon.title === i.title);
                         return (
-                            <TechItem key={k}>
+                            <div
+                                key={k}
+                                className="p-[7px] flex flex-col justify-center items-center w-[70px] desktop:p-[7px] wide:p-[7px]"
+                            >
                                 {techIcon?.icon || null}
                                 <p
                                     style={{
@@ -99,10 +97,10 @@ export default function AttributesEdit(): React.JSX.Element {
                                 >
                                     {i.title}
                                 </p>
-                            </TechItem>
+                            </div>
                         );
                     })}
-                </RowIcons>
+                </div>
             )}
         </>
     );
