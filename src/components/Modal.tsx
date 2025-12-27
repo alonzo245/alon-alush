@@ -7,9 +7,7 @@ import { mobileThreshold } from "../config/utils";
 import FeatureCarousel from "./FeatureCarousel";
 import { IoMdClose } from "react-icons/io";
 import { icon } from "../assets/icons";
-import { P, H3, Container, Row, Close, Content, H6, TechList } from "./Modal.style";
 import workFeatures from "../assets/workFeatures";
-import styled from "@emotion/styled";
 
 export default function Modal(): React.JSX.Element {
     const { width } = useScreenSize();
@@ -45,16 +43,23 @@ export default function Modal(): React.JSX.Element {
                 },
             }}
         >
-            <Container>
-                <Close onClick={() => setState({ modal: false, modalData: null })}>
+            <div className="relative w-full h-full overflow-y-auto desktop:overflow-y-visible wide:overflow-y-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                <div
+                    className="fixed right-[10px] top-[10px] cursor-pointer z-[9999999]"
+                    onClick={() => setState({ modal: false, modalData: null })}
+                >
                     <IoMdClose size={30} color={"#fff"} />
-                </Close>
+                </div>
                 {width < mobileThreshold ? (
                     <>
-                        <Content>
-                            <H3>{state?.modalData?.title}</H3>
-                            <H6>Technologies used in project</H6>
-                            <TechList>
+                        <div className="text-left align-top desktop:w-[60%] desktop:text-left desktop:align-top desktop:pl-[30px] desktop:pr-[30px] wide:w-[60%] wide:text-left wide:align-top wide:pl-[30px] wide:pr-[30px]">
+                            <h3 className="text-white text-[30px] mb-[10px] w-full block desktop:text-white desktop:text-[50px] desktop:mb-[30px] wide:text-white wide:text-[50px] wide:mb-[30px]">
+                                {state?.modalData?.title}
+                            </h3>
+                            <h6 className="text-[#958eca] text-[20px] mb-5 desktop:text-[#958eca] desktop:text-[25px] desktop:mb-5 wide:text-[#958eca] wide:text-[25px] wide:mb-5">
+                                Technologies used in project
+                            </h6>
+                            <div className="flex items-start mb-5 w-full flex-wrap justify-start desktop:flex desktop:items-center desktop:mb-[30px] desktop:w-full desktop:flex-wrap desktop:justify-start wide:flex wide:items-center wide:mb-[30px] wide:w-full wide:flex-wrap wide:justify-start [&>div]:m-[5px]">
                                 {(state?.modalData?.technologies || []).map(
                                     (item: string, i: number) => (
                                         <div key={i}>
@@ -62,14 +67,15 @@ export default function Modal(): React.JSX.Element {
                                         </div>
                                     ),
                                 )}
-                            </TechList>
-                            <P
+                            </div>
+                            <div
+                                className="mb-0 desktop:mb-0 wide:mb-0"
                                 dangerouslySetInnerHTML={{
                                     __html: state?.modalData?.description || "",
                                 }}
                             />
-                        </Content>
-                        <DIV>
+                        </div>
+                        <div className="flex mt-[30px] justify-start overflow-x-auto overflow-y-visible">
                             {(state?.modalData?.thumbnails || []).map((item: any, i: number) => {
                                 if (item?.type === "youtube") {
                                     return (
@@ -86,23 +92,28 @@ export default function Modal(): React.JSX.Element {
                                     );
                                 }
                                 return item?.type === "wide" ? null : (
-                                    <Img
+                                    <img
                                         alt=""
                                         key={i}
                                         src={workFeatures[item as keyof typeof workFeatures]}
+                                        className="w-[70%] h-auto m-0 mx-[10px] table-row first:pl-[-40px]"
                                     />
                                 );
                             })}
-                        </DIV>
+                        </div>
                     </>
                 ) : (
                     <>
                         {state?.modalData && (
-                            <Row>
-                                <Content>
-                                    <H3>{state?.modalData?.title}</H3>
-                                    <H6>Technologies used in project</H6>
-                                    <TechList>
+                            <div className="flex justify-start items-start flex-col h-full desktop:flex desktop:justify-around desktop:items-start desktop:flex-row wide:flex wide:justify-around wide:items-start wide:flex-row">
+                                <div className="text-left align-top desktop:w-[60%] desktop:text-left desktop:align-top desktop:pl-[30px] desktop:pr-[30px] wide:w-[60%] wide:text-left wide:align-top wide:pl-[30px] wide:pr-[30px]">
+                                    <h3 className="text-white text-[30px] mb-[10px] w-full block desktop:text-white desktop:text-[50px] desktop:mb-[30px] wide:text-white wide:text-[50px] wide:mb-[30px]">
+                                        {state?.modalData?.title}
+                                    </h3>
+                                    <h6 className="text-[#958eca] text-[20px] mb-5 desktop:text-[#958eca] desktop:text-[25px] desktop:mb-5 wide:text-[#958eca] wide:text-[25px] wide:mb-5">
+                                        Technologies used in project
+                                    </h6>
+                                    <div className="flex items-start mb-5 w-full flex-wrap justify-start desktop:flex desktop:items-center desktop:mb-[30px] desktop:w-full desktop:flex-wrap desktop:justify-start wide:flex wide:items-center wide:mb-[30px] wide:w-full wide:flex-wrap wide:justify-start [&>div]:m-[5px]">
                                         {(state?.modalData?.technologies || []).map(
                                             (item: string, i: number) => (
                                                 <div key={i}>
@@ -110,42 +121,20 @@ export default function Modal(): React.JSX.Element {
                                                 </div>
                                             ),
                                         )}
-                                    </TechList>
-                                    <P
+                                    </div>
+                                    <div
+                                        className="mb-0 desktop:mb-0 wide:mb-0"
                                         dangerouslySetInnerHTML={{
                                             __html: state?.modalData?.description || "",
                                         }}
                                     />
-                                </Content>
+                                </div>
                                 <FeatureCarousel />
-                            </Row>
+                            </div>
                         )}
                     </>
                 )}
-            </Container>
+            </div>
         </ExpandModal>
     );
 }
-
-const DIV = styled.div`
-    display: flex;
-    margin-top: 30px;
-    justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: visible;
-    //height: 824px;
-    //display: table; ;
-`;
-
-const Img = styled.img`
-    width: 70%;
-    height: auto;
-    //max-height: 100px;
-    //height: auto;
-    margin: 0 10px;
-    display: table-row;
-
-    &:first-of-type {
-        padding-left: -40px;
-    }
-`;

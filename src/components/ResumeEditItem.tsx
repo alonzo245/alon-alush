@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect, useRef, useState } from "react";
 import "../pages/resume/resume.style.css";
 import { useGlobalState } from "../hooks/useGlobalState";
 import { AiFillEdit, AiOutlinePlus } from "react-icons/ai";
-import { EditIconWrapper2 } from "../pages/Home.style";
+import { EditIconWrapper2 } from "../pages/Home";
 import { WorkHistoryItem } from "../data/workHistory";
 
 export default function ResumeEditItem(): React.JSX.Element {

@@ -6,8 +6,31 @@ import { useGlobalState } from "../../hooks/useGlobalState";
 import workFeatures from "../../data/workFeatures";
 import JobFeatures from "../../components/JobFeatures";
 import ResumeEditItem from "../../components/ResumeEditItem";
-import { EditIconWrapper } from "../Home.style";
+import editIcon from "../../assets/svg/edit.svg";
 import { WorkHistoryItem } from "../../data/workHistory";
+
+const EditIconWrapper = ({
+    children,
+    style,
+}: {
+    children: React.ReactNode;
+    style?: React.CSSProperties;
+}): React.JSX.Element => (
+    <div
+        className="relative"
+        style={{
+            ...style,
+        }}
+    >
+        <div
+            className="absolute left-[-25px] top-[10px] block w-5 h-5 bg-no-repeat bg-[top_left]"
+            style={{
+                backgroundImage: `url(${editIcon})`,
+            }}
+        />
+        {children}
+    </div>
+);
 
 interface PProps {
     open?: string;

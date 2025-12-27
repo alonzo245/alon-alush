@@ -1,8 +1,20 @@
 import React from "react";
 import techIcons from "../data/techIcons";
 import { useGlobalState } from "../hooks/useGlobalState";
-import { EditIconWrapper } from "./Home.style";
 import AttributesEdit from "../components/AttributesEdit";
+import editIcon from "../assets/svg/edit.svg";
+
+const EditIconWrapper = ({ children }: { children: React.ReactNode }): React.JSX.Element => (
+    <div className="relative">
+        <div
+            className="absolute left-[-25px] top-[10px] block w-5 h-5 bg-no-repeat bg-[top_left]"
+            style={{
+                backgroundImage: `url(${editIcon})`,
+            }}
+        />
+        {children}
+    </div>
+);
 import { FaBorderNone } from "react-icons/fa";
 import { AttributeCategory } from "../data/user";
 

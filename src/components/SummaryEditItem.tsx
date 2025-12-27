@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalState } from "../hooks/useGlobalState";
-import { EditIconWrapper2 } from "../pages/Home.style";
+import { EditIconWrapper2 } from "../pages/Home";
 import { AiOutlineCloseCircle, AiOutlinePlus } from "react-icons/ai";
 import { SummaryItem } from "../data/summary";
 
