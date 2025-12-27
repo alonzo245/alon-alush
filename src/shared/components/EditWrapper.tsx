@@ -1,7 +1,6 @@
 import { AiFillEdit } from "react-icons/ai";
 
 import React, { ReactNode } from "react";
-import styled from "@emotion/styled";
 import { useGlobalState } from "../hooks/useGlobalState";
 
 interface EditWrapperProps {
@@ -12,12 +11,8 @@ export default function EditWrapper({ children }: EditWrapperProps): React.JSX.E
     const { state } = useGlobalState();
 
     return (
-        <Container>
+        <div className="relative">
             {state?.edit && <AiFillEdit size={20} color={"#fff"} />} {children}
-        </Container>
+        </div>
     );
 }
-
-const Container = styled.div`
-    position: relative;
-`;
