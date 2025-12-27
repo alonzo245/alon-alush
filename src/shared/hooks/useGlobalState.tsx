@@ -7,7 +7,6 @@ interface User {
 
 interface GlobalState {
     user: User | null;
-    edit: boolean;
     modal?: boolean;
     modalData?: any;
     mobileMenuVisibility?: boolean;
@@ -22,7 +21,6 @@ interface GlobalStateContextValue {
 const globalStateContext = React.createContext<GlobalStateContextValue>({
     state: {
         user: null,
-        edit: true,
         setState: () => {},
     },
     setState: () => {},
@@ -32,7 +30,6 @@ export const useGlobalState = (): GlobalStateContextValue => useContext(globalSt
 
 const initialState: GlobalState = {
     user: { ...user },
-    edit: false,
     setState: () => {},
 };
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { useGlobalState } from "../../shared/hooks/useGlobalState";
-import SummaryEditItem from "./SummaryEditItem";
 import { SummaryItem } from "../../constants/data/summary";
 
 export default function Summary(): React.JSX.Element {
@@ -11,7 +10,7 @@ export default function Summary(): React.JSX.Element {
             className="flex flex-col px-[10px] mx-auto desktop:my-10 desktop:px-20 wide:my-10 wide:px-20"
             id="summary"
         >
-            {state?.user?.summary?.length === 0 || state?.edit ? null : (
+            {state?.user?.summary?.length === 0 ? null : (
                 <div className="flex flex-1 mx-auto flex-row w-full flex-wrap justify-evenly items-start desktop:my-10 desktop:px-0 desktop:[&>div]:w-[calc(50%-20px)] desktop:[&>div]:mx-[10px] desktop:[&>div]:px-[10px] wide:my-10 wide:px-0 wide:[&>div]:w-[calc(50%-20px)] wide:[&>div]:px-5">
                     {(state?.user?.summary || [])?.map((item: SummaryItem, i: number) => {
                         return (
@@ -32,7 +31,6 @@ export default function Summary(): React.JSX.Element {
                     })}
                 </div>
             )}
-            <SummaryEditItem />
         </div>
     );
 }

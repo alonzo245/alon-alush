@@ -36,16 +36,3 @@
         transform: rotate(360deg);
     }
 }
-
-.editIcon:before {
-    position: absolute;
-    left: -25px;
-    top: 10px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    content: "";
-    background-image: url("../assets/svg/edit.svg");
-    background-repeat: no-repeat;
-    background-position: top left;
-}

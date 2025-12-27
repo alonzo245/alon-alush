@@ -2,7 +2,6 @@ import React from "react";
 import techImages from "../../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
 import { useGlobalState } from "../../shared/hooks/useGlobalState";
-import ProjectsEdit from "./ProjectsEdit";
 import { GitHubProject } from "../../constants/data/githubProjects";
 
 const projectSourceUrlButton = (url: string): React.JSX.Element => (
@@ -20,9 +19,7 @@ const projectSourceUrlButton = (url: string): React.JSX.Element => (
 export default function Projects(): React.JSX.Element {
     const { state } = useGlobalState();
 
-    return state?.edit ? (
-        <ProjectsEdit />
-    ) : (
+    return (
         <div className="flex flex-col items-center justify-center w-full mx-auto" id="projects">
             <h3 className="text-[30px] mb-5 mt-[50px] desktop:mt-0 wide:mt-0">
                 {state?.user?.projectsTitle}
