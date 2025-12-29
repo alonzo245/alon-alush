@@ -1,24 +1,14 @@
 import React from "react";
 import clsx from "clsx";
-import { useLink } from "@react-aria/link";
+import { Link, Button } from "react-aria-components";
 import techImages from "../../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
 import { useGlobalState } from "../../core/hooks/useGlobalState";
 import { GitHubProject } from "../../constants/data/githubProjects";
 
 const ProjectSourceButton = ({ url }: { url: string }): React.JSX.Element => {
-    const linkRef = React.useRef<HTMLAnchorElement>(null);
-    const { linkProps } = useLink(
-        {
-            elementType: "a",
-        },
-        linkRef
-    );
-
     return (
-        <a
-            {...linkProps}
-            ref={linkRef}
+        <Link
             href={url}
             target="_blank"
             rel="noopener noreferrer"
@@ -26,12 +16,13 @@ const ProjectSourceButton = ({ url }: { url: string }): React.JSX.Element => {
                 "w-full text-white px-4 py-2.5 cursor-pointer text-sm font-medium outline-none",
                 "flex items-center justify-center gap-2 border border-dashed border-white/30 rounded-md",
                 "no-underline transition-all duration-300 ease-in-out",
-                "hover:bg-white/10 hover:border-white/50 hover:shadow-lg active:scale-[0.98]"
+                "hover:bg-white/10 hover:border-white/50 hover:shadow-lg active:scale-[0.98]",
+                "focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2"
             )}
         >
             <span>View Source</span>
-            <FaGithub size={18} />
-        </a>
+            <FaGithub size={18} aria-hidden="true" />
+        </Link>
     );
 };
 
@@ -39,17 +30,19 @@ export default function Projects(): React.JSX.Element {
     const { state } = useGlobalState();
 
     return (
-        <div
+        <section
             className="flex flex-col items-center justify-center w-full mx-auto px-4"
             id="projects"
+            aria-labelledby="projects-heading"
         >
-            <h3 className="text-4xl font-bold mb-12 mt-12 desktop:mt-8 wide:mt-8 text-white">
+            <h2 id="projects-heading" className="text-4xl font-bold mb-12 mt-12 desktop:mt-8 wide:mt-8 text-white">
                 {state?.user?.projectsTitle}
-            </h3>
+            </h2>
             <div className="flex flex-wrap justify-center gap-6 w-full max-w-7xl">
                 {(state?.user?.projects || []).map((project: GitHubProject, key: number) => (
-                    <div
+                    <article
                         key={key}
+                        role="listitem"
                         className="group relative bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm text-white p-6 flex flex-col w-full max-w-[320px] rounded-xl border border-white/10 shadow-xl transition-all duration-300 ease-in-out hover:border-[#5600ff]/50 hover:shadow-2xl hover:shadow-[#5600ff]/20 hover:-translate-y-1 desktop:w-[280px] wide:w-[300px]"
                         style={{
                             backgroundImage: `linear-gradient(135deg, rgba(86, 0, 255, 0.05) 0%, rgba(0, 0, 0, 0.2) 100%)`,
@@ -70,11 +63,12 @@ export default function Projects(): React.JSX.Element {
                             </p>
 
                             {/* Technology Icons */}
-                            <div className="flex flex-wrap items-center gap-2 mb-4 pt-3 border-t border-dashed border-white/10">
+                            <div className="flex flex-wrap items-center gap-2 mb-4 pt-3 border-t border-dashed border-white/10" role="list" aria-label="Technologies used">
                                 {project.technologies &&
                                     project.technologies.map((technology: string) => (
                                         <div
                                             key={technology}
+                                            role="listitem"
                                             className="rounded-lg w-8 h-8 bg-white/5 border border-white/10 p-1.5 flex items-center justify-center transition-all duration-200 hover:bg-white/10 hover:scale-110"
                                             style={{
                                                 backgroundImage: `url(${
@@ -87,6 +81,7 @@ export default function Projects(): React.JSX.Element {
                                                 backgroundPosition: "center",
                                             }}
                                             title={technology}
+                                            aria-label={technology}
                                         />
                                     ))}
                             </div>
@@ -96,9 +91,9 @@ export default function Projects(): React.JSX.Element {
                         <div className="mt-auto pt-2">
                             {project.url && <ProjectSourceButton url={project.url} />}
                         </div>
-                    </div>
+                    </article>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }

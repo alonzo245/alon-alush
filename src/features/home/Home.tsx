@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import { useLink } from "@react-aria/link";
+import { Link } from "react-aria-components";
 import Resume from "../resume/Resume";
 import Summary from "../summary/Summary";
 import Navigation from "../../shared/components/Navigation";
@@ -13,27 +13,25 @@ import { useUserQuery } from "../../core/hooks/useUserQuery";
 import Attributes from "../attributes/Attributes";
 import Videos from "../videos/Videos";
 
-const SocialLink = ({ href, children, ariaLabel }: { href: string; children: React.ReactNode; ariaLabel: string }) => {
-    const linkRef = React.useRef<HTMLAnchorElement>(null);
-    const { linkProps } = useLink(
-        {
-            elementType: "a",
-        },
-        linkRef
-    );
-
+const SocialLink = ({
+    href,
+    children,
+    ariaLabel,
+}: {
+    href: string;
+    children: React.ReactNode;
+    ariaLabel: string;
+}) => {
     return (
-        <a
-            {...linkProps}
-            ref={linkRef}
+        <Link
             href={href}
             target={"_blank"}
             rel="noopener noreferrer"
             aria-label={ariaLabel}
-            className="inline-block cursor-pointer my-[10px] mx-[10px]"
+            className="inline-block cursor-pointer my-[10px] mx-[10px] focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2 rounded"
         >
             {children}
-        </a>
+        </Link>
     );
 };
 
@@ -51,39 +49,55 @@ export default function Home(): React.JSX.Element {
     }
 
     return (
-        <div className={clsx("mx-auto flex justify-center items-start flex-col", "desktop:max-w-[1260px] wide:max-w-[1440px]")}>
+        <main
+            className={clsx(
+                "mx-auto flex justify-center items-start flex-col",
+                "desktop:max-w-[1260px] wide:max-w-[1440px]",
+            )}
+        >
             <Modal />
 
-            <header>
+            <header role="banner">
                 <Navigation />
             </header>
-            <div className={clsx(
-                "flex justify-between items-center flex-col mx-auto w-full",
-                "desktop:flex-row desktop:items-center desktop:my-5 desktop:mx-auto desktop:w-[90%]",
-                "wide:flex-row wide:items-center wide:my-5 wide:mx-auto"
-            )} id="hero">
+            <section
+                className={clsx(
+                    "flex justify-between items-center flex-col mx-auto w-full",
+                    "desktop:flex-row desktop:items-center desktop:my-5 desktop:mx-auto desktop:w-[90%]",
+                    "wide:flex-row wide:items-center wide:my-5 wide:mx-auto",
+                )}
+                id="hero"
+                aria-labelledby="hero-heading"
+            >
                 <Avatar />
-                <div className={clsx(
-                    "relative w-[480px] min-w-[480px] flex flex-col text-center items-center",
-                    "desktop:ml-5 desktop:min-w-[670px] desktop:items-start desktop:text-left",
-                    "wide:ml-[60px] wide:min-w-[830px] wide:items-start wide:text-left"
-                )}>
-                    <h1 className={clsx(
-                        "text-white text-[60px] text-center mt-5",
-                        "wide:text-[100px] wide:mt-0",
-                        "desktop:text-[86px] desktop:mt-0"
-                    )}>
+                <div
+                    className={clsx(
+                        "relative w-[480px] min-w-[480px] flex flex-col text-center items-center",
+                        "desktop:ml-5 desktop:min-w-[670px] desktop:items-start desktop:text-left",
+                        "wide:ml-[60px] wide:min-w-[830px] wide:items-start wide:text-left",
+                    )}
+                >
+                    <h1
+                        id="hero-heading"
+                        className={clsx(
+                            "text-white text-[60px] text-center mt-5",
+                            "wide:text-[100px] wide:mt-0",
+                            "desktop:text-[86px] desktop:mt-0",
+                        )}
+                    >
                         {user?.name}
                     </h1>
-                    <h2 className={clsx(
-                        "text-[22px] text-[#5600ff] px-[60px] mt-[10px] mb-[10px]",
-                        "desktop:text-[46px] desktop:px-0",
-                        "wide:text-[56px] wide:px-0"
-                    )}>
+                    <h2
+                        className={clsx(
+                            "text-[22px] text-[#5600ff] px-[60px] mt-[10px] mb-[10px]",
+                            "desktop:text-[46px] desktop:px-0",
+                            "wide:text-[56px] wide:px-0",
+                        )}
+                    >
                         {user?.currentJobTitle}
                     </h2>
 
-                    <div>
+                    <nav aria-label="Social media links">
                         {user?.linkedin && (
                             <SocialLink href={user.linkedin} ariaLabel="LinkedIn">
                                 <FaLinkedin size={35} color={"#999"} />
@@ -97,14 +111,14 @@ export default function Home(): React.JSX.Element {
                         <SocialLink href="#videos" ariaLabel="YouTube Videos">
                             <FaYoutubeSquare size={35} color={"#999"} />
                         </SocialLink>
-                    </div>
+                    </nav>
                 </div>
-            </div>
+            </section>
             <Resume />
             <Attributes />
             <Summary />
             <Videos />
             <Projects />
-        </div>
+        </main>
     );
 }

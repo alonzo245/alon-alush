@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "react-aria-components";
 import "./resume.style.css";
 import images from "../../assets/images";
 import { MdWorkOutline } from "react-icons/md";
@@ -8,6 +9,7 @@ import JobFeatures from "./JobFeatures";
 import { WorkHistoryItem } from "../../constants/data/workHistory";
 
 interface PProps {
+    id?: string;
     open?: string;
     dangerouslySetInnerHTML?: { __html: string };
 }
@@ -47,14 +49,20 @@ export default function Resume(): React.JSX.Element {
     };
 
     return (
-        <div className="w-full !important row centered" id="resume">
+        <section
+            className="w-full !important row centered"
+            id="resume"
+            aria-labelledby="resume-heading"
+        >
             <div className="title">
                 {resume?.length > 0 ? (
-                    <h3 className="text-[50px]">{state?.user?.resumeTitle}</h3>
+                    <h2 id="resume-heading" className="text-[50px]">
+                        {state?.user?.resumeTitle}
+                    </h2>
                 ) : null}
             </div>
             <div>
-                <ul className="branch branch-centered">
+                <ul className="branch branch-centered" aria-label="Work history timeline">
                     {(resume || []).map(
                         (
                             { id, title, company, icon, description, date, preDescription = null },
@@ -98,19 +106,22 @@ export default function Resume(): React.JSX.Element {
                                         {description && description.length > 800 ? (
                                             <>
                                                 <P
+                                                    id={`resume-description-${k}`}
                                                     dangerouslySetInnerHTML={{
                                                         __html: description,
                                                     }}
                                                     open={opened?.includes(k) ? "open" : ""}
                                                 />
-                                                <div
-                                                    className="border border-dashed border-[#99999980] h-[35px] text-center rounded-[5px] leading-[35px] cursor-pointer my-[10px] mx-auto desktop:max-w-[250px] wide:max-w-[350px]"
-                                                    onClick={() => toggleHidden(k)}
+                                                <Button
+                                                    onPress={() => toggleHidden(k)}
+                                                    className="border border-dashed border-[#99999980] h-[35px] px-4 text-center rounded-[5px] leading-[35px] cursor-pointer my-[10px] mx-auto desktop:max-w-[250px] wide:max-w-[350px] bg-transparent text-inherit focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2"
+                                                    aria-expanded={opened?.includes(k)}
+                                                    aria-controls={`resume-description-${k}`}
                                                 >
                                                     {opened?.includes(k)
                                                         ? "Read Less"
                                                         : "Read More"}
-                                                </div>
+                                                </Button>
                                             </>
                                         ) : (
                                             description && (
@@ -129,6 +140,6 @@ export default function Resume(): React.JSX.Element {
                     )}
                 </ul>
             </div>
-        </div>
+        </section>
     );
 }

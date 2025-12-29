@@ -6,31 +6,32 @@ export default function Summary(): React.JSX.Element {
     const { state } = useGlobalState();
 
     return (
-        <div
+        <section
             className="flex flex-col px-[10px] mx-auto desktop:my-10 desktop:px-20 wide:my-10 wide:px-20"
             id="summary"
+            aria-labelledby="summary-heading"
         >
             {state?.user?.summary?.length === 0 ? null : (
                 <div className="flex flex-1 mx-auto flex-row w-full flex-wrap justify-evenly items-start desktop:my-10 desktop:px-0 desktop:[&>div]:w-[calc(50%-20px)] desktop:[&>div]:mx-[10px] desktop:[&>div]:px-[10px] wide:my-10 wide:px-0 wide:[&>div]:w-[calc(50%-20px)] wide:[&>div]:px-5">
                     {(state?.user?.summary || [])?.map((item: SummaryItem, i: number) => {
                         return (
-                            <div
+                            <article
                                 key={i}
                                 className="flex-none leading-[1.2] p-5 rounded-[10px] w-full self-start mb-5 [&_li]:py-[3px] desktop:max-w-[1000px] wide:max-w-[1000px]"
                             >
-                                <h4 className="text-[30px] mb-[10px] mt-[30px] desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0">
+                                <h3 className="text-[30px] mb-[10px] mt-[30px] desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0">
                                     {item?.title}
-                                </h4>
-                                <ul>
+                                </h3>
+                                <ul aria-label={`${item?.title} details`}>
                                     {(item?.bullets || [])?.map((bullet: string, k: number) => {
                                         return <li key={k}>{bullet}</li>;
                                     })}
                                 </ul>
-                            </div>
+                            </article>
                         );
                     })}
                 </div>
             )}
-        </div>
+        </section>
     );
 }
