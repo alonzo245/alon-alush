@@ -7,7 +7,7 @@ export default function Summary(): React.JSX.Element {
 
     return (
         <section
-            className="flex flex-col px-[10px] mx-auto desktop:my-10 desktop:px-20 wide:my-10 wide:px-20"
+            className="flex flex-col px-[10px] mx-auto desktop:my-10 desktop:px-10 wide:my-10 wide:px-20"
             id="summary"
             aria-labelledby="summary-heading"
         >
@@ -19,7 +19,7 @@ export default function Summary(): React.JSX.Element {
                                 key={i}
                                 className="flex-none leading-[1.2] p-5 rounded-[10px] w-full self-start mb-5 [&_li]:py-[3px] desktop:w-[calc(50%-20px)] desktop:mx-[10px] desktop:px-[10px] wide:w-[calc(50%-20px)] wide:px-5"
                             >
-                                <h3 className="text-[30px] mb-[10px] mt-[30px] desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0">
+                                <h3 className="text-[30px] mb-[10px] mt-[30px] desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0 font-bold">
                                     {item?.title}
                                 </h3>
                                 <ul aria-label={`${item?.title} details`}>

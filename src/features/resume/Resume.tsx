@@ -57,7 +57,7 @@ const Resume = (): React.JSX.Element => {
         >
             <div id="resume-heading" className="title">
                 {resume?.length > 0 ? (
-                    <h2 className="text-[50px]">{state?.user?.resumeTitle}</h2>
+                    <h2 className="text-[50px] font-bold">{state?.user?.resumeTitle}</h2>
                 ) : null}
             </div>
             <div>

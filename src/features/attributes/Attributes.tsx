@@ -15,7 +15,7 @@ export default function Attributes(): React.JSX.Element {
         >
             <h2
                 id="attributes-heading"
-                className="text-[50px] mb-[10px] mt-0 desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0"
+                className="text-[50px] mb-[10px] mt-0 desktop:mb-[10px] desktop:mt-0 wide:mb-[10px] wide:mt-0 font-bold"
                 style={{ alignSelf: "center", marginBottom: "30px", marginTop: "40px" }}
             >
                 {state?.user?.attributesTitle}

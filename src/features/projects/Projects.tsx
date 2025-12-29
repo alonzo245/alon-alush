@@ -43,7 +43,7 @@ const Projects = (): React.JSX.Element => {
         >
             <h2
                 id="projects-heading"
-                className="text-4xl font-bold mb-12 mt-12 desktop:mt-8 wide:mt-8 text-white"
+                className="text-[30px] mb-5 mt-[30px] desktop:mt-[30px] wide:mt-[30px] font-bold"
             >
                 {state?.user?.projectsTitle}
             </h2>

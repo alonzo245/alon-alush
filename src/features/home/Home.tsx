@@ -101,7 +101,7 @@ const Home = (): React.JSX.Element => {
                     <h1
                         id="hero-heading"
                         className={clsx(
-                            "text-white text-[60px] text-center mt-5",
+                            "text-white text-[60px] text-center mt-5 font-bold",
                             "wide:text-[100px] wide:mt-0",
                             "desktop:text-[86px] desktop:mt-0",
                         )}
@@ -110,7 +110,7 @@ const Home = (): React.JSX.Element => {
                     </h1>
                     <h2
                         className={clsx(
-                            "text-[22px] text-[#5600ff] px-[60px] mt-[10px] mb-[10px]",
+                            "text-[22px] text-[#5600ff] px-[60px] mt-[10px] mb-[10px] font-bold",
                             "desktop:text-[46px] desktop:px-0",
                             "wide:text-[56px] wide:px-0",
                         )}
