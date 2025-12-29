@@ -116,7 +116,14 @@ const Resume = (): React.JSX.Element => {
                                                 />
                                                 <Button
                                                     onPress={() => handleToggleHidden(k)}
-                                                    className="border border-dashed border-[#99999980] h-[35px] px-4 text-center rounded-[5px] leading-[35px] cursor-pointer my-[10px] mx-auto desktop:max-w-[250px] wide:max-w-[350px] bg-transparent text-inherit focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2"
+                                                    className="border border-dashed border-[#99999980] min-h-[44px] h-auto py-2 px-4 text-center rounded-[5px] leading-normal cursor-pointer my-[10px] mx-auto block w-full desktop:max-w-[250px] wide:max-w-[350px] bg-transparent text-inherit focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2 select-none relative z-10 active:bg-white/10"
+                                                    style={{
+                                                        touchAction: "manipulation",
+                                                        WebkitTapHighlightColor: "transparent",
+                                                        WebkitTouchCallout: "none",
+                                                        userSelect: "none",
+                                                        pointerEvents: "auto",
+                                                    }}
                                                     aria-expanded={opened?.includes(k)}
                                                     aria-controls={`resume-description-${k}`}
                                                 >
