@@ -4,6 +4,7 @@ import { Link } from "react-aria-components";
 import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
 import { useGlobalState } from "../../core/hooks/useGlobalState";
 import { useUserQuery } from "../../core/hooks/useUserQuery";
+import LoadingSpinner from "../../shared/components/LoadingSpinner";
 
 // Lazy load heavy components
 const Resume = lazy(() => import("../resume/Resume"));
@@ -41,7 +42,7 @@ SocialLink.displayName = "SocialLink";
 
 const LoadingFallback = (): React.JSX.Element => (
     <div className="mx-auto flex justify-center items-center h-screen">
-        <div className="text-white">Loading...</div>
+        <LoadingSpinner size="lg" />
     </div>
 );
 
@@ -53,7 +54,7 @@ const Home = (): React.JSX.Element => {
     if (isLoading) {
         return (
             <div className="mx-auto flex justify-center items-center h-screen">
-                <div className="text-white">Loading...</div>
+                <LoadingSpinner size="lg" />
             </div>
         );
     }

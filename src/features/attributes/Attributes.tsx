@@ -29,7 +29,7 @@ export default function Attributes(): React.JSX.Element {
                         </h3>
 
                         <div
-                            className="flex flex-wrap justify-center items-center w-full desktop:w-1/2 wide:w-1/2"
+                            className="flex flex-wrap justify-center items-center w-full desktop:w-1/2 wide:w-1/2 mx-auto"
                             role="list"
                             aria-label={`${section?.title} technologies`}
                         >

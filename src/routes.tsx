@@ -1,12 +1,13 @@
 import { lazy, Suspense } from "react";
 import { RouteObject } from "react-router-dom";
+import LoadingSpinner from "./shared/components/LoadingSpinner";
 
 // Lazy load routes for code splitting
 const Home = lazy(() => import("./features/home/Home"));
 
 const LoadingFallback = (): React.JSX.Element => (
     <div className="mx-auto flex justify-center items-center h-screen">
-        <div className="text-white">Loading...</div>
+        <LoadingSpinner size="lg" />
     </div>
 );
 
