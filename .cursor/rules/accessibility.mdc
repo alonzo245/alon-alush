@@ -1,0 +1,30 @@
+# Accessibility (A11y)
+
+- **Always use React Aria Components** for interactive elements (Button, Link, etc.)
+- Use semantic HTML (`<main>`, `<section>`, `<article>`, `<nav>`, `<header>`)
+- Proper heading hierarchy (h1 → h2 → h3, no skipping levels)
+- **Implement accessibility features on all interactive elements**:
+  - Add `tabIndex="0"` for keyboard navigation
+  - Add `aria-label` or `aria-labelledby` for screen readers
+  - Add `onClick` and `onKeyDown` handlers for keyboard interaction
+  - Ensure all interactive elements are keyboard accessible
+- Add `aria-label`, `aria-labelledby`, `aria-describedby` where needed
+- Use `aria-hidden="true"` for decorative icons/images
+- Ensure keyboard navigation works for all interactive elements
+- Add focus styles for keyboard users
+- Use `role` attributes only when semantic HTML isn't sufficient
+- Test with screen readers
+
+## Accessibility Checklist
+
+- [ ] All interactive elements use React Aria Components
+- [ ] Semantic HTML used appropriately
+- [ ] Proper heading hierarchy
+- [ ] ARIA labels where needed
+- [ ] Keyboard navigation works
+- [ ] Focus indicators visible
+- [ ] Screen reader tested
+- [ ] Color contrast meets WCAG AA standards
+- [ ] Images have alt text
+- [ ] Forms have labels
+

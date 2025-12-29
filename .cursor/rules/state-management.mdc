@@ -1,0 +1,22 @@
+# State Management
+
+## Global State (Zustand)
+
+- Use `useAppStore` from `store/useAppStore.ts` for global application state
+- Keep stores focused and modular
+- Use TypeScript interfaces for store state
+- Prefer computed values over storing derived state
+
+## URL State (nuqs)
+
+- Use `useQueryStates` from `nuqs` for URL-based state
+- Define parsers in `core/utils/nuqs.ts`
+- Keep URL state minimal and meaningful
+
+## Server State (TanStack Query)
+
+- Use TanStack Query hooks for all API calls
+- Define queries in `core/api/queries/`
+- Use proper query keys for cache management
+- Handle loading and error states appropriately
+

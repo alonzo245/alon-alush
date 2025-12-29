@@ -1,0 +1,20 @@
+# Git Workflow
+
+- Use descriptive commit messages
+- Follow conventional commits format when possible
+- Keep commits focused and atomic
+- Use branches for features
+
+## Code Review Checklist
+
+- [ ] TypeScript types are correct
+- [ ] Components are accessible (ARIA attributes, keyboard navigation)
+- [ ] Mobile-first responsive design
+- [ ] No console.logs or debug code
+- [ ] Error handling is appropriate
+- [ ] Performance considerations addressed
+- [ ] Tests pass
+- [ ] Code follows project structure
+- [ ] Imports are organized
+- [ ] Tailwind classes are used correctly
+

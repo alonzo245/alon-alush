@@ -1,0 +1,11 @@
+# Notes
+
+- Always prioritize accessibility
+- Mobile-first design approach
+- Keep components small and focused
+- Use TypeScript strictly
+- Follow the established project structure
+- When in doubt, check existing code patterns
+- If unsure about an answer, say so instead of guessing
+- If there might not be a correct answer, acknowledge it
+

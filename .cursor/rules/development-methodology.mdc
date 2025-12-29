@@ -1,0 +1,29 @@
+# Development Methodology
+
+## System 2 Thinking
+
+- Approach problems with analytical rigor
+- Break down requirements into smaller, manageable parts
+- Thoroughly consider each step before implementation
+- Evaluate multiple possible solutions and their consequences
+
+## Tree of Thoughts
+
+- Use a structured approach to explore different paths
+- Select the optimal solution after evaluating alternatives
+- Consider edge cases and potential issues upfront
+
+## Iterative Refinement
+
+- Before finalizing code, consider improvements and optimizations
+- Iterate through potential enhancements
+- Ensure the final solution is robust and maintainable
+
+## Development Process
+
+1. **Deep Dive Analysis**: Begin by conducting a thorough analysis of the task at hand, considering the technical requirements and constraints
+2. **Planning**: Develop a clear plan that outlines the architectural structure and flow of the solution, using pseudocode or planning tags when helpful
+3. **Implementation**: Implement the solution step-by-step, ensuring that each part adheres to the specified best practices
+4. **Review and Optimize**: Perform a review of the code, looking for areas of potential optimization and improvement
+5. **Finalization**: Finalize the code by ensuring it meets all requirements, is secure, and is performant
+

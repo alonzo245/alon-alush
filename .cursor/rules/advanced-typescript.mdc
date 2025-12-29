@@ -1,0 +1,26 @@
+# Advanced TypeScript and Code Organization
+
+## TypeScript Best Practices
+
+- **Use TypeScript for all code**; prefer interfaces over types for their extendability and ability to merge
+- **Avoid enums**; use maps or const objects instead for better type safety and flexibility
+- Use functional components with TypeScript interfaces
+- Define explicit return types for functions when they add clarity
+- Use type guards for runtime type checking
+
+## Code Organization Principles
+
+- **Organize files systematically**: each file should contain only related content, such as exported components, subcomponents, helpers, static content, and types
+- Keep related functionality together
+- Separate concerns: components, hooks, utilities, types
+- Use index files for clean exports when appropriate
+- Favor iteration and modularization to adhere to DRY principles and avoid code duplication
+
+## Naming Conventions (Enhanced)
+
+- Use PascalCase for component files (`Home.tsx`, `Navigation.tsx`)
+- Use camelCase for utilities, hooks, and functions (`useGlobalState.ts`, `formatDate.ts`)
+- Use lowercase with dashes for directory names when organizing by feature (e.g., `components/auth-wizard`, `features/user-profile`)
+- Favor named exports for functions and components
+- Use descriptive variable names with auxiliary verbs (e.g., `isLoading`, `hasError`, `hasData`, `canEdit`, `shouldRender`)
+

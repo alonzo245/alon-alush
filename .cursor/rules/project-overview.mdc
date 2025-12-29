@@ -1,0 +1,41 @@
+# Project Overview
+
+This is a modern React 19 portfolio website built with TypeScript, Tailwind CSS, and React Aria Components for accessibility.
+
+## Tech Stack
+
+### Core Technologies
+- **React 19** - Latest React features and patterns
+- **TypeScript** - Type safety throughout the codebase
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router 7** - Routing and navigation
+- **TanStack Query (React Query)** - Server state management and data fetching
+- **Zustand** - Client state management
+- **nuqs** - URL-based state management
+- **clsx** - Conditional className utility
+- **React Aria Components** - Accessible component primitives
+
+### Development Tools
+- **Storybook** - Component development and documentation
+- **Playwright** - E2E testing
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **TypeScript** - Type checking
+
+## Project Structure
+
+```
+src/
+├── app/              # New work goes here (App Router pattern)
+├── components/       # Design system components (reusable, accessible)
+├── core/            # Business logic, hooks, utils
+│   ├── hooks/       # Custom React hooks
+│   ├── utils/       # Utility functions
+│   └── api/         # API client & queries
+├── routes/          # Route-based pages + nested components
+├── store/           # Zustand stores
+├── stories/         # Storybook stories
+├── features/        # Feature-based modules (legacy, migrate to routes/)
+└── routes.tsx       # Centralized route configuration
+```
+

@@ -1,0 +1,50 @@
+# Code Style and Structure
+
+## File Organization
+
+- Write concise, technical TypeScript code with accurate examples
+- Use functional and declarative programming patterns; avoid classes
+- Favor iteration and modularization over code duplication
+- Use descriptive variable names with auxiliary verbs (e.g., `isLoading`, `hasError`, `hasData`)
+- Structure files with exported components, subcomponents, helpers, static content, and types
+- Use PascalCase for component files, camelCase for utilities and hooks
+
+## Optimization and Best Practices
+
+- Minimize the use of `useEffect` and `setState` when possible
+- Implement dynamic imports (`React.lazy()`) for code splitting and optimization
+- Use responsive design with a mobile-first approach
+- Optimize images: use WebP format when possible, include size data, implement lazy loading with `loading="lazy"`
+- Use `React.memo()`, `useMemo()`, and `useCallback()` appropriately for performance
+
+## Error Handling and Validation
+
+- Prioritize error handling and edge cases
+- Use early returns for error conditions
+- Implement guard clauses to handle preconditions and invalid states early
+- Use custom error types for consistent error handling
+- Handle API errors gracefully with user-friendly messages
+
+## State Management and Data Fetching
+
+- Use modern state management solutions (Zustand for global state, TanStack React Query for server state)
+- Implement validation using Zod for schema validation when needed
+- Handle loading and error states appropriately
+- Use proper query keys for cache management
+
+## Security and Performance
+
+- Implement proper error handling, user input validation, and secure coding practices
+- Follow performance optimization techniques: reduce load times, improve rendering efficiency
+- Sanitize user inputs
+- Use HTTPS and secure authentication practices
+- Avoid exposing sensitive information in client-side code
+
+## Testing and Documentation
+
+- Write unit tests for components using Jest and React Testing Library
+- Write E2E tests using Playwright for critical user flows
+- Provide clear and concise comments for complex logic
+- Use JSDoc comments for functions and components to improve IDE intellisense
+- Document component props and usage in Storybook stories
+

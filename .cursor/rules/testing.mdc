@@ -1,0 +1,20 @@
+# Testing
+
+## Unit Tests
+
+- Write tests for utilities and hooks
+- Use React Testing Library for component tests
+- Test accessibility with `@testing-library/jest-dom`
+
+## E2E Tests
+
+- Write Playwright tests in `e2e/` directory
+- Test critical user flows
+- Test accessibility with Playwright's accessibility features
+
+## Storybook
+
+- Create stories for design system components
+- Document component props and usage
+- Show different states and variants
+

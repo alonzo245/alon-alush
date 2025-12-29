@@ -1,0 +1,11 @@
+# Code Quality Standards
+
+- **No TODOs, placeholders, or incomplete implementations** - code must be fully functional
+- **Complete implementations only** - include all required imports and proper naming
+- **Verify code thoroughly** before considering it final
+- **DRY Principle** - Don't Repeat Yourself, extract reusable code
+- **Readability over performance** - prioritize code that's easy to understand
+- **Early returns** - use early returns to reduce nesting and improve readability
+- **Descriptive naming** - variables and functions should clearly express their purpose
+- **Type safety** - always define types when possible
+

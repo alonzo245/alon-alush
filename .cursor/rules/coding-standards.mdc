@@ -1,0 +1,71 @@
+# Coding Standards
+
+## TypeScript
+
+- Always use TypeScript for new files
+- Define explicit types for props, state, and function parameters
+- Use interfaces for object shapes
+- Avoid `any` - use `unknown` or proper types instead
+- Use type inference where appropriate but be explicit for public APIs
+- Always define types when possible, especially for function parameters and return values
+
+## React Patterns
+
+- Use functional components only
+- Prefer hooks over class components
+- Use React 19 features (use() hook, Server Components where applicable)
+- Keep components small and focused (single responsibility)
+- Extract reusable logic into custom hooks
+- Use React.memo() for expensive components when needed
+- **Use const arrow functions instead of function declarations**: `const Component = () => {}` instead of `function Component() {}`
+- **Event handlers should be named with "handle" prefix**: `handleClick`, `handleKeyDown`, `handleSubmit`, etc.
+- **Use early returns whenever possible** to make code more readable and reduce nesting
+
+## Component Guidelines
+
+### Design System Components (`components/`)
+- Must be reusable and accessible
+- Use React Aria Components for interactive elements
+- Style with Tailwind CSS utility classes
+- Use `clsx` for conditional className management
+- Export as named exports
+- Include TypeScript types
+- Follow mobile-first design principles
+- Include proper ARIA attributes
+
+### Feature Components (`routes/` or `features/`)
+- Page-level components
+- Can use design system components
+- Should be route-specific or feature-specific
+
+## File Naming
+
+- Components: PascalCase (`Home.tsx`, `Navigation.tsx`)
+- Hooks: camelCase with `use` prefix (`useGlobalState.ts`, `useScreenSize.ts`)
+- Utils: camelCase (`nuqs.ts`, `formatDate.ts`)
+- Types: PascalCase (`User.ts`, `GitHubProject.ts`)
+- Constants: camelCase (`config.ts`, `user.ts`)
+- **Use descriptive variable and function/const names** - names should clearly indicate purpose
+
+## Imports
+
+- Group imports: React → external libraries → internal modules
+- Use absolute imports when configured, otherwise relative imports
+- Import types with `import type` when importing only types
+- Order: default imports, then named imports
+
+## Error Handling
+
+- Use error boundaries for component error handling
+- Handle API errors in TanStack Query error callbacks
+- Display user-friendly error messages
+- Log errors appropriately (don't expose sensitive info)
+
+## Performance
+
+- Use `React.memo()` for expensive components
+- Use `useMemo()` and `useCallback()` when appropriate
+- Lazy load routes with `React.lazy()`
+- Use `loading="lazy"` for images below the fold
+- Optimize bundle size (code splitting)
+

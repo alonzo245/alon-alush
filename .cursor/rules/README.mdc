@@ -1,0 +1,29 @@
+# Cursor Rules
+
+This directory contains all the coding rules and guidelines for the project, organized into separate files for better maintainability.
+
+## File Structure
+
+- `role-and-expertise.mdc` - Role definition and expertise areas
+- `core-principles.mdc` - Core development principles
+- `objective.mdc` - Project objectives and goals
+- `project-overview.mdc` - Project structure and tech stack
+- `code-implementation-guidelines.mdc` - Code implementation rules
+- `coding-standards.mdc` - TypeScript, React patterns, and coding standards
+- `accessibility.mdc` - Accessibility guidelines and checklist
+- `state-management.mdc` - State management patterns (Zustand, nuqs, TanStack Query)
+- `styling.mdc` - Tailwind CSS and styling guidelines
+- `testing.mdc` - Testing strategies and tools
+- `development-methodology.mdc` - Development methodology and process
+- `code-style-and-structure.mdc` - Code style and file organization
+- `advanced-typescript.mdc` - Advanced TypeScript patterns
+- `performance-optimization.mdc` - Performance optimization techniques
+- `code-quality.mdc` - Code quality standards
+- `common-patterns.mdc` - Common development patterns
+- `git-workflow.mdc` - Git workflow and code review checklist
+- `notes.mdc` - General notes and reminders
+
+## Usage
+
+These rules are automatically loaded by Cursor IDE. They guide AI-assisted development to ensure consistency, quality, and best practices throughout the codebase.
+

@@ -1,0 +1,47 @@
+# Advanced Performance Optimization
+
+## Code Splitting and Lazy Loading
+
+- Leverage `React.lazy()` for dynamic imports and code splitting
+- Wrap lazy-loaded components in `Suspense` with a fallback UI
+- Use dynamic loading for non-critical components and routes
+- Implement optimized chunking strategy during build process (Vite/Webpack)
+- Split vendor bundles from application code
+- Use route-based code splitting for better performance
+
+## Image Optimization (Enhanced)
+
+- Use WebP format when possible for better compression
+- Include size data (width/height) to prevent layout shift (CLS)
+- Implement lazy loading with `loading="lazy"` for images below the fold
+- Use responsive images with `srcset` when appropriate
+- Optimize image delivery with proper formats and compression
+- Consider using Next.js Image component patterns if migrating
+
+## Web Vitals Optimization
+
+- **Optimize Core Web Vitals** (LCP, CLS, FID/INP) using tools like Lighthouse or WebPageTest
+- Minimize Largest Contentful Paint (LCP) by optimizing images, fonts, and critical CSS
+- Reduce Cumulative Layout Shift (CLS) by setting image dimensions and avoiding dynamic content insertion
+- Improve First Input Delay (FID) / Interaction to Next Paint (INP) by reducing JavaScript execution time
+- Monitor and measure performance regularly
+- Use React DevTools Profiler to identify performance bottlenecks
+
+## React-Specific Optimizations
+
+- Use `React.memo()` for expensive components that receive stable props
+- Use `useMemo()` for expensive computations
+- Use `useCallback()` for stable function references passed to child components
+- Avoid unnecessary re-renders by optimizing dependencies
+- Use React DevTools Profiler to identify performance bottlenecks
+- Minimize bundle size by removing unused code and dependencies
+
+## Performance Checklist
+
+- [ ] Components are memoized when appropriate
+- [ ] Images use lazy loading
+- [ ] Routes are code-split
+- [ ] Bundle size is optimized
+- [ ] Unused code is removed
+- [ ] API calls are cached appropriately
+

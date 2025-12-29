@@ -1,0 +1,36 @@
+# Common Patterns
+
+## Creating a New Component
+
+1. Create component file in appropriate directory (`components/` or `routes/`)
+2. Use React Aria Components for interactive elements
+3. Style with Tailwind CSS
+4. Add TypeScript types
+5. Export as named export
+6. Add Storybook story if it's a design system component
+7. Add tests if needed
+
+## Creating a New Hook
+
+1. Create hook file in `core/hooks/`
+2. Use `use` prefix
+3. Return object or array (be consistent)
+4. Add TypeScript return type
+5. Document with JSDoc comments
+
+## Creating a New Route
+
+1. Create page component in `routes/` directory
+2. Add route to `routes.tsx`
+3. Use semantic HTML structure
+4. Ensure accessibility
+5. Add loading and error states
+
+## API Integration
+
+1. Create query hook in `core/api/queries/`
+2. Use TanStack Query
+3. Define proper query keys
+4. Handle loading, error, and success states
+5. Use TypeScript types for API responses
+

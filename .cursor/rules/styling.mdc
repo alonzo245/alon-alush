@@ -1,0 +1,19 @@
+# Styling
+
+## Tailwind CSS
+
+- **Always use Tailwind classes for styling HTML elements; avoid using CSS or style tags**
+- Use utility classes, not custom CSS when possible
+- Use `clsx` for conditional classes
+- **Use "class:" instead of the ternary operator in class tags whenever possible** (prefer `clsx` with object syntax)
+- Follow mobile-first responsive design
+- Use Tailwind's spacing scale consistently
+- Custom colors defined in `tailwind.config.js`
+- Use arbitrary values sparingly (`text-[60px]` only when needed)
+
+## CSS Files
+
+- Avoid custom CSS files when possible
+- If needed, use CSS modules or styled-components patterns
+- Keep styles co-located with components
+
