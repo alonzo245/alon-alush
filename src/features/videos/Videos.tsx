@@ -66,26 +66,47 @@ const Videos = (): React.JSX.Element => {
                             <Button
                                 key={key}
                                 onPress={() => handleVideoClick(video.videoId)}
-                                className="m-[10px] w-full flex-[100%] relative transition-all duration-[100ms] ease cursor-pointer desktop:flex-[30%] wide:flex-[30%] focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2 rounded"
+                                className="group m-[10px] w-full flex-[100%] relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] desktop:flex-[30%] wide:flex-[30%] focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2"
                                 aria-label={`Play ${
                                     (videosList as any)[video.videoId]?.title || "video"
                                 }`}
                             >
-                                <img
-                                    src={`/images/videos/${video.videoId}.jpg`}
-                                    alt={`${
-                                        (videosList as any)[video.videoId]?.title ||
-                                        "Video thumbnail"
-                                    }`}
-                                    className="w-full opacity-80 desktop:opacity-100 desktop:hover:opacity-70"
-                                    loading="lazy"
-                                    width={640}
-                                    height={360}
-                                />
-                                <span
-                                    className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-2xl z-[11111] w-0 h-[74px] border-[transparent_transparent_transparent_#ffffff] border-solid border-[37px_0_37px_60px] desktop:hidden desktop:group-hover:block"
-                                    aria-hidden="true"
-                                />
+                                <div className="relative w-full aspect-video overflow-hidden bg-gray-900">
+                                    <img
+                                        src={`/images/videos/${video.videoId}.jpg`}
+                                        alt={`${
+                                            (videosList as any)[video.videoId]?.title ||
+                                            "Video thumbnail"
+                                        }`}
+                                        className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                                        loading="lazy"
+                                        width={640}
+                                        height={360}
+                                    />
+                                    {/* Gradient overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+
+                                    {/* Play button overlay */}
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-30 scale-20">
+                                        <div className="relative w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                            {/* Outer circle */}
+                                            <div className="absolute inset-0 bg-[#ffffff]/90 rounded-full blur-md group-hover:bg-[#5600ff] group-hover:blur-lg transition-all duration-300" />
+                                            {/* Inner circle */}
+                                            <div className="absolute inset-0 bg-[#ffffff] rounded-full opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
+                                            {/* Play icon */}
+                                            <div className="relative w-0 h-0 border-l-[24px] border-l-[#5600ff] border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-1" />
+                                        </div>
+                                    </div>
+
+                                    {/* Video title overlay (bottom) */}
+                                    {(videosList as any)[video.videoId]?.title && (
+                                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/90 to-transparent">
+                                            <p className="text-white text-sm font-semibold line-clamp-2 group-hover:text-[#5600ff] transition-colors duration-300 text-right">
+                                                {(videosList as any)[video.videoId]?.title}
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
                             </Button>
                         ),
                     )}
