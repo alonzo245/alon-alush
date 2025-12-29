@@ -181,13 +181,14 @@ Products I've led & developed:
         company: "Jolt.io",
         title: "R&D Team Leader / Senior Fullstack Developer ",
         description: `
-Being a productive leader of the team where leadership is a behavioral trait.<br/>
-Developing and maintaining team standards, documentation, tools, and best practices in the agile scrum world.<br/>
-Develop and maintain the back-end,front-end and core applications of the company.<br/>
-Work closely with the product team, developers, testers, designers, data scientists.<br/>
-Reaching for quality tests of the applications.<br/>
-Working in TDD SOLID methodologies.<br />
-Developing and designing system architecture of the company features and products.
+I provide hands-on technical and people leadership, focusing on building high-performing engineering teams and establishing leadership as a behavioral standard rather than a role title.
+<br><br>        
+I define and maintain engineering standards, documentation, tools, and best practices within an Agile/Scrum environment. I design and develop backend, frontend, and core application components, ensuring scalable, maintainable, and high-quality solutions.
+<br><br>
+I collaborate closely with product managers, developers, QA engineers, designers, and data scientists to align technical execution with business goals. I place strong emphasis on quality engineering practices, including TDD and SOLID principles, to ensure reliability and long-term sustainability.
+<br><br>
+I am responsible for designing system architecture across products and features, creating solutions that support performance, scalability, and growth.
+<br><br>
 
         `,
         date: "2020 - 2021",
@@ -198,12 +199,12 @@ Developing and designing system architecture of the company features and product
         company: "Pepper Bank",
         title: "Senior Full Stack Developer / Scrum Master ",
         description: `
-In charge of the team progress development in agile methodologies.<br/>
-Passionate about managing and executing projects end to end.<br/>
-Hands on architecting core application/microservices components.<br/>
-Working directly with chief product on roadmaps and features, Passionate about collaborating with others and coaching in the scrum process, practice servant leadership and promote the concept with managers within the organization.<br/>
-communicator and assist teams resolving conflicts, able to share best practices with others, work with management and teams in agile culture.<br/>
-Responsible for writing server-side web application logic in JavaScript, develop backend components, connect the application with the other web services, and support the front-end developers by integrating their work with the Node.js applications.<br/>
+Responsible for leading the team’s delivery and progress within agile methodologies, ensuring effective execution and continuous improvement. I manage and drive projects end to end, staying hands-on where it matters — including architecting core application and microservices components.
+<br><br>
+I work closely with the Chief Product Officer on roadmap planning and feature delivery, fostering strong collaboration across teams. I actively coach teams in Scrum practices, promote servant-leadership principles, and help embed an agile culture across the organization. I support teams in resolving conflicts, encourage knowledge-sharing, and align processes and expectations with management.
+<br><br>
+On the technical side, I design and develop server-side application logic in JavaScript and Node.js, build backend components, integrate external web services, and partner with frontend developers to ensure seamless integration and reliable end-to-end solutions.
+<br><br>
         `,
         date: "2018 - 2020",
     },
@@ -213,13 +214,14 @@ Responsible for writing server-side web application logic in JavaScript, develop
         company: "Investing.com",
         title: "Tech Lead / Senior Full Stack Developer",
         description: `
-Project leader of the company's mobile website.<br/>
-Worked with management directly and matrix management of 5 employees during planning phases of projects and code implementations.
-Worked in parallel on 5 other development projects of the company, such as Web Apps, Restful API's, Back Office Admins, including Front End JavaScript, MVVM Frameworks, HTML5, CSS3 and Back End technologies (LAMP).<br/>
-Assisting other developers of the company with code review, planned effective work strategies and tasks to grow their skill set and make them most efficient.<br/>
-Self driven to solve problems, communicating with different departments of the company, such as product, design, front-end and QA teams. <br/>
-My main responsibilities were to design the application architecture and create reusable and testable code for the site of the company as a part of a scalable application.<br/> 
-Managing different opcode caching, creating and designing databases, developed CMS's in front-end and backend. <br/>
+I served as the project lead for the company’s mobile website, working directly with executive leadership while providing matrix management for a team of five engineers during planning, development, and delivery phases.
+<br><br>
+In parallel, I contributed to multiple additional initiatives, including web applications, RESTful APIs, back-office admin systems, and full-stack development across JavaScript, MVVM frameworks, HTML5, CSS3, and LAMP-based backend technologies.
+<br><br>
+I actively supported other developers through code reviews, knowledge-sharing, and structured task planning to improve efficiency, technical quality, and skill development. I worked closely with product, design, frontend, and QA teams to ensure seamless collaboration and execution.
+<br><br>
+My core responsibilities included designing scalable application architectures, developing reusable and testable code, and optimizing performance through database design and opcode caching strategies. I also developed CMS solutions across both frontend and backend environments.
+<br><br>
        `,
         date: "2014 - 2018",
     },
@@ -229,10 +231,10 @@ Managing different opcode caching, creating and designing databases, developed C
         company: "SalesTech",
         title: "Senior Full Stack DeveloperSalesTech ",
         description: `
-Senior Full stack web developer, worked in a team of web developers on multiple sides of the site such as<br/>
-Back-end and Front-end. Created web application components with JavaScript.<br/>
-Creation and maintenance of Back End (LAMP) and Front End (JavaScript/jQuery/Vanilla) code in MVC<br/>
-application. Working with GIT in Agile development.<br/>
+I worked as a Senior Full-Stack Web Developer as part of a cross-functional engineering team, contributing to both backend and frontend development. I built and maintained web application components using JavaScript and developed scalable backend services on a LAMP stack.
+<br><br>
+I was responsible for maintaining and enhancing MVC-based applications, writing clean and reliable code across JavaScript (Vanilla/ jQuery) and PHP environments. I collaborated within an Agile workflow and used Git for version control and continuous delivery.
+<br><br>
        `,
         date: "2014 - 2015",
     },
@@ -255,8 +257,8 @@ application. Working with GIT in Agile development.<br/>
         company: "ynet",
         title: "Web Developer ",
         description: `
-Worked as a junior web developer. <br/>
-Creating frontend designs and animations for online advertising campaigns.<br/>
+Worked as a junior web developer, focusing on designing and implementing frontend interfaces and animations for online advertising campaigns. Collaborated with designers and marketing teams to deliver high-quality, visually engaging digital assets aligned with brand and campaign goals.
+<br><br>
        `,
         date: "2008 - 2009",
     },
