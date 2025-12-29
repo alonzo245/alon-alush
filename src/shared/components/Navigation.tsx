@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
-import useClickOutside from "../hooks/useClickOutside";
+import clsx from "clsx";
+import { useButton } from "@react-aria/button";
+import useClickOutside from "../../core/hooks/useClickOutside";
 import { animateScroll as scroll, Link } from "react-scroll";
 import { mobileThreshold } from "../../constants/config";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import useScreenSize from "../hooks/useScreenSize";
-import { useGlobalState } from "../hooks/useGlobalState";
+import useScreenSize from "../../core/hooks/useScreenSize";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 
 export default function Navigation(): React.JSX.Element | null {
     const [open, setOpen] = useState<boolean>(false);
@@ -42,46 +44,29 @@ export default function Navigation(): React.JSX.Element | null {
         >
             <Burger open={open} setOpen={onClick} />
             <nav
-                className={`fixed flex flex-col justify-center bg-black transition-transform duration-300 ease-in-out h-screen text-left p-8 top-0 left-0 z-[99999] w-full cursor-pointer ${
-                    open ? "translate-x-0" : "-translate-x-full"
-                }`}
+                className={clsx(
+                    "fixed flex flex-col justify-center bg-black transition-transform duration-300 ease-in-out h-screen text-left p-8 top-0 left-0 z-[99999] w-full cursor-pointer",
+                    open ? "translate-x-0" : "-translate-x-full",
+                )}
+                role="navigation"
+                aria-label="Main navigation"
             >
-                <Link
-                    to="hero"
-                    onClick={() => onClick("hero")}
-                    className="text-[2rem] uppercase py-8 font-bold tracking-[0.1rem] text-[#5600ff] no-underline transition-colors duration-300 linear hover:text-[#343078] max-[576px]:text-[1.5rem] max-[576px]:text-center"
-                >
+                <NavLink to="hero" onClick={() => onClick("hero")}>
                     TOP
-                </Link>
+                </NavLink>
 
-                <Link
-                    to="resume"
-                    onClick={() => onClick("resume")}
-                    className="text-[2rem] uppercase py-8 font-bold tracking-[0.1rem] text-[#5600ff] no-underline transition-colors duration-300 linear hover:text-[#343078] max-[576px]:text-[1.5rem] max-[576px]:text-center"
-                >
+                <NavLink to="resume" onClick={() => onClick("resume")}>
                     WORK TIMELINE
-                </Link>
-                <Link
-                    to="summary"
-                    onClick={() => onClick("summary")}
-                    className="text-[2rem] uppercase py-8 font-bold tracking-[0.1rem] text-[#5600ff] no-underline transition-colors duration-300 linear hover:text-[#343078] max-[576px]:text-[1.5rem] max-[576px]:text-center"
-                >
+                </NavLink>
+                <NavLink to="summary" onClick={() => onClick("summary")}>
                     SUMMARY & EXPERIENCE
-                </Link>
-                <Link
-                    to="projects"
-                    onClick={() => onClick("projects")}
-                    className="text-[2rem] uppercase py-8 font-bold tracking-[0.1rem] text-[#5600ff] no-underline transition-colors duration-300 linear hover:text-[#343078] max-[576px]:text-[1.5rem] max-[576px]:text-center"
-                >
+                </NavLink>
+                <NavLink to="projects" onClick={() => onClick("projects")}>
                     GitHub Projects
-                </Link>
-                <Link
-                    to="videos"
-                    onClick={() => onClick("videos")}
-                    className="text-[2rem] uppercase py-8 font-bold tracking-[0.1rem] text-[#5600ff] no-underline transition-colors duration-300 linear hover:text-[#343078] max-[576px]:text-[1.5rem] max-[576px]:text-center"
-                >
+                </NavLink>
+                <NavLink to="videos" onClick={() => onClick("videos")}>
                     Videos & Tutorials
-                </Link>
+                </NavLink>
                 {width < mobileThreshold && (
                     <div className="flex justify-center items-center">
                         <a
@@ -114,35 +99,73 @@ interface BurgerProps {
     setOpen: (section?: string) => boolean;
 }
 
+const NavLink = ({
+    to,
+    onClick,
+    children,
+}: {
+    to: string;
+    onClick: () => void;
+    children: React.ReactNode;
+}): React.JSX.Element => {
+    return (
+        <Link
+            to={to}
+            onClick={onClick}
+            className={clsx(
+                "text-[2rem] uppercase py-8 font-bold tracking-[0.1rem] text-[#5600ff] no-underline transition-colors duration-300 linear hover:text-[#343078]",
+                "max-[576px]:text-[1.5rem] max-[576px]:text-center",
+            )}
+        >
+            {children}
+        </Link>
+    );
+};
+
 const Burger = ({ open, setOpen }: BurgerProps): React.JSX.Element => {
+    const buttonRef = React.useRef<HTMLButtonElement>(null);
+    const { buttonProps } = useButton(
+        {
+            onPress: () => setOpen(),
+        },
+        buttonRef,
+    );
+
     return (
         <div
-            className={`flex justify-center items-center fixed top-[5%] right-8 rounded-[2rem] z-[9999999] w-[35px] ${
-                open ? "bg-[#FFFFFF00]" : "bg-[#222]"
-            } desktop:bg-transparent wide:bg-transparent`}
+            className={clsx(
+                "flex justify-center items-center fixed top-[5%] right-8 rounded-[2rem] z-[9999999] w-[35px]",
+                open ? "bg-[#FFFFFF00]" : "bg-[#222]",
+                "desktop:bg-transparent wide:bg-transparent",
+            )}
         >
             <button
-                className={`scale-[0.6] flex flex-col justify-around h-8 bg-transparent border-0 cursor-pointer p-0 focus:outline-none desktop:scale-100 wide:scale-100 ${
-                    open ? "w-[25px]" : "w-[35px]"
-                }`}
-                onClick={() => setOpen()}
+                {...buttonProps}
+                ref={buttonRef}
+                className={clsx(
+                    "scale-[0.6] flex flex-col justify-around h-8 bg-transparent border-0 cursor-pointer p-0 focus:outline-none desktop:scale-100 wide:scale-100",
+                    open ? "w-[25px]" : "w-[35px]",
+                )}
                 style={{ width: open ? "25px" : "35px" }}
             >
                 <div
-                    className={`w-8 h-1 rounded-[10px] transition-all duration-300 linear relative origin-[1px] ${
-                        open ? "bg-white rotate-[45deg]" : "bg-[#EFFFFA] rotate-0"
-                    }`}
+                    className={clsx(
+                        "w-8 h-1 rounded-[10px] transition-all duration-300 linear relative origin-[1px]",
+                        open ? "bg-white rotate-[45deg]" : "bg-[#EFFFFA] rotate-0",
+                    )}
                 />
                 <div
-                    className={`w-8 h-1 rounded-[10px] transition-all duration-300 linear relative origin-[1px] ${
-                        open ? "opacity-0 translate-x-5" : "opacity-100 translate-x-0"
-                    }`}
+                    className={clsx(
+                        "w-8 h-1 rounded-[10px] transition-all duration-300 linear relative origin-[1px]",
+                        open ? "opacity-0 translate-x-5" : "opacity-100 translate-x-0",
+                    )}
                     style={{ backgroundColor: open ? "#FFFFFF" : "#EFFFFA" }}
                 />
                 <div
-                    className={`w-8 h-1 rounded-[10px] transition-all duration-300 linear relative origin-[1px] ${
-                        open ? "bg-white rotate-[-45deg]" : "bg-[#EFFFFA] rotate-0"
-                    }`}
+                    className={clsx(
+                        "w-8 h-1 rounded-[10px] transition-all duration-300 linear relative origin-[1px]",
+                        open ? "bg-white rotate-[-45deg]" : "bg-[#EFFFFA] rotate-0",
+                    )}
                 />
             </button>
         </div>

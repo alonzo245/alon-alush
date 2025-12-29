@@ -1,6 +1,6 @@
 import React from "react";
 import techIcons from "../../constants/data/techIcons";
-import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 import { FaBorderNone } from "react-icons/fa";
 import { AttributeCategory } from "../../constants/data/user";
 

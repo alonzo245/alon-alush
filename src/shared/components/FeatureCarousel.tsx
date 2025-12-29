@@ -1,10 +1,11 @@
 import React from "react";
-import { useGlobalState } from "../hooks/useGlobalState";
+import clsx from "clsx";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 import "react-spring-modal/styles.css";
 import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.min.css";
-import useScreenSize from "../hooks/useScreenSize";
+import useScreenSize from "../../core/hooks/useScreenSize";
 import { mobileThreshold } from "../../constants/config";
 import workFeatures from "../../assets/workFeatures";
 
@@ -13,7 +14,14 @@ export default function FeatureCarousel(): React.JSX.Element {
 
     const { state } = useGlobalState();
     return (
-        <div className="w-full self-center flex-[2] desktop:w-1/2 desktop:flex-1 wide:w-1/2 wide:flex-1 [&_.carousel-root]:!h-full">
+        <div
+            className={clsx(
+                "w-full self-center flex-[2]",
+                "desktop:w-1/2 desktop:flex-1",
+                "wide:w-1/2 wide:flex-1",
+                "[&_.carousel-root]:!h-full",
+            )}
+        >
             <Carousel
                 labels={undefined}
                 showStatus={false}
@@ -74,7 +82,12 @@ export default function FeatureCarousel(): React.JSX.Element {
                                     title="Embedded youtube"
                                 />
                             ) : (
-                                <div className="overflow-hidden h-full flex items-center justify-center desktop:mb-0 wide:mb-0">
+                                <div
+                                    className={clsx(
+                                        "overflow-hidden h-full flex items-center justify-center",
+                                        "desktop:mb-0 wide:mb-0",
+                                    )}
+                                >
                                     <img
                                         alt=""
                                         key={i}

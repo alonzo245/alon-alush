@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 import workFeatures from "../../constants/data/workFeatures";
 import { BsCodeSlash } from "react-icons/bs";
 

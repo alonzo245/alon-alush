@@ -1,20 +1,39 @@
 import React from "react";
+import clsx from "clsx";
+import { useLink } from "@react-aria/link";
 import techImages from "../../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
-import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 import { GitHubProject } from "../../constants/data/githubProjects";
 
-const projectSourceUrlButton = (url: string): React.JSX.Element => (
-    <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full text-white px-4 py-2.5 cursor-pointer text-sm font-medium outline-none flex items-center justify-center gap-2 border border-dashed border-white/30 rounded-md no-underline transition-all duration-300 ease-in-out hover:bg-white/10 hover:border-white/50 hover:shadow-lg active:scale-[0.98]"
-    >
-        <span>View Source</span>
-        <FaGithub size={18} />
-    </a>
-);
+const ProjectSourceButton = ({ url }: { url: string }): React.JSX.Element => {
+    const linkRef = React.useRef<HTMLAnchorElement>(null);
+    const { linkProps } = useLink(
+        {
+            elementType: "a",
+        },
+        linkRef
+    );
+
+    return (
+        <a
+            {...linkProps}
+            ref={linkRef}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={clsx(
+                "w-full text-white px-4 py-2.5 cursor-pointer text-sm font-medium outline-none",
+                "flex items-center justify-center gap-2 border border-dashed border-white/30 rounded-md",
+                "no-underline transition-all duration-300 ease-in-out",
+                "hover:bg-white/10 hover:border-white/50 hover:shadow-lg active:scale-[0.98]"
+            )}
+        >
+            <span>View Source</span>
+            <FaGithub size={18} />
+        </a>
+    );
+};
 
 export default function Projects(): React.JSX.Element {
     const { state } = useGlobalState();
@@ -75,7 +94,7 @@ export default function Projects(): React.JSX.Element {
 
                         {/* Button */}
                         <div className="mt-auto pt-2">
-                            {project.url && projectSourceUrlButton(project.url)}
+                            {project.url && <ProjectSourceButton url={project.url} />}
                         </div>
                     </div>
                 ))}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 import { SummaryItem } from "../../constants/data/summary";
 
 export default function Summary(): React.JSX.Element {

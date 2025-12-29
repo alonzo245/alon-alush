@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import { useGlobalState } from "../../shared/hooks/useGlobalState";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 import ReactTooltip from "react-tooltip";
 import { Link } from "react-router-dom";
-import useScreenSize from "../../shared/hooks/useScreenSize";
+import useScreenSize from "../../core/hooks/useScreenSize";
 import { mobileThreshold } from "../../constants/config";
 import Hamburger from "hamburger-react";
 

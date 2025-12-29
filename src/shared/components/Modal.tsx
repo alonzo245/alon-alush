@@ -1,8 +1,8 @@
 import React from "react";
 import { ExpandModal } from "react-spring-modal";
-import { useGlobalState } from "../hooks/useGlobalState";
+import { useGlobalState } from "../../core/hooks/useGlobalState";
 import "react-spring-modal/styles.css";
-import useScreenSize from "../hooks/useScreenSize";
+import useScreenSize from "../../core/hooks/useScreenSize";
 import { mobileThreshold } from "../../constants/config";
 import FeatureCarousel from "./FeatureCarousel";
 import { IoMdClose } from "react-icons/io";
