@@ -77,7 +77,7 @@ const Home = (): React.JSX.Element => {
             </header>
             <section
                 className={clsx(
-                    "flex justify-between items-center flex-col mx-auto w-full",
+                    "flex justify-between items-center flex-col mx-auto w-full pt-4",
                     "desktop:flex-row desktop:items-center desktop:my-5 desktop:mx-auto desktop:w-[90%]",
                     "wide:flex-row wide:items-center wide:my-5 wide:mx-auto",
                 )}
