@@ -1,5 +1,6 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { NuqsAdapter } from "nuqs/adapters/react-router";
 import App from "./App";
 
 const queryClient = new QueryClient({
@@ -11,15 +12,12 @@ const queryClient = new QueryClient({
     },
 });
 
-// NuqsAdapter will be added once nuqs is installed
-// import { NuqsAdapter } from "nuqs/adapters/react-router";
-
 export default function AppWrapper(): React.JSX.Element {
     return (
         <QueryClientProvider client={queryClient}>
-            {/* <NuqsAdapter> */}
-            <App />
-            {/* </NuqsAdapter> */}
+            <NuqsAdapter>
+                <App />
+            </NuqsAdapter>
         </QueryClientProvider>
     );
 }

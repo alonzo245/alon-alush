@@ -55,11 +55,9 @@ const Resume = (): React.JSX.Element => {
             id="resume"
             aria-labelledby="resume-heading"
         >
-            <div className="title">
+            <div id="resume-heading" className="title">
                 {resume?.length > 0 ? (
-                    <h2 id="resume-heading" className="text-[50px]">
-                        {state?.user?.resumeTitle}
-                    </h2>
+                    <h2 className="text-[50px]">{state?.user?.resumeTitle}</h2>
                 ) : null}
             </div>
             <div>

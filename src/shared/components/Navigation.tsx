@@ -1,46 +1,93 @@
-import React, { useRef, useState, useCallback, memo } from "react";
+import React, { useRef, useState, useCallback, memo, useEffect } from "react";
 import clsx from "clsx";
 import { useButton } from "@react-aria/button";
 import useClickOutside from "../../core/hooks/useClickOutside";
-import { animateScroll as scroll, Link } from "react-scroll";
+import { Link } from "react-scroll";
 import { mobileThreshold } from "../../constants/config";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import useScreenSize from "../../core/hooks/useScreenSize";
 import { useGlobalState } from "../../core/hooks/useGlobalState";
+import { useQueryStates } from "../../core/utils/nuqs";
+import { searchParsers } from "../../core/utils/nuqs";
 
 const Navigation = (): React.JSX.Element | null => {
     const [open, setOpen] = useState<boolean>(false);
     const node = useRef<HTMLDivElement>(null);
     const { width } = useScreenSize();
     const { state } = useGlobalState();
+    const [{ section }, setSection] = useQueryStates(searchParsers);
 
     const handleClickOutside = useCallback(() => {
         setOpen(false);
+        document.body.style.overflowY = "auto";
     }, []);
 
     useClickOutside(node, handleClickOutside);
 
-    const handleNavClick = useCallback((section?: string): void => {
-        setOpen((prevOpen) => {
-            const newOpen = !prevOpen;
+    // Handle query string parameter on mount
+    useEffect(() => {
+        if (section) {
+            // Wait for all lazy-loaded components to render
+            const timer = setTimeout(() => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const offset = 0;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-            if (!newOpen) {
-                document.body.style.overflowY = "hidden";
-            } else {
-                document.body.style.overflowY = "auto";
-                if (section) {
-                    scroll.scrollTo(section, {
-                        delay: 100,
-                        smooth: true,
-                        containerId: section,
-                        offset: 700,
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth",
                     });
                 }
-            }
+            }, 800);
+            return () => clearTimeout(timer);
+        }
+    }, [section, width]);
 
-            return newOpen;
-        });
-    }, []);
+    const scrollToSection = useCallback(
+        (sectionName: string): void => {
+            const element = document.getElementById(sectionName);
+            if (element) {
+                const offset = width < mobileThreshold ? 100 : 700;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                });
+            }
+        },
+        [width],
+    );
+
+    const handleNavClick = useCallback(
+        (sectionName?: string): void => {
+            setOpen((prevOpen) => {
+                const newOpen = !prevOpen;
+
+                if (newOpen) {
+                    // Opening menu - lock body scroll
+                    document.body.style.overflowY = "hidden";
+                } else {
+                    // Closing menu - unlock body scroll and scroll to section
+                    document.body.style.overflowY = "auto";
+                    if (sectionName) {
+                        // Update URL with section parameter
+                        setSection({ section: sectionName });
+                        // Scroll to section with a small delay to ensure menu is closed
+                        setTimeout(() => {
+                            scrollToSection(sectionName);
+                        }, 150);
+                    }
+                }
+
+                return newOpen;
+            });
+        },
+        [setSection, scrollToSection],
+    );
 
     if (state?.modal) return null;
 
@@ -59,20 +106,20 @@ const Navigation = (): React.JSX.Element | null => {
                 aria-label="Main navigation"
             >
                 <NavLink to="hero" onClick={() => handleNavClick("hero")}>
-                    TOP
+                    Overview
                 </NavLink>
 
                 <NavLink to="resume" onClick={() => handleNavClick("resume")}>
-                    WORK TIMELINE
+                    Career
                 </NavLink>
                 <NavLink to="summary" onClick={() => handleNavClick("summary")}>
-                    SUMMARY & EXPERIENCE
+                    Skills & Experience
                 </NavLink>
                 <NavLink to="projects" onClick={() => handleNavClick("projects")}>
-                    GitHub Projects
+                    Code & Projects
                 </NavLink>
                 <NavLink to="videos" onClick={() => handleNavClick("videos")}>
-                    Videos & Tutorials
+                    Videos & Teaching
                 </NavLink>
                 {width < mobileThreshold && (
                     <div className="flex justify-center items-center">
@@ -145,7 +192,7 @@ const Burger = memo(({ open, setOpen }: BurgerProps): React.JSX.Element => {
     return (
         <div
             className={clsx(
-                "flex justify-center items-center fixed top-[5%] right-8 rounded-[2rem] z-[9999999] w-[35px]",
+                "flex justify-center items-center fixed top-[20px] right-[10px] rounded-[2rem] z-[9999999] w-[35px]",
                 open ? "bg-[#FFFFFF00]" : "bg-[#222]",
                 "desktop:bg-transparent wide:bg-transparent",
             )}

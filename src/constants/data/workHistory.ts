@@ -18,30 +18,23 @@ const workHistory: WorkHistoryItem[] = [
         title: "Senior Full-Stack Engineer",
         description: `
         
-As a Senior Full-Stack Engineer, I delivered multiple high-impact projects that shaped ZipRecruiter's core job seeker and employer experience.
-      <br><br>
-      
-I led end-to-end initiatives with a strong focus on backend & frontend development across a broad range of technologies. I worked extensively with Go, Python, JavaScript, Node.js, and TypeScript, building scalable services and APIs, and drove the migration of legacy systems into a modern Next.js 15 architecture.
-      <br><br>
-      
-On the infrastructure and data side, I contributed to projects involving AWS, Spark, SQL/NoSQL databases (MongoDB, DynamoDB), Databricks, and data pipelines. I strengthened observability and reliability by implementing monitoring with Prometheus, Grafana, and Thanos, improving alerting, logging, and deployment pipelines.
-      <br><br>
-      
-I actively contributed to A/B testing and experimentation platforms (Statsig, internal tooling), ensuring that new features were data-driven and aligned with business goals.
-      <br><br>
-      
-I invested heavily in cross-team collaboration and organizational impact. I partnered with infrastructure teams to deliver reusable blueprints and infrastructure code, collaborated with US-based teams to align on product and technical goals, and proactively addressed technical debt to ensure long-term scalability.
-      <br><br>
-      
-I played an active role in mentorship and knowledge sharing, acting as a buddy for new hires, supporting peers through pair programming, and leading the IL Frontend interest group to drive best practices. Additionally, I lectured on web and AI technologies at the company's Tech Weeks in the US.
-      <br><br>
-      
-Recognized for my high motivation, energy, and positive influence on team culture, I consistently balanced multiple priorities while maintaining delivery velocity and quality. My ability to combine hands-on technical depth with leadership and cross-organizational contributions positioned me as a role model for execution, collaboration, and innovation within the engineering organization.
-      <br><br>
-
+As a Senior Full-Stack Engineer, I delivered multiple high-impact initiatives that directly shaped ZipRecruiter’s core experience for both job seekers and employers.
+<br><br>
+I led end-to-end development across backend and frontend systems, working extensively with Go, Python, JavaScript, Node.js, and TypeScript to build scalable services and APIs. I also played a key role in modernizing legacy applications, driving the migration toward a Next.js 15 based architecture.
+<br><br>
+On the infrastructure and data side, I contributed to large-scale initiatives involving AWS, Spark, SQL/NoSQL databases (MongoDB, DynamoDB), and Databricks. I strengthened system reliability and observability by implementing monitoring solutions with Prometheus, Grafana, and Thanos, significantly improving alerting, logging, and deployment workflows.
+<br><br>
+I was actively involved in A/B testing and experimentation using Statsig and internal platforms, ensuring feature delivery was data-driven and aligned with measurable business outcomes.
+<br><br>
+Collaboration and organizational impact were core to my role. I partnered with infrastructure teams to develop reusable blueprints and infrastructure-as-code assets, worked closely with US-based product and engineering teams, and proactively reduced technical debt to support long-term platform scalability.
+<br><br>
+I also contributed to team growth and culture through mentorship, onboarding support, pair programming, and by leading the IL Frontend interest group to promote engineering excellence. I regularly lectured on web and AI technologies during the company’s Tech Weeks in the US.
+<br><br>
+Recognized for my initiative, energy, and positive team influence, I consistently balanced multiple priorities while maintaining delivery quality and momentum. My combination of technical depth, leadership, and cross-organizational collaboration positioned me as a key contributor and role model within the engineering organization.
+<br><br>
 Tech Stack:
-Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, NoSQL (MongoDB, DynamoDB), Databricks, Prometheus, Grafana, Thanos, Argo, Kubernetes, Git, A/B testing platforms (Statsig, internal tools), CI/CD pipelines.
-        <br><br>
+Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, NoSQL (MongoDB, DynamoDB), Databricks, Prometheus, Grafana, Thanos, Argo, Kubernetes, Git, Statsig, CI/CD pipelines.
+<br><br>
 `,
         date: "2024 - Present",
     },
@@ -51,13 +44,12 @@ Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, No
         company: "Singular",
         title: "Full-Stack Engineer",
         description: `
-        <ul>
-        <li>Working on the first-to-market products and creating solutions using the latest technologies.</li>
-        <li>Responsible for designing, developing and maintaining end-to-end (client and server) features and web applications</li>
-        <li>Work closely with our design and product teams to translate their requirements into functional, user-friendly features. </li>
-        <li>Tech stack I'm working with: React, Python, Django, MySQL, PostgreSQL, AWS, Redis, Druid, Snowflake, etc.</li>
-        </ul>
-        <br>
+        I work on first-to-market products, building innovative solutions using modern, industry-leading technologies. I am responsible for the design, development, and maintenance of end-to-end features across both client and server environments.
+<br><br>
+I collaborate closely with product and design teams to translate business and UX requirements into scalable, intuitive, and high-performance user experiences.
+<br><br>
+Tech Stack: React, Python, Django, MySQL, PostgreSQL, AWS, Redis, Druid, Snowflake, and additional supporting technologies.
+        <br><br>
         `,
         date: "2023 - 2024",
     },
@@ -70,19 +62,14 @@ Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, No
 <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/UD41T2l8ewE?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player"
  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         description: `
-<ul>
-    <li>Owner in all aspects of agile software development including code, systems design, implementations, and deployments.</li>
-    <li>Hands-On Coder in DevOps systems, Backend and Frontend code and projects, experienced mostly in AWS and GCP clouds</li>
-    <li>Responsible for the end-to-end lifecycle of the company's tech products and features.</li>
-    <li>Experience and deep understanding of system architecture design.</li>
-    <li>Creating short/long-term roadmaps for product delivery, from concept to production.</li>
-    <li>Mentoring high-performing teams.</li>
-    <li>Experience managing teams in hybrid environments and proven leadership abilities and people oriented.</li>
-    <li>Researching and suggesting new technologies to improve scale and performance, data-driven and result-oriented.</li>
-    <li>Leading business processes, managing cross-organizational activities, initiatives and projects.</li>
-</ul>
-<br>
-<br>
+I lead software development across the full lifecycle — from architecture and design through implementation, delivery, and continuous improvement. I stay deeply hands-on across DevOps, backend, and frontend work, with strong experience building and operating systems on AWS and GCP.
+<br><br>
+My role centers on owning products end-to-end: defining the right architecture, guiding delivery, and ensuring systems are scalable, resilient, and maintainable. I develop clear technical roadmaps that take ideas from concept into production, while balancing innovation with execution discipline.
+<br><br>
+I focus heavily on building team capability and culture. I mentor engineers, encourage technical excellence, and enable teams to perform at a high level in hybrid environments. My leadership style is pragmatic, people-focused, and execution-oriented.
+<br><br>
+I continuously evaluate and introduce technologies that improve scale, performance, and reliability, grounding decisions in data and measurable results. Beyond engineering, I also help drive cross-functional initiatives and business processes, aligning technology strategy with company objectives.
+<br><br>
         `,
         date: "2022 - 2023",
     },
@@ -93,20 +80,12 @@ Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, No
         title: "VP of Jolt.io",
         preDescription: ``,
         description: `
-Responsible for ensuring that design requirements are met.
- <br />
- Overseeing the consistency of user experiences, and managing a team of engineers and developers.
-<br/><br/>
-<ul>
-    <li>Leading teams through management and mentorship.</li>
-    <li>Contributing to recruitment activities.</li>
-    <li>Developing standards and procedures to ensure that quality standards are met and consistent.</li>
-    <li>Preparing and optimizing budgets.</li>
-    <li>Recommending technological developments and improvements inefficiency.</li>
-    <li>Developing teams to ensure quality end products.</li>
-</ul>
-<br>
-<br>
+Accountable for ensuring that design and functional requirements are fully met, while maintaining a consistent and high-quality user experience across all products. I manage and mentor engineering teams, providing leadership, guidance, and support to drive team performance and growth.
+<br><br>
+I contribute to recruitment efforts, help shape team structure, and define standards and procedures to ensure consistent delivery excellence. I am responsible for budget planning and optimization, and I proactively recommend technological improvements to increase efficiency, scalability, and product quality.
+<br><br>
+I focus on developing high-performing teams and establishing strong engineering practices that enable the organization to deliver reliable, user-centered, and high-impact solutions.
+<br><br>
         `,
         date: "2022 - Present",
     },
