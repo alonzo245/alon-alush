@@ -94,7 +94,7 @@ const Navigation = (): React.JSX.Element | null => {
     return (
         <div
             ref={node}
-            className="w-screen h-[30px] desktop:w-auto desktop:h-auto wide:w-auto wide:h-auto"
+            className="w-full max-w-full h-[30px] desktop:w-auto desktop:h-auto wide:w-auto wide:h-auto"
         >
             <Burger open={open} setOpen={handleNavClick} />
             <nav

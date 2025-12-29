@@ -10,8 +10,10 @@ function AppRoutes(): React.JSX.Element {
 
 export default function App(): React.JSX.Element {
     return (
-        <BrowserRouter>
-            <AppRoutes />
-        </BrowserRouter>
+        <div className="w-full max-w-full overflow-x-hidden">
+            <BrowserRouter>
+                <AppRoutes />
+            </BrowserRouter>
+        </div>
     );
 }

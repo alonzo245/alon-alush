@@ -62,7 +62,7 @@ const Home = (): React.JSX.Element => {
     return (
         <main
             className={clsx(
-                "mx-auto flex justify-center items-start flex-col",
+                "mx-auto flex justify-center items-start flex-col w-full max-w-full overflow-x-hidden",
                 "desktop:max-w-[1260px] wide:max-w-[1440px]",
             )}
         >
@@ -93,8 +93,8 @@ const Home = (): React.JSX.Element => {
                 </Suspense>
                 <div
                     className={clsx(
-                        "relative w-[480px] min-w-[480px] flex flex-col text-center items-center",
-                        "desktop:ml-5 desktop:min-w-[670px] desktop:items-start desktop:text-left",
+                        "relative w-full max-w-full px-4 flex flex-col text-center items-center",
+                        "desktop:ml-5 desktop:w-auto desktop:min-w-[670px] desktop:px-0 desktop:items-start desktop:text-left",
                         "wide:ml-[60px] wide:min-w-[830px] wide:items-start wide:text-left",
                     )}
                 >
@@ -110,7 +110,7 @@ const Home = (): React.JSX.Element => {
                     </h1>
                     <h2
                         className={clsx(
-                            "text-[22px] text-[#5600ff] px-[60px] mb-[10px] font-bold",
+                            "text-[22px] text-[#5600ff] px-4 mb-[10px] font-bold",
                             "desktop:text-[46px] desktop:px-0",
                             "wide:text-[56px] wide:px-0",
                         )}
