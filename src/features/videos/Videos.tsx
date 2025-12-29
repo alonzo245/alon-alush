@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, memo } from "react";
 import { Button } from "react-aria-components";
 import videosList from "../../lib/utils/videosList";
 
@@ -7,19 +7,19 @@ interface VideoItem {
     open: boolean;
 }
 
-export default function Videos(): React.JSX.Element {
+const Videos = (): React.JSX.Element => {
     const [list, setList] = useState<VideoItem[]>(() =>
         Object.keys(videosList).map((videoId) => ({ videoId, open: false })),
     );
 
-    const onClick = (videoId: string): void => {
-        setList(
-            list.map((video) => {
+    const handleVideoClick = useCallback((videoId: string): void => {
+        setList((prevList) =>
+            prevList.map((video) => {
                 if (videoId === video.videoId) return { videoId, open: true };
                 return video;
             }),
         );
-    };
+    }, []);
 
     return (
         <section
@@ -48,7 +48,7 @@ export default function Videos(): React.JSX.Element {
                         ) : (
                             <Button
                                 key={key}
-                                onPress={() => onClick(video.videoId)}
+                                onPress={() => handleVideoClick(video.videoId)}
                                 className="m-[10px] w-full flex-[100%] relative transition-all duration-[100ms] ease cursor-pointer desktop:flex-[30%] wide:flex-[30%] focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2 rounded"
                                 aria-label={`Play ${(videosList as any)[video.videoId]?.title || "video"}`}
                             >
@@ -57,6 +57,8 @@ export default function Videos(): React.JSX.Element {
                                     alt={`${(videosList as any)[video.videoId]?.title || "Video thumbnail"}`}
                                     className="w-full opacity-80 desktop:opacity-100 desktop:hover:opacity-70"
                                     loading="lazy"
+                                    width={640}
+                                    height={360}
                                 />
                                 <span className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-2xl z-[11111] w-0 h-[74px] border-[transparent_transparent_transparent_#ffffff] border-solid border-[37px_0_37px_60px] desktop:hidden desktop:group-hover:block" aria-hidden="true" />
                             </Button>
@@ -65,4 +67,6 @@ export default function Videos(): React.JSX.Element {
             </div>
         </section>
     );
-}
+};
+
+export default memo(Videos);

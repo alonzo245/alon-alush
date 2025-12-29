@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, memo } from "react";
 import { Button } from "react-aria-components";
 import "./resume.style.css";
 import images from "../../assets/images";
@@ -35,18 +35,19 @@ const P = ({ open, dangerouslySetInnerHTML }: PProps): React.JSX.Element => {
     );
 };
 
-export default function Resume(): React.JSX.Element {
+const Resume = (): React.JSX.Element => {
     const { state } = useGlobalState();
     const [opened, setOpened] = useState<number[]>([]);
     const [resume] = useState<WorkHistoryItem[]>(() => [...(state?.user?.resume || [])]);
 
-    const toggleHidden = (key: number): void => {
-        if (opened?.includes(key)) {
-            setOpened([...opened.filter((i) => i !== key)]);
-            return;
-        }
-        setOpened([...opened, key]);
-    };
+    const handleToggleHidden = useCallback((key: number): void => {
+        setOpened((prevOpened) => {
+            if (prevOpened.includes(key)) {
+                return prevOpened.filter((i) => i !== key);
+            }
+            return [...prevOpened, key];
+        });
+    }, []);
 
     return (
         <section
@@ -80,9 +81,12 @@ export default function Resume(): React.JSX.Element {
                                     <div className="node-icon w-[45px]">
                                         {images[icon as keyof typeof images] ? (
                                             <img
-                                                alt={icon}
+                                                alt={`${company} logo`}
                                                 src={images[icon as keyof typeof images]}
                                                 className="h-[45px] w-[45px] rounded-full bg-white border-[3px] border-transparent object-cover absolute top-0 left-0 translate-x-[-13px] transition-[background,border] duration-300 ease-in-out"
+                                                width={45}
+                                                height={45}
+                                                loading="lazy"
                                             />
                                         ) : (
                                             <div className="h-[45px] w-[45px] rounded-full bg-white border-[3px] border-transparent flex items-center justify-center absolute top-0 left-0 translate-x-[-13px] transition-[background,border] duration-300 ease-in-out">
@@ -113,7 +117,7 @@ export default function Resume(): React.JSX.Element {
                                                     open={opened?.includes(k) ? "open" : ""}
                                                 />
                                                 <Button
-                                                    onPress={() => toggleHidden(k)}
+                                                    onPress={() => handleToggleHidden(k)}
                                                     className="border border-dashed border-[#99999980] h-[35px] px-4 text-center rounded-[5px] leading-[35px] cursor-pointer my-[10px] mx-auto desktop:max-w-[250px] wide:max-w-[350px] bg-transparent text-inherit focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2"
                                                     aria-expanded={opened?.includes(k)}
                                                     aria-controls={`resume-description-${k}`}
@@ -142,4 +146,6 @@ export default function Resume(): React.JSX.Element {
             </div>
         </section>
     );
-}
+};
+
+export default memo(Resume);

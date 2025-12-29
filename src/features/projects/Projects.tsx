@@ -1,12 +1,16 @@
-import React from "react";
+import React, { memo } from "react";
 import clsx from "clsx";
-import { Link, Button } from "react-aria-components";
+import { Link } from "react-aria-components";
 import techImages from "../../assets/images/tech";
 import { FaGithub } from "react-icons/fa";
 import { useGlobalState } from "../../core/hooks/useGlobalState";
 import { GitHubProject } from "../../constants/data/githubProjects";
 
-const ProjectSourceButton = ({ url }: { url: string }): React.JSX.Element => {
+interface ProjectSourceButtonProps {
+    url: string;
+}
+
+const ProjectSourceButton = memo(({ url }: ProjectSourceButtonProps): React.JSX.Element => {
     return (
         <Link
             href={url}
@@ -17,16 +21,18 @@ const ProjectSourceButton = ({ url }: { url: string }): React.JSX.Element => {
                 "flex items-center justify-center gap-2 border border-dashed border-white/30 rounded-md",
                 "no-underline transition-all duration-300 ease-in-out",
                 "hover:bg-white/10 hover:border-white/50 hover:shadow-lg active:scale-[0.98]",
-                "focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2"
+                "focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2",
             )}
         >
             <span>View Source</span>
             <FaGithub size={18} aria-hidden="true" />
         </Link>
     );
-};
+});
 
-export default function Projects(): React.JSX.Element {
+ProjectSourceButton.displayName = "ProjectSourceButton";
+
+const Projects = (): React.JSX.Element => {
     const { state } = useGlobalState();
 
     return (
@@ -35,7 +41,10 @@ export default function Projects(): React.JSX.Element {
             id="projects"
             aria-labelledby="projects-heading"
         >
-            <h2 id="projects-heading" className="text-4xl font-bold mb-12 mt-12 desktop:mt-8 wide:mt-8 text-white">
+            <h2
+                id="projects-heading"
+                className="text-4xl font-bold mb-12 mt-12 desktop:mt-8 wide:mt-8 text-white"
+            >
                 {state?.user?.projectsTitle}
             </h2>
             <div className="flex flex-wrap justify-center gap-6 w-full max-w-7xl">
@@ -63,7 +72,11 @@ export default function Projects(): React.JSX.Element {
                             </p>
 
                             {/* Technology Icons */}
-                            <div className="flex flex-wrap items-center gap-2 mb-4 pt-3 border-t border-dashed border-white/10" role="list" aria-label="Technologies used">
+                            <div
+                                className="flex flex-wrap items-center gap-2 mb-4 pt-3 border-t border-dashed border-white/10"
+                                role="list"
+                                aria-label="Technologies used"
+                            >
                                 {project.technologies &&
                                     project.technologies.map((technology: string) => (
                                         <div
@@ -96,4 +109,6 @@ export default function Projects(): React.JSX.Element {
             </div>
         </section>
     );
-}
+};
+
+export default memo(Projects);

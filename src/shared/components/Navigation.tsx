@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useCallback, memo } from "react";
 import clsx from "clsx";
 import { useButton } from "@react-aria/button";
 import useClickOutside from "../../core/hooks/useClickOutside";
@@ -8,41 +8,48 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import useScreenSize from "../../core/hooks/useScreenSize";
 import { useGlobalState } from "../../core/hooks/useGlobalState";
 
-export default function Navigation(): React.JSX.Element | null {
+const Navigation = (): React.JSX.Element | null => {
     const [open, setOpen] = useState<boolean>(false);
     const node = useRef<HTMLDivElement>(null);
     const { width } = useScreenSize();
     const { state } = useGlobalState();
-    useClickOutside(node, () => setOpen(false));
+
+    const handleClickOutside = useCallback(() => {
+        setOpen(false);
+    }, []);
+
+    useClickOutside(node, handleClickOutside);
+
+    const handleNavClick = useCallback((section?: string): void => {
+        setOpen((prevOpen) => {
+            const newOpen = !prevOpen;
+
+            if (!newOpen) {
+                document.body.style.overflowY = "hidden";
+            } else {
+                document.body.style.overflowY = "auto";
+                if (section) {
+                    scroll.scrollTo(section, {
+                        delay: 100,
+                        smooth: true,
+                        containerId: section,
+                        offset: 700,
+                    });
+                }
+            }
+
+            return newOpen;
+        });
+    }, []);
 
     if (state?.modal) return null;
-
-    const onClick = (section?: string): boolean => {
-        setOpen(!open);
-
-        if (!open) {
-            document.body.style.overflowY = "hidden";
-        } else {
-            document.body.style.overflowY = "auto";
-            if (section)
-                scroll.scrollTo(section, {
-                    // duration: 1500,
-                    delay: 100,
-                    smooth: true,
-                    containerId: section,
-                    offset: 700,
-                });
-        }
-
-        return open;
-    };
 
     return (
         <div
             ref={node}
             className="w-screen h-[30px] desktop:w-auto desktop:h-auto wide:w-auto wide:h-auto"
         >
-            <Burger open={open} setOpen={onClick} />
+            <Burger open={open} setOpen={handleNavClick} />
             <nav
                 className={clsx(
                     "fixed flex flex-col justify-center bg-black transition-transform duration-300 ease-in-out h-screen text-left p-8 top-0 left-0 z-[99999] w-full cursor-pointer",
@@ -51,20 +58,20 @@ export default function Navigation(): React.JSX.Element | null {
                 role="navigation"
                 aria-label="Main navigation"
             >
-                <NavLink to="hero" onClick={() => onClick("hero")}>
+                <NavLink to="hero" onClick={() => handleNavClick("hero")}>
                     TOP
                 </NavLink>
 
-                <NavLink to="resume" onClick={() => onClick("resume")}>
+                <NavLink to="resume" onClick={() => handleNavClick("resume")}>
                     WORK TIMELINE
                 </NavLink>
-                <NavLink to="summary" onClick={() => onClick("summary")}>
+                <NavLink to="summary" onClick={() => handleNavClick("summary")}>
                     SUMMARY & EXPERIENCE
                 </NavLink>
-                <NavLink to="projects" onClick={() => onClick("projects")}>
+                <NavLink to="projects" onClick={() => handleNavClick("projects")}>
                     GitHub Projects
                 </NavLink>
-                <NavLink to="videos" onClick={() => onClick("videos")}>
+                <NavLink to="videos" onClick={() => handleNavClick("videos")}>
                     Videos & Tutorials
                 </NavLink>
                 {width < mobileThreshold && (
@@ -73,41 +80,43 @@ export default function Navigation(): React.JSX.Element | null {
                             href="https://il.linkedin.com/in/alonalush"
                             target={"_blank"}
                             rel="noopener noreferrer"
-                            onClick={() => onClick("")}
-                            className="inline-block my-[10px] mx-5"
+                            onClick={() => handleNavClick("")}
+                            className="inline-block my-[10px] mx-5 focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2 rounded"
+                            aria-label="LinkedIn Profile"
                         >
-                            <FaLinkedin size={50} color={"#999"} />
+                            <FaLinkedin size={50} color={"#999"} aria-hidden="true" />
                         </a>
                         <a
                             href="https://github.com/alonzo245"
                             target={"_blank"}
                             rel="noopener noreferrer"
-                            onClick={() => onClick("")}
-                            className="inline-block my-[10px] mx-5"
+                            onClick={() => handleNavClick("")}
+                            className="inline-block my-[10px] mx-5 focus:outline-none focus:ring-2 focus:ring-[#5600ff] focus:ring-offset-2 rounded"
+                            aria-label="GitHub Profile"
                         >
-                            <FaGithubSquare size={50} color={"#999"} />
+                            <FaGithubSquare size={50} color={"#999"} aria-hidden="true" />
                         </a>
                     </div>
                 )}
             </nav>
         </div>
     );
-}
+};
+
+export default memo(Navigation);
 
 interface BurgerProps {
     open: boolean;
-    setOpen: (section?: string) => boolean;
+    setOpen: (section?: string) => void;
 }
 
-const NavLink = ({
-    to,
-    onClick,
-    children,
-}: {
+interface NavLinkProps {
     to: string;
     onClick: () => void;
     children: React.ReactNode;
-}): React.JSX.Element => {
+}
+
+const NavLink = memo(({ to, onClick, children }: NavLinkProps): React.JSX.Element => {
     return (
         <Link
             to={to}
@@ -120,9 +129,11 @@ const NavLink = ({
             {children}
         </Link>
     );
-};
+});
 
-const Burger = ({ open, setOpen }: BurgerProps): React.JSX.Element => {
+NavLink.displayName = "NavLink";
+
+const Burger = memo(({ open, setOpen }: BurgerProps): React.JSX.Element => {
     const buttonRef = React.useRef<HTMLButtonElement>(null);
     const { buttonProps } = useButton(
         {
@@ -170,4 +181,6 @@ const Burger = ({ open, setOpen }: BurgerProps): React.JSX.Element => {
             </button>
         </div>
     );
-};
+});
+
+Burger.displayName = "Burger";

@@ -1,27 +1,29 @@
-import React from "react";
+import React, { memo, Suspense, lazy } from "react";
 import clsx from "clsx";
 import { Link } from "react-aria-components";
-import Resume from "../resume/Resume";
-import Summary from "../summary/Summary";
-import Navigation from "../../shared/components/Navigation";
 import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
-import Projects from "../projects/Projects";
-import Modal from "../../shared/components/Modal";
-import Avatar from "./Avatar";
 import { useGlobalState } from "../../core/hooks/useGlobalState";
 import { useUserQuery } from "../../core/hooks/useUserQuery";
-import Attributes from "../attributes/Attributes";
-import Videos from "../videos/Videos";
 
-const SocialLink = ({
-    href,
-    children,
-    ariaLabel,
-}: {
+// Lazy load heavy components
+const Resume = lazy(() => import("../resume/Resume"));
+const Summary = lazy(() => import("../summary/Summary"));
+const Navigation = lazy(() =>
+    import("../../shared/components/Navigation").then((m) => ({ default: m.default })),
+);
+const Projects = lazy(() => import("../projects/Projects"));
+const Modal = lazy(() => import("../../shared/components/Modal"));
+const Avatar = lazy(() => import("./Avatar"));
+const Attributes = lazy(() => import("../attributes/Attributes"));
+const Videos = lazy(() => import("../videos/Videos"));
+
+interface SocialLinkProps {
     href: string;
     children: React.ReactNode;
     ariaLabel: string;
-}) => {
+}
+
+const SocialLink = memo(({ href, children, ariaLabel }: SocialLinkProps): React.JSX.Element => {
     return (
         <Link
             href={href}
@@ -33,9 +35,17 @@ const SocialLink = ({
             {children}
         </Link>
     );
-};
+});
 
-export default function Home(): React.JSX.Element {
+SocialLink.displayName = "SocialLink";
+
+const LoadingFallback = (): React.JSX.Element => (
+    <div className="mx-auto flex justify-center items-center h-screen">
+        <div className="text-white">Loading...</div>
+    </div>
+);
+
+const Home = (): React.JSX.Element => {
     const { state } = useGlobalState();
     const { data: userData, isLoading } = useUserQuery();
     const user = userData || state?.user;
@@ -55,10 +65,14 @@ export default function Home(): React.JSX.Element {
                 "desktop:max-w-[1260px] wide:max-w-[1440px]",
             )}
         >
-            <Modal />
+            <Suspense fallback={null}>
+                <Modal />
+            </Suspense>
 
             <header role="banner">
-                <Navigation />
+                <Suspense fallback={null}>
+                    <Navigation />
+                </Suspense>
             </header>
             <section
                 className={clsx(
@@ -69,7 +83,13 @@ export default function Home(): React.JSX.Element {
                 id="hero"
                 aria-labelledby="hero-heading"
             >
-                <Avatar />
+                <Suspense
+                    fallback={
+                        <div className="rounded-[250px] h-[250px] w-[250px] bg-gray-800 animate-pulse" />
+                    }
+                >
+                    <Avatar />
+                </Suspense>
                 <div
                     className={clsx(
                         "relative w-[480px] min-w-[480px] flex flex-col text-center items-center",
@@ -114,11 +134,23 @@ export default function Home(): React.JSX.Element {
                     </nav>
                 </div>
             </section>
-            <Resume />
-            <Attributes />
-            <Summary />
-            <Videos />
-            <Projects />
+            <Suspense fallback={<LoadingFallback />}>
+                <Resume />
+            </Suspense>
+            <Suspense fallback={null}>
+                <Attributes />
+            </Suspense>
+            <Suspense fallback={null}>
+                <Summary />
+            </Suspense>
+            <Suspense fallback={null}>
+                <Videos />
+            </Suspense>
+            <Suspense fallback={null}>
+                <Projects />
+            </Suspense>
         </main>
     );
-}
+};
+
+export default memo(Home);
