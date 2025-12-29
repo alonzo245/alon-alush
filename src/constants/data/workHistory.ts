@@ -229,7 +229,7 @@ My core responsibilities included designing scalable application architectures, 
         id: "salesTech",
         icon: "",
         company: "SalesTech",
-        title: "Senior Full Stack DeveloperSalesTech ",
+        title: "Senior Full Stack Developer SalesTech ",
         description: `
 I worked as a Senior Full-Stack Web Developer as part of a cross-functional engineering team, contributing to both backend and frontend development. I built and maintained web application components using JavaScript and developed scalable backend services on a LAMP stack.
 <br><br>

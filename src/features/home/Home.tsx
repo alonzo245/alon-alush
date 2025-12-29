@@ -110,7 +110,7 @@ const Home = (): React.JSX.Element => {
                     </h1>
                     <h2
                         className={clsx(
-                            "text-[22px] text-[#5600ff] px-[60px] mt-[10px] mb-[10px] font-bold",
+                            "text-[22px] text-[#5600ff] px-[60px] mb-[10px] font-bold",
                             "desktop:text-[46px] desktop:px-0",
                             "wide:text-[56px] wide:px-0",
                         )}
