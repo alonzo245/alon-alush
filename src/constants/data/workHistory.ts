@@ -36,7 +36,7 @@ Tech Stack:
 Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, NoSQL (MongoDB, DynamoDB), Databricks, Prometheus, Grafana, Thanos, Argo, Kubernetes, Git, Statsig, CI/CD pipelines.
 <br><br>
 `,
-        date: "2024 - Present",
+        date: "2024 - 2025",
     },
     {
         id: "jolt",
@@ -56,23 +56,7 @@ I focus heavily on building team capability and culture. I mentor engineers, enc
 I continuously evaluate and introduce technologies that improve scale, performance, and reliability, grounding decisions in data and measurable results. Beyond engineering, I also help drive cross-functional initiatives and business processes, aligning technology strategy with company objectives.
 <br><br>
         `,
-        date: "2022 - 2023",
-    },
-    {
-        id: "jolt",
-        icon: "jolt",
-        company: "Jolt.io",
-        title: "VP of Jolt.io",
-        preDescription: ``,
-        description: `
-Accountable for ensuring that design and functional requirements are fully met, while maintaining a consistent and high-quality user experience across all products. I manage and mentor engineering teams, providing leadership, guidance, and support to drive team performance and growth.
-<br><br>
-I contribute to recruitment efforts, help shape team structure, and define standards and procedures to ensure consistent delivery excellence. I am responsible for budget planning and optimization, and I proactively recommend technological improvements to increase efficiency, scalability, and product quality.
-<br><br>
-I focus on developing high-performing teams and establishing strong engineering practices that enable the organization to deliver reliable, user-centered, and high-impact solutions.
-<br><br>
-        `,
-        date: "2022 - Present",
+        date: "2022 - 2024",
     },
     {
         id: "coderz",
@@ -135,30 +119,7 @@ ${externalLink(
     "https://www.facebook.com/groups/coderzcommunity",
 )} - More than 1200 developers, we target to help junior developers level-up their skills and find a job in the high-tech industry.
         `,
-        date: "2021 - Present",
-    },
-    {
-        id: "jolt",
-        icon: "jolt",
-        company: "Jolt.io",
-        title: "Hands-on R&D Director of Engineering",
-        description: `
-Managing the R&D roadmap and technical direction, guidance, delivery, features quality, technologies, DevOps and team members personal skills evolvement.
-<br/><br/>
-Working directly with the company's CPO, Proactive attitude of "Do what it takes to get the job done".
-Hands-on coder and managing team of developers, responsible for scaling challenges of DevOps services and systems of the company's apps. 
-<br/><br/>
-Responsible for the quality and workload estimation / schedule of the company's roadmap, projects, features, native apps and web apps delivery.
-<br/><br/>
-Products I've led & developed:
-- Jolt OS - 360 solution for education purposes including: smart teachers scheduler.
-- Student's Portal which includes: student's smart course schedule, public profile.
-- Jobs Board & Jobs Scraper.
-- Smart automated Job seeker
-- Scheduler Instructor Web App.
-- Management system for students, teachers, class sessions.
-        `,
-        date: "2021 - 2022",
+        date: "2021 - 2024",
     },
     {
         id: "jolt",
@@ -176,7 +137,7 @@ I am responsible for designing system architecture across products and features,
 <br><br>
 
         `,
-        date: "2020 - 2021",
+        date: "2020 - 2022",
     },
     {
         id: "pepper",
