@@ -39,28 +39,13 @@ Go, Python, Node.js, TypeScript, JavaScript, Next.js, React, AWS, Spark, SQL, No
         date: "2024 - Present",
     },
     {
-        id: "singular",
-        icon: "s",
-        company: "Singular",
-        title: "Full-Stack Engineer",
-        description: `
-        I work on first-to-market products, building innovative solutions using modern, industry-leading technologies. I am responsible for the design, development, and maintenance of end-to-end features across both client and server environments.
-<br><br>
-I collaborate closely with product and design teams to translate business and UX requirements into scalable, intuitive, and high-performance user experiences.
-<br><br>
-Tech Stack: React, Python, Django, MySQL, PostgreSQL, AWS, Redis, Druid, Snowflake, and additional supporting technologies.
-        <br><br>
-        `,
-        date: "2023 - 2024",
-    },
-    {
         id: "jolt",
         icon: "jolt",
         company: "Jolt.io",
         title: "CTO of Jolt.io",
         preDescription: `
 <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/UD41T2l8ewE?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player"
- frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+ ameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         description: `
 I lead software development across the full lifecycle — from architecture and design through implementation, delivery, and continuous improvement. I stay deeply hands-on across DevOps, backend, and frontend work, with strong experience building and operating systems on AWS and GCP.
 <br><br>
